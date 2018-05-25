@@ -1,0 +1,89 @@
+
+
+
+// Politica para sincronismo dos eventos com Categoria 824, 826, 827 e 829;
+// Inicio
+
+horario = getdate();
+Contador = 0;
+log ("SINC_COL: ****** Inicio Sincroniza Eventos Coleta ******");
+log ("SINC_COL: Consultando eventos no HISTORICO de Massivas");
+
+TABHISTMASS = "HISTORICO_MASSIVA";
+
+FILTROHISTMASS = "id_tipo_massiva in ( '824', '826', '827', '829') and tipo_alarme = 'INF' and data_termino is null";
+MS = GetByFilter(TABHISTMASS, FILTROHISTMASS, False);
+
+NumMS = length(MS);
+log ("SINC_COL: Quantidade de registros abertos na tabela HISTORICO " + string(NumMS));
+if (NumMS>0)
+{
+ I = NumMS - 1;
+ while (I>=0)
+    {
+     ////Verificando se server_serial em Massiva bate com o serverserial ativo no Netcool
+
+     TABEVENTOS = "EVENTOS_COLETA";
+     FILTROEVENTOS = "ServerSerial="+ MS[I].Server_Serial;
+
+     //log ("SINC_COL: " + FILTROEVENTOS + " Alarme: " + I);
+     EV = GetByFilter(TABEVENTOS, FILTROEVENTOS, false);
+     NumEV = length(EV);                                                                                                                 
+
+     if (NumEV=0)
+     {
+       log ("SINC_COL: " + MS[I].Server_Serial + " nao esta na tabela alerts.status - Alarme: " + I);
+
+
+    // Definicao de variavel MsgProps para envio via JMS
+    MsgProps = NewObject();
+    MsgProps.Priority = 4;
+    MsgProps.DeliveryMode = "PERSISTENT";
+    MsgProps.TimeToLive = 0;
+    
+    horario_fech = getdate();
+    // Criando XML de envio
+    log ("SINC_COL: Iniciando XML...");
+    XML = "<?xml version='1.0' standalone='yes'?><evento><Abertura>1</Abertura><Massiva>3</Massiva>";
+    XML = XML + "<ServerSerial>" + MS[I].Server_Serial + "</ServerSerial>";
+    XML = XML + "<Serial>" + MS[I].Serial + "</Serial>";
+    if (MS[I].NUMERO_BA=NULL) { NUM_BA = ''; } else { NUM_BA=MS[I].NUMERO_BA; }
+    XML = XML + "<NumBATP>" + NUM_BA + "</NumBATP><IdBATP>BA</IdBATP>";
+    XML = XML + "<Data>" + horario_fech + "</Data>";
+    XML = XML + "<Summary>" + MS[I].DESCRICAO + "</Summary>";
+    XML = XML + "<Category>" + MS[I].ID_TIPO_MASSIVA + "</Category>";
+    XML = XML + "<Technology>" + MS[I].ID_TIPO_EQ + "</Technology><AdditionalInfo></AdditionalInfo>";
+    XML = XML + "<equipamento><nome>" + MS[I].NOME_EQ + "</nome><ip></ip>";
+    if (MS[I].SHELF=NULL) { SHELF = ''; } else { SHELF=MS[I].SHELF; }
+    XML = XML + "<shelf><nome>" + SHELF+ "</nome>";
+    if (MS[I].SUB_SHELF=NULL) { SUB_SHELF = ''; } else { SUB_SHELF=MS[I].SUB_SHELF; }
+    XML = XML + "<subshelf><nome>" + SUB_SHELF + "</nome>";
+    if (MS[I].SLOT=NULL) { SLOT = ''; } else { SLOT=MS[I].SLOT; }
+    XML = XML + "<slot><nome>" + SLOT + "</nome>";
+    if (MS[I].SUB_SLOT=NULL) { SUB_SLOT = ''; } else { SUB_SLOT=MS[I].SUB_SLOT; }
+    XML = XML + "<subslot><nome>" + SUB_SLOT + "</nome>";
+    if (MS[I].PORT=NULL) { PORT = ''; } else { PORT=MS[I].PORT; }
+    XML = XML + "<port><nome>" + PORT + "</nome><ifindex></ifindex></port></subslot></slot></subshelf></shelf><Gpon>";
+    if (MS[I].GPON_ID=NULL) { GPON_ID = ''; } else { GPON_ID=MS[I].GPON_ID; }
+    XML = XML + "<Identifier>" + GPON_ID + "</Identifier></Gpon></equipamento></evento>";
+    log ("SINC_COL: XML de Fechamento: " + XML);
+    
+    // Envio XML via JMS
+    SendJMSMessage("JMS_DATASOURCE_RESPONSE_WPS", MsgProps, XML);
+ 
+
+       //Se nao existir, atualiza o campo data_termino em Massiva com o horario atual.
+      //MSDTTERM = "data_termino = sysdate";
+      //FiltroMASEVENTO = "id_historico = " + MS[I].ID_HISTORICO;
+      //BatchUpdate(TABHISTMASS, FiltroMASEVENTO, MSDTTERM );
+      Contador = Contador + 1;
+      //log ("SINC_COL: XML de Fechamento enviado: " + MS[I].Server_Serial + " - data: "+string(horario_fech)+"");
+     }
+     I = I - 1;
+    }
+horario2 = getdate();
+tdecor = horario2 - horario;
+log ("SINC_COL: ****** Fim Sincronizacao Massiva -> Tempo decorrido na politica: "+string(tdecor)+"s ****** para " + string(Contador) + " registros");
+}
+
+

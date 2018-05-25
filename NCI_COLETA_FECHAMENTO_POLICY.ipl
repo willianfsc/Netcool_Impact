@@ -1,0 +1,180 @@
+
+
+// COLETA_FECHAMENTO_POLICY
+// Esta policy envia para o ICS, o Fechamento de eventos Alarme e Massiva.
+// Inicio
+horario = getdate();
+log ("COLETA FECH XML: Inicio COLETA_FECHAMENTO_POLICY");
+NOMEEQ = "";
+IPEQ = "";
+IFINDEX = "";
+// Criacao da variavel JNDIProps que contem as propriedades JNDI
+//JNDIProps = NewObject();
+//JNDIProps["java.naming.factory.initial"] = "com.sun.jndi.fscontext.RefFSContextFactory";
+//JNDIProps["java.naming.provider.url"] = "file:/opt/mqm/tmp/JNDI-Directory";
+// Procura por eventos Alarme ou Massiva ainda nao enviados
+TABELA = "EVENTOS_COLETA";
+TAB_ORACLE = "REPORTER";
+//FILTRO1 = "(Class <> 48777) and (Massiva > 0) AND (Massiva <= 3) AND (Abertura = 10) AND (Severity = 0) AND (StateChange < getdate - 60) AND (ServerName LIKE '^DOM.*')";
+FILTRO1 = "Category in (824, 826, 827, 829) AND (Massiva > 0) AND (Massiva <= 3) AND (Abertura = 10) AND (Severity = 0) AND (ServerName LIKE '^DOM.*')";
+CONSULTA = GetByFilter(TABELA, FILTRO1, False);
+NumC = length(CONSULTA);
+Total = NumC;
+log ("COLETA FECH XML: " + NumC + " eventos para enviar fechamento");
+if (NumC > 0) {
+While(NumC > 0) {
+
+
+I = NumC - 1;
+// Definicao de variavel MsgProps para envio via JMS
+MsgProps = NewObject();
+if (CONSULTA[I].Massiva = 3)
+{ 
+MsgProps.Priority = 4;
+}
+else
+{
+MsgProps.Priority = 5;
+}
+MsgProps.DeliveryMode = "PERSISTENT";
+MsgProps.TimeToLive = 0;
+log("COLETA FECH XML: ServerName: " + CONSULTA[I].ServerName);
+if (CONSULTA[I].Class == 48741)
+{
+NumBATP = CONSULTA[I].TrapReason;
+IdBATP = CONSULTA[I].ServiceType;
+} else
+{
+NumBATP = "";
+IdBATP = "BA";
+}
+
+
+// Criando XML de envio
+log ("Iniciando XML...");
+XML = "<?xml version='1.0' standalone='yes'?>";
+XML = XML + "<evento>";
+XML = XML + "<Abertura>1</Abertura>";
+XML = XML + "<Massiva>" + CONSULTA[I].Massiva + "</Massiva>";
+XML = XML + "<ServerSerial>" + CONSULTA[I].ServerSerial + "</ServerSerial>";
+XML = XML + "<Serial>" + CONSULTA[I].Serial + "</Serial>";
+XML = XML + "<NumBATP>" + NumBATP + "</NumBATP>";
+XML = XML + "<IdBATP>" + IdBATP + "</IdBATP>";
+XML = XML + "<Data>" + CONSULTA[I].StateChange + "</Data>";
+XML = XML + "<Summary>" + CONSULTA[I].Summary + "</Summary>";
+XML = XML + "<Category>" + CONSULTA[I].Category + "</Category>";
+XML = XML + "<Technology>" + CONSULTA[I].Technology + "</Technology>";
+XML = XML + "<AdditionalInfo>" + CONSULTA[I].AdditionalInfo + "</AdditionalInfo>";
+XML = XML + "<equipamento>";
+if (CONSULTA[I].NEName LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+{
+NOMEEQ = "";
+} else
+{
+NOMEEQ = CONSULTA[I].NEName;
+}
+log ("COLETA FECH XML: NOMEEQ OK!");
+XML = XML + "<nome>" + NOMEEQ + "</nome>";
+if (CONSULTA[I].NEAddress LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+{
+IPEQ = CONSULTA[I].NEAddress;
+} else
+{
+IPEQ = "";
+}
+log ("COLETA FECH XML: IPEQ OK!");
+XML = XML + "<ip>" + IPEQ + "</ip>";
+XML = XML + "<shelf>";
+XML = XML + "<nome>" + CONSULTA[I].ShelfID + "</nome>";
+XML = XML + "<subshelf>";
+XML = XML + "<nome>" + CONSULTA[I].SubShelfID + "</nome>";
+XML = XML + "<slot>";
+XML = XML + "<nome>" + CONSULTA[I].Slot + "</nome>";
+XML = XML + "<subslot>";
+XML = XML + "<nome>" + CONSULTA[I].SubSlotID + "</nome>";
+XML = XML + "<port>";
+XML = XML + "<nome>" + CONSULTA[I].PSAP + "</nome>";
+
+
+if (CONSULTA[I].ShelfID = "" AND CONSULTA[I].SubShelfID = "" AND CONSULTA[I].Slot = "" AND CONSULTA[I].SubSlotID = "" AND CONSULTA[I].PSAP = "")
+{
+IFINDEX = CONSULTA[I].LSAP;
+} else
+{
+IFINDEX = "";
+}
+log ("COLETA FECH XML: IFINDEX OK!");
+XML = XML + "<ifindex>" + IFINDEX + "</ifindex>";
+XML = XML + "</port>";
+XML = XML + "</subslot>"; 
+XML = XML + "</slot>";
+XML = XML + "</subshelf>";
+XML = XML + "</shelf>";
+
+
+if (CONSULTA[I].Massiva = 3)
+{
+GPONID = "";
+if (CONSULTA[I].AlertKey LIKE "^ONT-[0-9]+-[0-9]+-[0-9]+-[0-9]+-[0-9]+ [A-Z]+ [A-Z]+$")
+{
+GPONID = RExtract(CONSULTA[I].AlertKey,"^ONT-[0-9]+-[0-9]+-[0-9]+-[0-9]+-([0-9]+) [A-Z]+ [A-Z]+$");
+}
+elseif (CONSULTA[I].AlertKey LIKE "ONT-.*-.*-.*-.*-[0-9]+.*[A-Z]+[A-Z].*")
+{
+GPONID = RExtract(CONSULTA[I].AlertKey,"ONT-.*-.*-.*-.*-([0-9]+).*[A-Z]+[A-Z].*");
+}  elseif (CONSULTA[I].AlertKey LIKE "ONT-.*-.*-.*-.*-.*")
+{
+GPONID = RExtract(CONSULTA[I].AlertKey,"ONT-.*-.*-.*-.*-(.*)");
+} 
+elseif (CONSULTA[I].AlertKey LIKE "^[0-9]+ [0-9]+ [0-9]+ [0-9]+ .*")
+{
+GPONID = RExtract(CONSULTA[I].AlertKey,"^[0-9]+ [0-9]+ [0-9]+ ([0-9]+) .*");
+}
+elseif (CONSULTA[I].AlertKey LIKE ".*ONT-.*-.*-.*")
+{
+GPONID = RExtract(CONSULTA[I].AlertKey,".*ONT-.*-.*-(.*)");
+}
+XML = XML + "<Gpon>";
+XML = XML + "<Identifier>" + GPONID + "</Identifier>";
+XML = XML + "</Gpon>";
+}
+
+
+XML = XML + "</equipamento>";
+XML = XML + "</evento>";
+log ("COLETA FECH XML: " + XML);
+// Envio XML via JMS
+// "WSMQQueueConnectionFactory" => Nome do JMS connection factory.
+// "ResponseQueue" => Nome do contexto JMS para onde se deseja enviar a mensagem.
+
+
+// Enviando el mensaje
+if (CONSULTA[I].Massiva = 3)
+{ 
+//SendJMSMessage(JNDIProps, "WSMQQueueConnectionFactory", "ResponseQueueWPS", MsgProps, XML);
+SendJMSMessage("JMS_DATASOURCE_RESPONSE_WPS", MsgProps, XML);
+}
+else
+{
+//SendJMSMessage(JNDIProps, "WSMQQueueConnectionFactory", "ResponseQueue", MsgProps, XML);
+SendJMSMessage("JMS_DATASOURCE_RESPONSE", MsgProps, XML);
+}
+log ("COLETA FECH XML: XML Enviado!");
+// Delete Evento
+FILTRO2 = "ServerSerial = " + CONSULTA[I].ServerSerial + " AND Serial = " + CONSULTA[I].Serial + ""; 
+BatchUpdate("REPORTER", FILTRO2, "Abertura = 11");
+BatchDelete(TABELA, FILTRO2, NULL);
+
+
+NumC = NumC - 1;
+}
+// Apos o envio de todas as mensagens atualiza status
+log ("COLETA FECH XML: Tentando apagar eventos");
+// Nao apaga temporariamente os alarmes do LOBATO - 30-06-2008 
+//FILTRO1 = "(Massiva > 0) AND (Massiva <= 3) AND (Abertura = 11) AND (Severity = 0) AND (StateChange < getdate - 60) AND (ServerName LIKE '^DOM.*') AND (Class not in (48741, 48777))";
+//CONSULTA = GetByFilter(TABELA, FILTRO1, False);
+// BatchDelete("EVENTOS", null, CONSULTA);
+horario2 = getdate();
+tdecor = horario2 - horario;
+log ("COLETA FECH XML: ****** Fim Fechamento XML -> Tempo decorrido na politica: "+string(tdecor)+"s para "+string(Total)+" registros******");
+}

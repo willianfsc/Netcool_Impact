@@ -1,0 +1,253 @@
+// NOME_ENDERECO_POLICY_NOVO
+
+// Inicio
+horario = getdate();
+log ("NEND: Inicio ");
+// DEFINE NOMES E ENDERECOS PARA TODOS OS EVENTOS DO CIC, INCLUINDO TAMBEM INFORMACAO DE 
+// LOCALIZACAO DO EQUIPAMENTO COM PROBLEMA
+
+TABLE = "EVENTOS";
+FILTER = "(Identifier IN (select top 600 Identifier from alerts.status where Category not in (824, 826, 827, 829) AND (Type <> 2) and (Class <> 48741) and (URL not like '@Impact_NEND') AND (ServerName LIKE 'DOM1' OR (ServerName LIKE 'DOM2' AND Severity > 0)) and Technology <> 14))";
+EVROOT = GetByFilter(TABLE, FILTER, false);
+Numroot = length(EVROOT);
+Total = Numroot;
+if (Numroot >0)
+{
+ I = Numroot-1;
+
+ while (I>=0) 
+ {
+  if (EVROOT[I].ServerName like 'DOM1.*')
+  { 
+
+  // Inicializacao de variaveis
+  Alert_NEAddress = EVROOT[I].NEAddress;
+  Alert_Location = EVROOT[I].Location;
+  Alert_Acknowledged = EVROOT[I].Acknowledged;
+  
+  // PASSA NOME PARA MAIUSCULAS
+  NOME = ToUpper(EVROOT[I].NEName);
+  NOME = Replace(NOME," ","");
+  Alert_NEName = NOME;
+  if (Alert_NEName LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+  {
+   Alert_NEAddress = Alert_NEName;
+   log ("NEND: NEName " + Alert_NEName + " eh um IP!");
+   // Retorna todos os OrgNodes de TAB_NOMES
+   // para enderecos IP iguais ao do evento recebido.
+ 
+   TABELA = "IMPACT_NENAME_IP";
+   FILTRO = "IP='"+EVROOT[I].NEAddress+"'";
+   RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+   NumR = length(RETREGRAS);
+   if (NumR > 0)
+   {
+    Alert_NEName = RETREGRAS[0].NENAME;
+    Alert_Acknowledged = "0";
+    log ("NEND: Dado: " + EVROOT[I].NEAddress + " encontrou-se: " + Alert_NEName);
+   }
+   else 
+   {
+    log ("NEND: IP " + Alert_NEName + " nao encontrado!");
+   }
+  }
+  else
+  {
+   // PROCURA POR NOME
+          // Retorna todos os OrgNodes de TAB_NOMES
+          // para nomes iguais ao do evento recebido.
+
+          if (Alert_NEName <> "")
+           {
+                 TABELA = "IMPACT_NENAME_IP";
+                 FILTRO = "NENAME='"+Alert_NEName+"'";
+                 RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+                 NumR = length(RETREGRAS);
+                 if (NumR > 0)
+                 {
+                      Alert_NEAddress = RETREGRAS[0].IP;
+                     Alert_Acknowledged = "0";
+                      log ("NEND: Dado: " + Alert_NEName + " encontrou-se: " + EVROOT[I].NEAddress);
+                  }
+                  else
+                  {
+                   log ("NEND: NEName " + Alert_NEName + " nao encontrado!");
+
+
+     // NEName nao eh um IP, vamos ver agora se o NEAddress eh um IP.
+
+     if (EVROOT[I].NEAddress LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+       {
+             log ("NEND: NEAddress" + EVROOT[I].NEAddress + " eh um IP!");
+
+             // Retorna todos os OrgNodes de TAB_NOMES
+              // para enderecos IP iguais ao do evento recebido.
+
+             TABELA = "IMPACT_NENAME_IP";
+             FILTRO = "IP='"+Alert_NEAddress+"'";
+             RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+             NumR = length(RETREGRAS);
+             if (NumR >0)
+             {
+                     Alert_NEName = RETREGRAS[0].NENAME;
+         Alert_Acknowledged = "0";
+                     log ("NEND: Dado: " + EVROOT[I].NEAddress + " encontrou-se: " + Alert_NEName);
+             }
+             else
+             {
+                     log ("NEND: IP " + EVROOT[I].NEAddress + " nao encontrado!");
+             }
+     }
+    }
+   }
+   else
+   {
+    if (EVROOT[I].NEAddress LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+                         {
+                             log ("NEND: NEAddress" + EVROOT[I].NEAddress + " eh um IP!");
+
+                             // Retorna todos os OrgNodes de TAB_NOMES
+                             // para enderecos IP iguais ao do evento recebido.
+
+                             TABELA = "IMPACT_NENAME_IP";
+                             FILTRO = "IP='"+Alert_NEAddress+"'";
+                             RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+                             NumR = length(RETREGRAS);
+                             if (NumR >0)
+                             {
+                                  Alert_NEName = RETREGRAS[0].NENAME;
+                                  Alert_Acknowledged = "0";
+                                  log ("NEND: Dado: " + EVROOT[I].NEAddress + " encontrou-se: " + Alert_NEName);
+                                 }
+                                 else
+                                 {
+                                    log ("NEND: IP " + EVROOT[I].NEAddress + " nao encontrado!");
+                                 }
+                         }
+   }
+  }
+
+
+  // AJUSTE DE LOCALIDADES
+  if (Alert_NEName LIKE "^[A-Z][A-Z][A-Z][A-Z][A-Z][0-9].*")
+  {
+   Alert_Location = RExtract (Alert_NEName,"^([A-Z][A-Z][A-Z][A-Z][A-Z])[0-9].*");
+  }
+  if (Alert_NEName LIKE "^[A-Z][A-Z][A-Z][A-Z][A-Z]SES.*")
+  {
+   Alert_Location = RExtract (Alert_NEName,"^([A-Z][A-Z][A-Z][A-Z][A-Z])SES.*");
+  }
+  if (Alert_NEName LIKE ".*_[A-Z][A-Z][A-Z][A-Z][A-Z]_.*")
+  {
+   Alert_Location =  RExtract (Alert_NEName,".*_([A-Z][A-Z][A-Z][A-Z][A-Z])_.*");
+  }
+  if (Alert_NEName LIKE ".*_[A-Z][A-Z][A-Z]-[A-Z][A-Z]_.*")
+  {
+   Alert_Location = RExtract (Alert_NEName,".*_([A-Z][A-Z][A-Z])-[A-Z][A-Z]_.*");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,".*_[A-Z][A-Z][A-Z]-([A-Z][A-Z])_.*");
+  }
+  if (Alert_ LIKE ".*-[A-Z][A-Z][A-Z]-[A-Z][A-Z]-.*")
+  {
+   Alert_Location = RExtract (Alert_NEName,".*-([A-Z][A-Z][A-Z])-[A-Z][A-Z]-.*");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,".*-[A-Z][A-Z][A-Z]-([A-Z][A-Z])-.*");
+  }
+  if (Alert_NEName LIKE ".*-[A-Z][A-Z][A-Z]-[A-Z][A-Z][A-Z]-.*")
+  {
+   Alert_Location = RExtract (Alert_NEName,".*-([A-Z][A-Z][A-Z])-[A-Z][A-Z][A-Z]-.*");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,".*-[A-Z][A-Z][A-Z]-([A-Z][A-Z][A-Z])-.*");
+  }
+  if (Alert_NEName LIKE ".*[A-Z][A-Z][A-Z]_[A-Z][A-Z]_.*")
+  {
+   Alert_Location = RExtract (Alert_NEName,".*([A-Z][A-Z][A-Z])_[A-Z][A-Z]_.*");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,".*[A-Z][A-Z][A-Z]_([A-Z][A-Z])_.*");
+  }
+  if (Alert_NEName LIKE "^[A-Z][A-Z][A-Z]-[A-Z][A-Z].+")
+  {
+   Alert_Location = RExtract (Alert_NEName,"^([A-Z][A-Z][A-Z])-[A-Z][A-Z].+");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,"^[A-Z][A-Z][A-Z]-([A-Z][A-Z]).+");
+  }
+  if (Alert_NEName LIKE ".*-[A-Z][A-Z][A-Z][A-Z][A-Z]-.*")
+  {
+   Alert_Location =  RExtract (Alert_NEName,".*-([A-Z][A-Z][A-Z][A-Z][A-Z])-.*");
+  }
+  if (Alert_NEName LIKE "[A-Z][A-Z][A-Z][A-Z][A-Z]_[A-Z][A-Z][A-Z][0-9].*")
+  {
+   Alert_Location =  RExtract (Alert_NEName,"([A-Z][A-Z][A-Z][A-Z][A-Z])_[A-Z][A-Z][A-Z][0-9].*");
+  }
+  if (Alert_NEName LIKE "^[A-Z]+[_-][A-Z]+[0-9].[0-9].*")
+  {
+   Alert_Location = RExtract (Alert_NEName,"^([A-Z]+)[_-][A-Z]+[0-9].[0-9].*");
+   Alert_Location = Alert_Location + RExtract (Alert_NEName,"^[A-Z]+[_-]([A-Z]+)[0-9].[0-9].*");
+  }
+  if (Alert_NEName LIKE "^[A-Z][A-Z][A-Z][A-Z][A-Z]_ETH.*")
+  {
+         Alert_Location = RExtract (Alert_NEName,"^([A-Z][A-Z][A-Z][A-Z][A-Z])_ETH.*");
+  }
+
+  
+  // logica para definicao de nome da entidade do precision
+
+   fc = 0;
+   nome = Alert_NEName;
+
+   if (EVROOT[I].ShelfID != '')
+   {
+   nome = nome+'[ '+EVROOT[I].ShelfID+' ';
+         fc = fc+1;
+   }
+   if (EVROOT[I].SubShelfID != '')
+   {
+         nome = nome+'[ '+EVROOT[I].SubShelfID+' ';
+         fc = fc+1;
+   }
+   if (EVROOT[I].Slot != '')
+   {
+         nome = nome+'[ '+EVROOT[I].Slot+' ';
+         fc = fc+1;
+   }
+   if (EVROOT[I].SubSlotID != '' && EVROOT[I].Technology != 6)
+   {  
+         nome = nome+'[ '+EVROOT[I].SubSlotID+' ';
+
+         fc = fc+1;
+   }
+   if (EVROOT[I].PSAP != '')
+   {
+         nome = nome+'[ '+EVROOT[I].PSAP+' ';
+         fc = fc+1;
+   } 
+
+  // fecha chaves nome
+
+   primeiro = fc;
+  while (fc>0)
+   {
+   if (fc == primeiro)
+   {
+    nome = nome+']';
+   }
+   else
+   {
+              nome = nome+' ]';
+   }
+   fc = fc-1;
+   }
+ 
+   Alert_LocalNodeAlias = nome;
+   Alert_RemoteNodeAlias = 'FakePoller';
+
+  log ( "NEND: " + Alert_NEName + " - " + EVROOT[I].NEAddress + " - " + EVROOT[I].Location );
+  }
+  
+  // Chama Define massiva
+  Activate(NULL,"DEFINE_MASSIVA_POLICY_NOVO");
+ 
+  I = I-1;
+
+ } 
+}
+log ("NEND: Fim da policy ");
+horario2 = getdate();                                                                                                                                   
+tdecor = horario2 - horario;                                                                                                                            
+log ("NEND: ****** Fim NEND -> Tempo decorrido na politica: "+string(tdecor)+"s para "+string(Total)+" registros ******");
+

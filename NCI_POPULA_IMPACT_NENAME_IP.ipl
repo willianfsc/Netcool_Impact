@@ -1,0 +1,6059 @@
+
+log ("Inicio Pop_TAB_NOMES_POLICY");
+NL = NewObject();
+NL.NENAME = "37217118_ASSOCIACAO_BR_IGREJAS_2.TELESP.NET.BR";
+NL.IP = "201.1.225.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37217118_ASSOCIACAO_BR_IGREJAS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "41259812_CHALLENGER_2.TELESP.NET.BR";
+NL.IP = "201.1.226.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '41259812_CHALLENGER_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.226.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38126496_HOSPITAL_S_LUIZ_MB.TELESP.NET.BR";
+NL.IP = "201.1.227.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38126496_HOSPITAL_S_LUIZ_MB.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.227.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42326290_INSTITUTO_MAUA_1.TELESP.NET.BR";
+NL.IP = "201.1.228.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42326290_INSTITUTO_MAUA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.228.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42320402_INSTITUTO_MAUA_2.TELESP.NET.BR";
+NL.IP = "201.1.228.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42320402_INSTITUTO_MAUA_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.228.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "41915546_SHOPPING_TAMBORE_1.TELESP.NET.BR";
+NL.IP = "201.1.230.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '41915546_SHOPPING_TAMBORE_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42084846_SHOPPING_TAMBORE_2.TELESP.NET.BR";
+NL.IP = "201.1.230.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42084846_SHOPPING_TAMBORE_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36634134_DORIA_ASSOC_1.TELESP.NET.BR";
+NL.IP = "201.1.231.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36634134_DORIA_ASSOC_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.231.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32521224_LICEU_SANTISTA.TELESP.NET.BR";
+NL.IP = "201.1.234.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32521224_LICEU_SANTISTA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.234.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "47020978_KARTODROMO_GRANJA_VIANA.MARTIN";
+NL.IP = "201.1.238.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '47020978_KARTODROMO_GRANJA_VIANA.MARTIN'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.238.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "2328630_MULTICOBRA_GAL_GLICERIO.TELESP.NET.BR";
+NL.IP = "201.1.244.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '2328630_MULTICOBRA_GAL_GLICERIO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.244.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35248921_ACAO_EDUC_CLARETIANA.TELESP.NET.BR";
+NL.IP = "201.1.245.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35248921_ACAO_EDUC_CLARETIANA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.245.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37592445_REEBOK_REALPARK.TELESP.NET.BR";
+NL.IP = "201.1.247.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37592445_REEBOK_REALPARK.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.247.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38256417_ABIT.TELESP.NET.BR";
+NL.IP = "201.1.249.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38256417_ABIT.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.249.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55430916_BOURBON_STREET.TELESP.NET.BR";
+NL.IP = "201.13.224.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55430916_BOURBON_STREET.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.224.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32874481_CBS.TELESP.NET.BR";
+NL.IP = "201.13.225.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32874481_CBS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.225.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32874481_CBS_2.TELESP.NET.BR";
+NL.IP = "201.13.225.227";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32874481_CBS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.225.227'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38140967_VECCHIO_TORINO.TELESP.NET.BR";
+NL.IP = "201.13.226.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38140967_VECCHIO_TORINO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.226.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35413695_MASP_2_AND.TELESP.NET.BR";
+NL.IP = "201.13.226.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35413695_MASP_2_AND.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.226.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "51832673_SUN_MICROSYSTEMS.TELESP.NET.BR";
+NL.IP = "201.13.227.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '51832673_SUN_MICROSYSTEMS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.227.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50843408_INSTITUTO_MAUA.TELESP.NET.BR";
+NL.IP = "201.13.229.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50843408_INSTITUTO_MAUA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.229.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35413689_MASP_RESTAUR_2.TELESP.NET.BR";
+NL.IP = "201.13.233.111";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35413689_MASP_RESTAUR_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.233.111'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30327320_ESPORTE_C_PINHEIROS.TELESP.NET.BR";
+NL.IP = "201.13.233.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30327320_ESPORTE_C_PINHEIROS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.233.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35413689_MASP_RESTAUR_1.TELESP.NET.BR";
+NL.IP = "201.13.233.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35413689_MASP_RESTAUR_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.233.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35345886_ACAO_CLARETIANA_BIB.TELESP.NET.BR";
+NL.IP = "201.13.234.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35345886_ACAO_CLARETIANA_BIB.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.234.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "64824825_CAE.TELESP.NET.BR";
+NL.IP = "201.13.235.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '64824825_CAE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38734452_DELLA_VIA_PERDIZES.TELESP.NET.BR";
+NL.IP = "201.13.236.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38734452_DELLA_VIA_PERDIZES.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.236.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37215126_DELLA_VIA_MORUMBI.TELESP.NET.BR";
+NL.IP = "201.13.236.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37215126_DELLA_VIA_MORUMBI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.236.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32376044_DELLA_VIA_SOROCABA.TELESP.NET.BR";
+NL.IP = "201.13.236.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32376044_DELLA_VIA_SOROCABA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.236.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31673816_GOLDEN_LIGHT.TELESP.NET.BR";
+NL.IP = "201.13.237.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31673816_GOLDEN_LIGHT.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.237.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "44371822_STRONG.TELESP.NET.BR";
+NL.IP = "201.13.237.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '44371822_STRONG.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.237.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32875019_BARAO_DE_SERRA.TELESP.NET.BR";
+NL.IP = "201.13.238.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32875019_BARAO_DE_SERRA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.238.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32843482_JORGE_FLORES.TELESP.NET.BR";
+NL.IP = "201.13.238.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32843482_JORGE_FLORES.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.238.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55850538_DALLAS&HOUSTON.TELESP.NET.BR";
+NL.IP = "201.13.238.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55850538_DALLAS&HOUSTON.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.238.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30730799_CASA_DO_SABER.TELESP.NET.BR";
+NL.IP = "201.13.239.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30730799_CASA_DO_SABER.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.239.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62210315_FASTSHOP_LARCENTER.TELESP.NET.BR";
+NL.IP = "201.13.242.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62210315_FASTSHOP_LARCENTER.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.242.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62211985_VIACAO_COMETA_TIETE.TELESP.NET.BR";
+NL.IP = "201.13.242.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62211985_VIACAO_COMETA_TIETE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.242.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32846783_FECOMERCIO_1.TELESP.NET.BR";
+NL.IP = "201.13.242.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32846783_FECOMERCIO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.242.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34688439_CENTRO_CONVEN_MATA_ATLA_1.TELESP.NET.BR";
+NL.IP = "201.13.243.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34688439_CENTRO_CONVEN_MATA_ATLA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34688439_CENTRO_CONVEN_MATA_ATLA_2.TELESP.NET.BR";
+NL.IP = "201.13.243.175";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34688439_CENTRO_CONVEN_MATA_ATLA_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.175'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "3083764_MATIZ_HADDOCK.TELESP.NET.BR";
+NL.IP = "201.13.243.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '3083764_MATIZ_HADDOCK.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30793713_DELLA_VIA_CONCEICAO.TELESP.NET.BR";
+NL.IP = "201.13.243.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30793713_DELLA_VIA_CONCEICAO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32144302_MULTICOBRA_BAURU.TELESP.NET.BR";
+NL.IP = "201.13.245.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32144302_MULTICOBRA_BAURU.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38325286_DATABYTE_LAPA_1.TELESP.NET.BR";
+NL.IP = "201.13.246.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38325286_DATABYTE_LAPA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38325286_DATABYTE_LAPA_2.TELESP.NET.BR";
+NL.IP = "201.13.246.239";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38325286_DATABYTE_LAPA_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.239'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55791130_INSTITUTO_ENG_1.TELESP.NET.BR";
+NL.IP = "201.13.246.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55791130_INSTITUTO_ENG_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32284686_FIESP_SOROCABA_1.TELESP.NET.BR";
+NL.IP = "201.13.247.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32284686_FIESP_SOROCABA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.247.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32193857_PREFEITURA_STS_2.TELESP.NET.BR";
+NL.IP = "201.13.248.15";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32193857_PREFEITURA_STS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.15'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32193857_PREFEITURA_STOS_GABINETE_1.TELESP.NET.BR";
+NL.IP = "201.13.248.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32193857_PREFEITURA_STOS_GABINETE_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32084679_CHALLENGER_E_IMOB_1.TELESP.NET.BR";
+NL.IP = "201.13.248.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32084679_CHALLENGER_E_IMOB_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32084679_CHALLENGER_E_IMOB_2.TELESP.NET.BR";
+NL.IP = "201.13.248.239";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32084679_CHALLENGER_E_IMOB_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.239'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "69272709_IGREJA_COMUNICADE_GRACA";
+NL.IP = "201.13.249.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '69272709_IGREJA_COMUNICADE_GRACA'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30211223_YR_HALL_1.TELESP.NET.BR";
+NL.IP = "201.13.250.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30211223_YR_HALL_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.250.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55058891_ELECTRO_BERRINI.TELESP.NET.BR";
+NL.IP = "201.13.251.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55058891_ELECTRO_BERRINI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30811875_QUALITY_S_IMPERIAL.TELESP.NET.BR";
+NL.IP = "201.13.252.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30811875_QUALITY_S_IMPERIAL.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.252.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30314660_HEBRAICA_ASSOCIACAO_3.TELESP.NET.BR";
+NL.IP = "201.26.226.92";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30314660_HEBRAICA_ASSOCIACAO_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.226.92'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_VIRA_COPOS_1";
+NL.IP = "200.207.28.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_VIRA_COPOS_1'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '200.207.28.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_VIRA_COPOS_2";
+NL.IP = "200.207.28.3";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_VIRA_COPOS_2'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '200.207.28.3'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_VIRA_COPOS_3";
+NL.IP = "200.207.28.4";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_VIRA_COPOS_3'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '200.207.28.4'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_10.SPEEDY_WIFI";
+NL.IP = "201.1.232.11";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_10.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.11'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_11.SPEEDY_WIFI";
+NL.IP = "201.1.232.12";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_11.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.12'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_12.SPEEDY_WIFI";
+NL.IP = "201.1.232.13";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_12.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.13'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_13.SPEEDY_WIFI";
+NL.IP = "201.1.232.14";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_13.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.14'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_14.SPEEDY_WIFI";
+NL.IP = "201.1.232.15";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_14.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.15'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_16.SPEEDY_WIFI";
+NL.IP = "201.1.232.17";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_16.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.17'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_17.SPEEDY_WIFI";
+NL.IP = "201.1.232.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_17.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_19.SPEEDY_WIFI";
+NL.IP = "201.1.232.20";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_19.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.20'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_20.SPEEDY_WIFI";
+NL.IP = "201.1.232.21";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_20.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.21'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_21.SPEEDY_WIFI";
+NL.IP = "201.1.232.22";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_21.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.22'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_22.SPEEDY_WIFI";
+NL.IP = "201.1.232.23";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_22.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.23'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_24.SPEEDY_WIFI";
+NL.IP = "201.1.232.25";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_24.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.25'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_25.SPEEDY_WIFI";
+NL.IP = "201.1.232.26";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_25.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.26'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_26.TELESP.NET.BR";
+NL.IP = "201.1.232.27";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_26.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.27'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_3.SPEEDY_WIFI";
+NL.IP = "201.1.232.4";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_3.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.4'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_4.SPEEDY_WIFI";
+NL.IP = "201.1.232.5";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_4.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.5'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_5.SPEEDY_WIFI";
+NL.IP = "201.1.232.6";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_5.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.6'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_6.SPEEDY_WIFI";
+NL.IP = "201.1.232.7";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_6.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.7'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_7.SPEEDY_WIFI";
+NL.IP = "201.1.232.8";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_7.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.8'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CUMBICA_8.SPEEDY_WIFI";
+NL.IP = "201.1.232.9";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CUMBICA_8.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.232.9'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_1.SPEEDY_WIFI";
+NL.IP = "201.13.251.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_1.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_2.SPEEDY_WIFI";
+NL.IP = "201.13.251.131";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_2.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.131'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_3.SPEEDY_WIFI";
+NL.IP = "201.13.251.132";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_3.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.132'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_4.SPEEDY_WIFI";
+NL.IP = "201.13.251.133";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_4.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.133'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_5.SPEEDY_WIFI";
+NL.IP = "201.13.251.134";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_5.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.134'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_6.SPEEDY_WIFI";
+NL.IP = "201.13.251.135";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_6.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.135'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_7.SPEEDY_WIFI";
+NL.IP = "201.13.251.136";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_7.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.136'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_8.SPEEDY_WIFI";
+NL.IP = "201.13.251.137";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_8.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.137'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_CONGONHAS_9.SPEEDY_WIFI";
+NL.IP = "201.13.251.138";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_CONGONHAS_9.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.138'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_1.SPEEDY_WIFI";
+NL.IP = "201.26.224.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_1.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_2.SPEEDY_WIFI";
+NL.IP = "201.26.224.195";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_2.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.195'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_3.SPEEDY_WIFI";
+NL.IP = "201.26.224.196";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_3.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.196'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_5.SPEEDY_WIFI";
+NL.IP = "201.26.224.198";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_5.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.198'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_6.SPEEDY_WIFI";
+NL.IP = "201.26.224.199";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_6.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.199'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_INT_BRASILIA_7";
+NL.IP = "201.26.224.200";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_INT_BRASILIA_7'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.224.200'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_1.SPEEDY_WIFI";
+NL.IP = "201.26.225.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_1.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_2.SPEEDY_WIFI";
+NL.IP = "201.26.225.3";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_2.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.3'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_3.SPEEDY_WIFI";
+NL.IP = "201.26.225.4";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_3.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.4'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_4.SPEEDY_WIFI";
+NL.IP = "201.26.225.5";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_4.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.5'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_5.SPEEDY_WIFI";
+NL.IP = "201.26.225.6";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_5.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.6'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_6.SPEEDY_WIFI";
+NL.IP = "201.26.225.7";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_6.SPEEDY_WIFI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.7'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_AFONSO_PENA_7";
+NL.IP = "201.26.225.8";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_AFONSO_PENA_7'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.8'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_PAMPULHA_1.TELESP.NET.BR";
+NL.IP = "201.26.225.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_PAMPULHA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_PAMPULHA_2.TELESP.NET.BR";
+NL.IP = "201.26.225.99";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_PAMPULHA_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.99'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "AEROPORTO_PAMPULHA_3.TELESP.NET.BR";
+NL.IP = "201.26.225.100";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = 'AEROPORTO_PAMPULHA_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.100'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42295251_HOTEL_PHATERNON_S_CAETANO..TELESP.NET.BR";
+NL.IP = "201.13.235.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42295251_HOTEL_PHATERNON_S_CAETANO..TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "44360098_HOTEL_MERCURE_STO_ANDRE.TELESP.NET.BR";
+NL.IP = "201.13.235.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '44360098_HOTEL_MERCURE_STO_ANDRE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35014673_HOTEL_IBIS_S_CARLOS.TELESP.NET.BR";
+NL.IP = "201.13.235.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35014673_HOTEL_IBIS_S_CARLOS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32651436_HOTEL_SOL_INN_VCPOS.TELESP.NET.BR";
+NL.IP = "201.13.236.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32651436_HOTEL_SOL_INN_VCPOS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.236.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55713841_HOTEL_CLASSIC_TOWER.TELESP.NET.BR";
+NL.IP = "201.13.237.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55713841_HOTEL_CLASSIC_TOWER.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.237.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50553712_HOTEL_EDEL_TRADE_CENTER.TELESP.NET.BR";
+NL.IP = "201.13.237.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50553712_HOTEL_EDEL_TRADE_CENTER.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.237.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55056462_HOTEL_ESTANPLAZA_BERRINI_1.TELESP.NET.BR";
+NL.IP = "201.13.239.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55056462_HOTEL_ESTANPLAZA_BERRINI_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.239.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55056462_HOTEL_ESTANPLAZA_BERRINI_2.TELESP.NET.BR";
+NL.IP = "201.13.239.143";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55056462_HOTEL_ESTANPLAZA_BERRINI_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.239.143'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30570189_HOTEL_FORMULE1_JARDINS.TELESP.NET.BR";
+NL.IP = "201.13.243.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30570189_HOTEL_FORMULE1_JARDINS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55336554_HOTEL_IBIS_CONGONHAS_2.TELESP.NET.BR";
+NL.IP = "201.13.245.15";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55336554_HOTEL_IBIS_CONGONHAS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.15'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32392332_HOTEL_T_R_PALM_TOWERS_1.TELESP.NET.BR";
+NL.IP = "201.13.245.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32392332_HOTEL_T_R_PALM_TOWERS_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55336554_HOTEL_IBIS_CONGONHAS_1.TELESP.NET.BR";
+NL.IP = "201.13.245.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55336554_HOTEL_IBIS_CONGONHAS_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32392332_HOTEL_T_R_PALM_TOWERS_2.TELESP.NET.BR";
+NL.IP = "201.13.245.207";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32392332_HOTEL_T_R_PALM_TOWERS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.207'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55336554_HOTEL_IBIS_CONGONHAS_3.TELESP.NET.BR";
+NL.IP = "201.13.245.28";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55336554_HOTEL_IBIS_CONGONHAS_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.245.28'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31429868_HOTEL_DELLA_VOLPE_1.TELESP.NET.BR";
+NL.IP = "201.13.246.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31429868_HOTEL_DELLA_VOLPE_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31429868_HOTEL_DELLA_VOLPE_2.TELESP.NET.BR";
+NL.IP = "201.13.246.79";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31429868_HOTEL_DELLA_VOLPE_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.79'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31429868_HOTEL_DELLA_VOLPE_3.TELESP.NET.BR";
+NL.IP = "201.13.246.92";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31429868_HOTEL_DELLA_VOLPE_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.92'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32392306_HOTEL_THE_ROYAL_PALM_2.TELESP.NET.BR";
+NL.IP = "201.13.249.15";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32392306_HOTEL_THE_ROYAL_PALM_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.15'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32392306_HOTEL_THE_ROYAL_PALM_1.TELESP.NET.BR";
+NL.IP = "201.13.249.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32392306_HOTEL_THE_ROYAL_PALM_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32392306_HOTEL_THE_ROYAL_PALM_3.TELESP.NET.BR";
+NL.IP = "201.13.249.28";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32392306_HOTEL_THE_ROYAL_PALM_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.28'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32232212_HOTEL_MENDES_1.TELESP.NET.BR";
+NL.IP = "201.13.249.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32232212_HOTEL_MENDES_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32232212_HOTEL_MENDES_2.TELESP.NET.BR";
+NL.IP = "201.13.249.79";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32232212_HOTEL_MENDES_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.79'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50441899_HOTEL_IBIS_CONG.TELESP.NET.BR";
+NL.IP = "201.13.250.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50441899_HOTEL_IBIS_CONG.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.250.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50441899_HOTEL_IBIS_CONGONHAS_2.TELESP.NET.BR";
+NL.IP = "201.13.250.207";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50441899_HOTEL_IBIS_CONGONHAS_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.250.207'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50441899_HOTEL_IBIS_CONGONHAS_3.TELESP.NET.BR";
+NL.IP = "201.13.250.220";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50441899_HOTEL_IBIS_CONGONHAS_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.250.220'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34812363_HOTEL_SCO_JOAO.TELESP.NET.BR";
+NL.IP = "201.13.251.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34812363_HOTEL_SCO_JOAO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36634708_HOTEL_LEAO_MONTANHA.TELESP.NET.BR";
+NL.IP = "201.13.252.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36634708_HOTEL_LEAO_MONTANHA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.252.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36637347_HOTEL_LEAO_MONT_C_EVENTOS.TELESP.NET.BR";
+NL.IP = "201.13.252.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36637347_HOTEL_LEAO_MONT_C_EVENTOS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.252.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36267728_HOTEL_CONDOMINIO_JAU.MARTI";
+NL.IP = "201.1.244.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36267728_HOTEL_CONDOMINIO_JAU.MARTI'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.244.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36267467_SUPERMERCADO_JAUSERV.TELESP.NET.BR";
+NL.IP = "201.1.238.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36267467_SUPERMERCADO_JAUSERV.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.238.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "51824714_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.1.244.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '51824714_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.244.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "39437686_SUPERMERCADO_CENTERVALE.TELESP.NET.BR";
+NL.IP = "201.1.245.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '39437686_SUPERMERCADO_CENTERVALE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.245.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37262808_SUPERMERCADO_PAO_DE_ACUCAR_MORUMBI.TELESP.NET.BR";
+NL.IP = "201.1.250.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37262808_SUPERMERCADO_PAO_DE_ACUCAR_MORUMBI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.250.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30731463_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.1.250.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30731463_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.250.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32949821_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.1.251.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32949821_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.251.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55235978_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.1.251.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55235978_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.251.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38620054_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NRT.BR";
+NL.IP = "201.1.254.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38620054_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NRT.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.254.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36295880_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.1.254.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36295880_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.254.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30228383_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.13.229.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30228383_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.229.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "33821757_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.13.233.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '33821757_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.233.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30642703_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.13.234.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30642703_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.234.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37591229_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.13.236.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37591229_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.236.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "41522339_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.13.240.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '41522339_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.240.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42251275_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR";
+NL.IP = "201.26.225.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42251275_SUPERMERCADO_PAO_DE_ACUCAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.225.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30450617_RESTAURANTE_JARDINEIRA_GRILL.TELESP.NET.BR";
+NL.IP = "201.1.231.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30450617_RESTAURANTE_JARDINEIRA_GRILL.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.231.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31676492_RESTAURANTE_AMERICA_9_JULHO.TELESP.NET.BR";
+NL.IP = "201.1.237.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31676492_RESTAURANTE_AMERICA_9_JULHO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.237.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30312775_RESTAURANTE_AMERICA_IGUATEMI.TELESP.NET.BR";
+NL.IP = "201.1.237.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30312775_RESTAURANTE_AMERICA_IGUATEMI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.237.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31687254_RESTAURANTE_SUSHI_KIM.TELESP.NET.BR";
+NL.IP = "201.1.244.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31687254_RESTAURANTE_SUSHI_KIM.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.244.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31677720_RESTAURANTE_LAVECCHIA_I_BIBI.TELESP.NET.BR";
+NL.IP = "201.1.245.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31677720_RESTAURANTE_LAVECCHIA_I_BIBI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.245.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38155850_RESTAURANTE_GALETOS_JARDIM_AMERICA.TELESP.NET.BR";
+NL.IP = "201.1.246.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38155850_RESTAURANTE_GALETOS_JARDIM_AMERICA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35411467_RESTAURANTE_GALETOS_PAULISTA.TELESP.NET.BR";
+NL.IP = "201.1.246.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35411467_RESTAURANTE_GALETOS_PAULISTA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38125952_RESTAURANTE_GALETOS_IGUATEMI.TELESP.NET.BR";
+NL.IP = "201.1.246.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38125952_RESTAURANTE_GALETOS_IGUATEMI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "41919864_RESTAURANTE_GALETOS_BARUERI.TELESP.NET.BR";
+NL.IP = "201.1.246.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '41919864_RESTAURANTE_GALETOS_BARUERI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "51834158_RESTAURANTE_GALETOS_MORUMBI.TELESP.NET.BR";
+NL.IP = "201.1.246.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '51834158_RESTAURANTE_GALETOS_MORUMBI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31680791_RESTAURANTE_GALETOS_ITAIM.TELESP.NET.BR";
+NL.IP = "201.1.246.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31680791_RESTAURANTE_GALETOS_ITAIM.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35411135_RESTAURANTE_GALETOS_AL_SANTOS.TELESP.NET.BR";
+NL.IP = "201.1.246.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35411135_RESTAURANTE_GALETOS_AL_SANTOS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.246.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38254883_RESTAURANTE_CREMERIA_NESTLE.TELESP.NET.BR";
+NL.IP = "201.1.247.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38254883_RESTAURANTE_CREMERIA_NESTLE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.247.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55394094_RESTAURANTE_GENUINO_CHOPP.TELESP.NET.BR";
+NL.IP = "201.1.249.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55394094_RESTAURANTE_GENUINO_CHOPP.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.249.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38455897_RESTAURANTE_JESUINO_BAR.TELESP.NET.BR";
+NL.IP = "201.1.251.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38455897_RESTAURANTE_JESUINO_BAR.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.251.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38136594_RESTAURANTE_CRISTALO_IGUATEMI.TELESP.NET.BR";
+NL.IP = "201.1.254.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38136594_RESTAURANTE_CRISTALO_IGUATEMI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.254.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35413133_RESTAURANTE_NOVILHO_PRATA_PARAISO.TELESP.NET.BR";
+NL.IP = "201.13.224.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35413133_RESTAURANTE_NOVILHO_PRATA_PARAISO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.224.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38981579_RESTAURANTE_AMADEUS.TELESP.NET.BR";
+NL.IP = "201.13.224.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38981579_RESTAURANTE_AMADEUS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.224.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35412844_RESTAURANTE_CONF_CRISTALLO_PAULISTA.TELESP.NET.BR";
+NL.IP = "201.13.224.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35412844_RESTAURANTE_CONF_CRISTALLO_PAULISTA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.224.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50543698_RESTAURANTE_CAFE_JOURNAL.TELESP.NET.BR";
+NL.IP = "201.13.225.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50543698_RESTAURANTE_CAFE_JOURNAL.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.225.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36674513_RESTAURANTE_CRISTALLO_HIG_1.TELESP.NET.BR";
+NL.IP = "201.13.227.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36674513_RESTAURANTE_CRISTALLO_HIG_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.227.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50447434_RESTAURANTE_CAFFEERA_CAFE.TELESP.NET.BR";
+NL.IP = "201.13.235.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50447434_RESTAURANTE_CAFFEERA_CAFE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36267547_RESTAURANTE_CAFE_FIRENZE.TELESP.NET.BR";
+NL.IP = "201.13.251.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36267547_RESTAURANTE_CAFE_FIRENZE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.251.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32223506_FACULDADE_UNISANTOS_BOQUEIRAO_1";
+NL.IP = "201.1.225.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32223506_FACULDADE_UNISANTOS_BOQUEIRAO_1'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32223506_FACULDADE_UNISANTOS_BOQUEIRAO_2";
+NL.IP = "201.1.225.24";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32223506_FACULDADE_UNISANTOS_BOQUEIRAO_2'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.24'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32257458_FACULDADE_UNISANTOS_POMPEIA_PAT";
+NL.IP = "201.1.225.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32257458_FACULDADE_UNISANTOS_POMPEIA_PAT'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32257458_FACULDADE_UNISANTOS_POMPEIA_BIB";
+NL.IP = "201.1.225.35";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32257458_FACULDADE_UNISANTOS_POMPEIA_BIB'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.35'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31075126_FACULDADE_USP_BIBL_CENTRAL_1";
+NL.IP = "201.1.225.50";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31075126_FACULDADE_USP_BIBL_CENTRAL_1'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.50'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32223899_FACULDADE_UNISANTOS_VMATHIAS";
+NL.IP = "201.1.225.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32223899_FACULDADE_UNISANTOS_VMATHIAS'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.225.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32371562_FACULDADE_PUC_C_EXATAS_1.TELESP.COM.BR";
+NL.IP = "201.1.230.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32371562_FACULDADE_PUC_C_EXATAS_1.TELESP.COM.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38625924_FACULDADE_PUC_MONTE_ALEGRE.TELESP.NET.BR";
+NL.IP = "201.1.230.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38625924_FACULDADE_PUC_MONTE_ALEGRE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32144128_FACULDADE_SAGRADO_CORACAO_1.TELESP.NET.BR";
+NL.IP = "201.1.231.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32144128_FACULDADE_SAGRADO_CORACAO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.231.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32272458_FACULDADE_S_FRANCISCO.TELESP.NET.BR";
+NL.IP = "201.1.236.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32272458_FACULDADE_S_FRANCISCO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.236.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "40339247_FACULDADE_SF_BRAGANCA.TELESP.NET.BR";
+NL.IP = "201.1.236.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '40339247_FACULDADE_SF_BRAGANCA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.236.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "2123385_FACULDADE_UNIRP.TELESP.NET.BR";
+NL.IP = "201.1.238.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '2123385_FACULDADE_UNIRP.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.238.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32897795_FACULDADE_UNICAMP_REITORIA.TELESP.NET.BR";
+NL.IP = "201.1.242.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32897795_FACULDADE_UNICAMP_REITORIA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35322583_FACULDADE_LINS.MARTI.MARTIN";
+NL.IP = "201.1.244.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35322583_FACULDADE_LINS.MARTI.MARTIN'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.244.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32189296_FACULDADE_ITE_BAURU_DIREITO.TELESP.NET.BR";
+NL.IP = "201.1.248.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32189296_FACULDADE_ITE_BAURU_DIREITO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.248.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "61314422_FACULDADE_UNICSUL_SAO_MIGUEL.TELESP.NET.BR";
+NL.IP = "201.1.254.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '61314422_FACULDADE_UNICSUL_SAO_MIGUEL.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.254.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34216801_FACULDADE_UNIFEV_R_PERNAMBUCO..TELESP.NET.BR";
+NL.IP = "201.13.224.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34216801_FACULDADE_UNIFEV_R_PERNAMBUCO..TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.224.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "30442779_FACULDADE_ANHEMBI_MORUMBI_C_AT.TELESP.NET.BR";
+NL.IP = "201.13.225.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '30442779_FACULDADE_ANHEMBI_MORUMBI_C_AT.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.225.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "50941681_FACULDADE_ANHEMBI_MORUMBI_R_PE.TELESP.NET.BR";
+NL.IP = "201.13.225.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '50941681_FACULDADE_ANHEMBI_MORUMBI_R_PE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.225.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "02255588_FACULDADE_UNESP_PPRUDENTE.TELESP.NET.BR";
+NL.IP = "201.13.226.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '02255588_FACULDADE_UNESP_PPRUDENTE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.226.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31072996_FACULDADE_USP_DIREITO_1.TELESP.NET.BR";
+NL.IP = "201.13.228.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31072996_FACULDADE_USP_DIREITO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.228.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31072996_FACULDADE_USP_DIREITO_2.TELESP.NET.BR";
+NL.IP = "201.13.228.120";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31072996_FACULDADE_USP_DIREITO_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.228.120'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32890354_FACULDADE_UNICAMP_DGA.TELESP.NET.BR";
+NL.IP = "201.13.228.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32890354_FACULDADE_UNICAMP_DGA.TELESP.NET.BR'",false);
+
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.228.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35443278_FACULDADE_UNIARARAS.TELESP.NET.BR";
+NL.IP = "201.13.234.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35443278_FACULDADE_UNIARARAS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.234.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "5092495_FACULDADE_UNIB_IBIRAPUERA.TELESP.NET.BR";
+NL.IP = "201.13.235.146";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '5092495_FACULDADE_UNIB_IBIRAPUERA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.235.146'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32222905_FACULDADE_CAMPUS_D_E_2.TELESP.NET.BR";
+NL.IP = "201.13.240.111";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32222905_FACULDADE_CAMPUS_D_E_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.240.111'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32222905_FACULDADE_CAMPUS_D_E_1.TELESP.NET.BR";
+NL.IP = "201.13.240.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32222905_FACULDADE_CAMPUS_D_E_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.240.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38261863_FACULDADE_OSW_CRUZ_1.TELESP.NET.BR";
+NL.IP = "201.13.241.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38261863_FACULDADE_OSW_CRUZ_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.241.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32092591_FACULDADE_UNICSUL_SL_POS.TELESP.NET.BR";
+NL.IP = "201.13.247.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32092591_FACULDADE_UNICSUL_SL_POS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.247.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32890854_FACULDADE_UNICAMP_B_C_3.TELESP.NET.BR";
+NL.IP = "201.13.248.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32890854_FACULDADE_UNICAMP_B_C_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32890854_FACULDADE_UNICAMP_B_C_4.TELESP.NET.BR";
+NL.IP = "201.13.248.207";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32890854_FACULDADE_UNICAMP_B_C_4.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.248.207'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32313758_TELEFONICA_PAULISTA_AND_22.TELESP.NET.BR";
+NL.IP = "201.1.230.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32313758_TELEFONICA_PAULISTA_AND_22.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32633550_TELEFONICA_MARTINIANO_2.TELESP.NET.BR";
+NL.IP = "201.1.230.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32633550_TELEFONICA_MARTINIANO_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32623550_TELEFONICA_MARTINIANO_1.TELESP.NET.BR";
+NL.IP = "201.1.230.216";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32623550_TELEFONICA_MARTINIANO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.216'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32622863_TELEFONICA_MARTINIANO_1.TELESP.NET.BR";
+NL.IP = "201.1.230.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32622863_TELEFONICA_MARTINIANO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38282243_TELEFONICA_BRIG.GALVA.TELESP.NET.BR";
+NL.IP = "201.1.230.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38282243_TELEFONICA_BRIG.GALVA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.230.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32538760_TELEFONICA_RESTAURANTE.TELESP.NET.BR";
+NL.IP = "201.1.231.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32538760_TELEFONICA_RESTAURANTE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.231.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32556737_TELEFONICA_CONSOLACAO.TELESP.NET.BR";
+NL.IP = "201.1.248.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32556737_TELEFONICA_CONSOLACAO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.248.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32532116_TELEFONICA_MARTINIANO_AUD.TELESP.NET.BR";
+NL.IP = "201.1.253.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32532116_TELEFONICA_MARTINIANO_AUD.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.253.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32157877_TELEFONICA_R_PRETO.TELESP.NET.BR";
+NL.IP = "201.13.242.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32157877_TELEFONICA_R_PRETO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.242.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "32353457_TELEFONICA_CAMPINAS.TELESP.NET.BR";
+NL.IP = "201.13.243.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '32353457_TELEFONICA_CAMPINAS.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "69599597_TELEFONICA_CEOS_1.TELESP.NET.BR";
+NL.IP = "201.13.243.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '69599597_TELEFONICA_CEOS_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.243.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38151927_TELEFONICA_F_LIMA_1.TELESP.NET.BR";
+NL.IP = "201.13.244.162";
+
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38151927_TELEFONICA_F_LIMA_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.244.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36091254_TELEFONICA_15_NOVEMBRO.TELESP.NET.BR";
+NL.IP = "201.26.226.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36091254_TELEFONICA_15_NOVEMBRO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.26.226.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55421923_ACADEMIA_RUNNER_MOEMA.TELESP.NET.BR";
+NL.IP = "201.1.237.242";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55421923_ACADEMIA_RUNNER_MOEMA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.237.242'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "49909344_ACADEMIA_RUNNER_SH_ABC.TELESP.NET.BR";
+NL.IP = "201.1.238.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '49909344_ACADEMIA_RUNNER_SH_ABC.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.238.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "31078068_ACADEMIA_BIORITMO_CENTRO.TELESP.NET.BR";
+NL.IP = "201.1.239.114";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '31078068_ACADEMIA_BIORITMO_CENTRO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.239.114'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37427344_ACADEMIA_BIORTIMO_MORUMBI.TELESP.NET.BR";
+NL.IP = "201.1.239.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37427344_ACADEMIA_BIORTIMO_MORUMBI.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.239.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37143037_ACADEMIA_BIORITMO_PQ_CONTINEN.TELESP.NET.BR";
+NL.IP = "201.1.239.162";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37143037_ACADEMIA_BIORITMO_PQ_CONTINEN.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.239.162'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36737355_ACADEMIA_BIORITMO_AGUA_BRANCA.TELESP.NET.BR";
+NL.IP = "201.1.239.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36737355_ACADEMIA_BIORITMO_AGUA_BRANCA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.239.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "42084066_ACADEMIA_BIORITMO_ALPHAVILLE.TELESP.NET.BR";
+NL.IP = "201.1.239.82";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '42084066_ACADEMIA_BIORITMO_ALPHAVILLE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.239.82'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62223295_EXPO_CN_BRANCO_1.TELESP.NET.BR";
+NL.IP = "201.1.241.210";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62223295_EXPO_CN_BRANCO_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.241.210'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62223295_EXPO_CN_BRANCO_2.TELESP.NET.BR";
+NL.IP = "201.1.241.211";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62223295_EXPO_CN_BRANCO_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.241.211'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62223418_EXPO_CN_AZUL_2.TELESP.NET.BR";
+NL.IP = "201.1.242.111";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62223418_EXPO_CN_AZUL_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.111'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62223530_EXPO_CN_VERMELHO.TELESP.NET.BR";
+NL.IP = "201.1.242.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62223530_EXPO_CN_VERMELHO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62219440_EXPO_CN_AUDITORIO_3.TELESP.NET.BR";
+NL.IP = "201.1.242.2";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62219440_EXPO_CN_AUDITORIO_3.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.2'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62219440_EXPO_CN_AUDITORIO_4.TELEFONICA.TELEFONICA";
+NL.IP = "201.1.242.3";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62219440_EXPO_CN_AUDITORIO_4.TELEFONICA.TELEFONICA'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.3'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62219560_EXPO_CN_AUDITORIO_1.TELEFONICA";
+NL.IP = "201.1.242.34";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62219560_EXPO_CN_AUDITORIO_1.TELEFONICA'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.34'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62219560_EXPO_CN_AUDITORIO_2.TELEFONICA";
+NL.IP = "201.1.242.47";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62219560_EXPO_CN_AUDITORIO_2.TELEFONICA'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.47'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62511067_EXPO_CN_VERDE.TELESP.NET.BR";
+NL.IP = "201.1.242.66";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62511067_EXPO_CN_VERDE.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.66'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "62223418_EXPO_CN_AZUL_1.TELESP.NET.BR";
+NL.IP = "201.1.242.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '62223418_EXPO_CN_AZUL_1.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.242.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "41253353_CIESP_S_BERNADO.TELESP.NET.BR";
+NL.IP = "201.1.247.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '41253353_CIESP_S_BERNADO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.247.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34455101_CIESP_LIMEIRA.TELESP.NET.BR";
+NL.IP = "201.1.252.178";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34455101_CIESP_LIMEIRA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.252.178'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "33848934_CIESP_MATAO.TELESP.NET.BR";
+NL.IP = "201.1.252.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '33848934_CIESP_MATAO.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.252.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "34327574_CIESP_PIRACICABA.TELESP.NET.BR";
+NL.IP = "201.1.252.226";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '34327574_CIESP_PIRACICABA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.252.226'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "55334849_CIESP_BROOKLIN_2.TELESP.NET.BR";
+NL.IP = "201.13.246.15";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '55334849_CIESP_BROOKLIN_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.246.15'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36235906_CIESP_S_J_B_VISTA_2.TELESP.NET.BR";
+NL.IP = "201.13.249.111";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36235906_CIESP_S_J_B_VISTA_2.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.111'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "36235906_CIESP_S_J_B_VISTA.TELESP.NET.BR";
+NL.IP = "201.13.249.98";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '36235906_CIESP_S_J_B_VISTA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.249.98'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "38257263_ESTADIO_PACAEMBU.TELESP.NET.BR";
+NL.IP = "201.1.252.18";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '38257263_ESTADIO_PACAEMBU.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.1.252.18'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "37443701_ESTADIO_MORUMBI_SL_IMPRENSA.TELESP.NET.BR";
+NL.IP = "201.13.227.130";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '37443701_ESTADIO_MORUMBI_SL_IMPRENSA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.227.130'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+NL = NewObject();
+NL.NENAME = "35076129_ESTADIO_MORUMBI_T_IMPRENSA.TELESP.NET.BR";
+NL.IP = "201.13.229.194";
+
+APAGA=GetByFilter("IMPACT_NENAME_IP","NENAME = '35076129_ESTADIO_MORUMBI_T_IMPRENSA.TELESP.NET.BR'",false);
+Num = length(APAGA);
+if (Num>0) {
+	I = Num -1;
+	while (I>=0) {
+		DeleteDataItem (APAGA[I]);
+		I = I -1;
+		}
+	}
+APAGA=GetByFilter("IMPACT_NENAME_IP","IP = '201.13.229.194'",false);
+Num = length(APAGA);
+if (Num>0) {
+     I = Num -1;
+     while (I>=0) {
+             DeleteDataItem (APAGA[I]);
+             I = I -1;
+             }
+     }
+AddDataItem("IMPACT_NENAME_IP", NL);
+
+
+log ("Fim Pop_TAB_NOMES_POLICY");
+

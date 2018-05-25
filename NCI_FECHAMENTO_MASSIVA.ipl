@@ -1,0 +1,74 @@
+// Politica para Fechamento de Massiva
+
+// Inicio
+
+horario = getdate();
+
+log ("FECH_MASS: ****** Inicio Fechamento Massiva ******");
+log ("FECH_MASS: Consultando eventos no ObjectServer");
+
+TABEVENTOS = "EVENTOS";
+FILTROEVENTOS = "(Abertura = 10) and (Class in (48741, 48777))";
+log ("FECH_MASS: " + FILTROEVENTOS);
+EV = GetByFilter(TABEVENTOS, FILTROEVENTOS, false);
+NumEV = length(EV);
+
+  	if (NumEV>0)
+	{
+
+		I = NumEV - 1;
+
+		while (I>=0)
+		{
+			//Verificando se Server Serial e Serial do ObjectServer � igual ao Server Serial e Serial da base de dados Massiva
+			log ("FECH_MASS: Consultando eventos na tabela Historico Massiva");
+			TABHISTMASS = "HISTORICO_MASSIVA";
+			FILTROHISTMASS = "Server_Serial='"+string(EV[I].ServerSerial)+"' and Serial='"+string(EV[I].Serial)+"'";
+			HM = GetByFilter(TABHISTMASS, FILTROHISTMASS, false);
+			NumH = length(HM);
+
+				if (NumH>0)
+				{
+					H = NumH -1;
+					while (H>=0)
+					{
+						log ("FECH_MASS: DATA_TERMINO:" + HM[H].DATA_TERMINO + ":");
+						if (HM[H].DATA_TERMINO <> NULL)
+						{
+							//atualizando o Abertura(Eventos) para 1 - Fechamento
+							Abertura = "Abertura = 1";
+							Severity = "Severity = 0";
+							Acknowledged= "Acknowledged = 1";
+							FILTROAbertura = "ServerSerial="+ EV[I].ServerSerial;
+							BatchUpdate(TABEVENTOS, FILTROAbertura, Abertura);
+							BatchUpdate(TABEVENTOS, FILTROAbertura, Severity);
+							BatchUpdate(TABEVENTOS, FILTROAbertura, Acknowledged);
+							log ("FECH_MASS: OK - Abertura atualizado para 1 - Fechamento " + EV[I].ServerSerial);
+							log ("FECH_MASS: OK - Severity atualizado para 0 - Clear " + EV[I].ServerSerial);
+							log ("FECH_MASS: OK - Acknowledgedatualizado para 1 - Yes " + EV[I].ServerSerial);
+
+						}
+						else
+						{
+							log ("FECH_MASS: " + EV[I].ServerSerial + " ou " + EV[I].Serial + " nao esta Fechado na base de HISTORICO_MASSIVA");
+						}
+						H = H - 1;
+					}
+				}
+				else
+				{
+					log ("FECH_MASS: " + EV[I].ServerSerial + " ou " + EV[I].Serial + " nao esta na base de HISTORICO_MASSIVA");
+
+				}
+
+			I = I - 1;
+		}
+ 	}
+	else
+	{
+		log ("FECH_MASS: Nao existem eventos a tratar");
+	}
+
+horario2 = getdate();
+tdecor = horario2 - horario;
+log ("FECH_MASS: ****** Fim Fechamento Massiva -> Tempo decorrido na politica: "+string(tdecor)+"s ******");

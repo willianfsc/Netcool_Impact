@@ -1,0 +1,5219 @@
+log ("Inicio Pop_CLIENTES_GLOBAIS");
+
+DataType = "CLIENTES_GLOBAIS";
+CountOnly = False;
+MyNodes = GetByFilter(DataType, "", CountOnly);
+BatchDelete(DataType,NULL,MyNodes);
+
+
+NL = NewObject();
+NL.KEY = "10.0.0.5";
+NL.NEAddress = "10.0.0.5";
+NL.NEName = "RT BASF1 10.0.0.5";
+NL.Customer = "Basf";
+NL.Location = "BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392227896";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "10.0.0.6";
+NL.NEAddress = "10.0.0.6";
+NL.NEName = "RT_BASF2_10.0.0.6";
+NL.Customer = "Basf";
+NL.Location = "BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392227594";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "10.128.216.118";
+NL.NEAddress = "10.128.216.118";
+NL.NEName = "10.128.216.118";
+NL.Customer = "AJEPER";
+NL.Location = "Calle Los Hornos- Los Olivos - Ajeper - Peru";
+NL.Site = "Lima";
+NL.ServiceIdentifier = "CD 43909";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "10.128.224.34";
+NL.NEAddress = "10.128.224.34";
+NL.NEName = "10.128.224.34";
+NL.Customer = "ATENTO";
+NL.Location = "Calle Cruz del Sur 129 Monterrico - Atento - Peru";
+NL.Site = "Lima";
+NL.ServiceIdentifier = "CD 43037";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "10.217.151.8";
+NL.NEAddress = "10.217.151.8";
+NL.NEName = "10.217.151.8";
+NL.Customer = "BANCO_BRADESCO_SA";
+NL.Location = "Rua  Afonso Celso 990 - SALVADOR";
+NL.Site = "SALVADOR - BAHIA";
+NL.ServiceIdentifier = "710000017770190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "10.84.12.136";
+NL.NEAddress = "10.84.12.136";
+NL.NEName = "10.84.12.136";
+NL.Customer = "BANCO_BILBAO_VIZCAYA_ARGENTARIA_BRASIL_SA";
+NL.Location = "Rua Brigadeiro Galvao 291 - SALVADOR";
+NL.Site = "SALVADOR - BAHIA";
+NL.ServiceIdentifier = "5046622";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.17.90.129";
+NL.NEAddress = "172.17.90.129";
+NL.NEName = "172.17.90.129";
+NL.Customer = "EMPRESA_BRASILEIRA_DE_CORREIOS_E_TELEGRAFOS";
+NL.Location = "AVENIDA CECI 1900 - BARUERI";
+NL.Site = "BARUERI - SP";
+NL.ServiceIdentifier = "110714191120199CNX01";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.1";
+NL.NEAddress = "172.18.110.1";
+NL.NEName = "172.18.110.1";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "45 EAST 53 TH STREET 2 PLANTA CPD - NEW YORK_ESTADOS UNIDOS";
+NL.Site = "NEW YORK_ESTADOS UNIDOS";
+NL.ServiceIdentifier = "16888";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.2";
+NL.NEAddress = "172.18.110.2";
+NL.NEName = "172.18.110.2";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "CERRITO 449 5 PISO CPD INFORMATICA - MONTEVIDEO_URUGUAI";
+NL.Site = "MONTEVIDEO_URUGUAI";
+NL.ServiceIdentifier = "18816";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.3";
+NL.NEAddress = "172.18.110.3";
+NL.NEName = "172.18.110.3";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "CARRERA 7 N 99- 21 PISO 6 - COLOMBIA_BOGOTA";
+NL.Site = "COLOMBIA_BOGOTA";
+NL.ServiceIdentifier = "16772";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.4";
+NL.NEAddress = "172.18.110.4";
+NL.NEName = "172.18.110.4";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "RUA AMADOR BUENO 474 - SAO PAULO_BRASIL";
+NL.Site = "SAO PAULO_BRASIL";
+NL.ServiceIdentifier = "19850";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.5";
+NL.NEAddress = "172.18.110.5";
+NL.NEName = "172.18.110.5";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "BARTOLOME MITRE 480 P1 CPD - BUENOS AIRES_ARGENTINA";
+NL.Site = "BUENOS AIRES_ARGENTINA";
+NL.ServiceIdentifier = "16929";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.6";
+NL.NEAddress = "172.18.110.6";
+NL.NEName = "172.18.110.6";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "ARTERIAL DE HOSTOS CALLE 2 N 11 CPD - HATO REY_PUERTO RICO";
+NL.Site = "HATO REY_PUERTO RICO";
+NL.ServiceIdentifier = "16893";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.110.7";
+NL.NEAddress = "172.18.110.7";
+NL.NEName = "172.18.110.7";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "BULEBAR BERNARDO QUINTANA 4056 COLONIA SAN PABLO 76150 - QUERETARO_MEXICO";
+NL.Site = "QUERETARO_MEXICO";
+NL.ServiceIdentifier = "16917";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.115.112";
+NL.NEAddress = "172.18.115.112";
+NL.NEName = "172.18.115.112";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "AGUSTINA 920 PISO 8 CPD - SANTIAGO_CHILE";
+NL.Site = "SANTIAGO_CHILE";
+NL.ServiceIdentifier = "17383";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.115.44";
+NL.NEAddress = "172.18.115.44";
+NL.NEName = "172.18.115.44";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "CERRITO 449 5 PISO CPD INFORMATICA - MONTEVIDEO_URUGUAI";
+NL.Site = "MONTEVIDEO_URUGUAI";
+NL.ServiceIdentifier = "18875";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.116.2";
+NL.NEAddress = "172.18.116.2";
+NL.NEName = "172.18.116.2";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "RUA AMADOR BUENO 474 - SAO PAULO_BRASIL";
+NL.Site = "SAO PAULO_BRASIL";
+NL.ServiceIdentifier = "19850";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.116.3";
+NL.NEAddress = "172.18.116.3";
+NL.NEName = "172.18.116.3";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "BARTOLOME MITRE 480 P1 CPD - BUENOS AIRES_ARGENTINA";
+NL.Site = "BUENOS AIRES_ARGENTINA";
+NL.ServiceIdentifier = "16929";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.18.116.4";
+NL.NEAddress = "172.18.116.4";
+NL.NEName = "172.18.116.4";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "BULEBAR BERNARDO QUINTANA 4056 COLONIA SAN PABLO 76150 - QUERETARO_MEXICO";
+NL.Site = "QUERETARO_MEXICO";
+NL.ServiceIdentifier = "16917";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.31.245.129";
+NL.NEAddress = "172.31.245.129";
+NL.NEName = "172.31.245.129";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "AVDA. DE CANTABRIA S/N 28670 BOADILLA DEL MONTE CPD OESTE/ESTE - MADRID_ESPANHA";
+NL.Site = "MADRID_ESPANHA";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.31.245.130";
+NL.NEAddress = "172.31.245.130";
+NL.NEName = "172.31.245.130";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "AVDA. DE CANTABRIA S/N 28670 BOADILLA DEL MONTE CPD OESTE/ESTE - MADRID_ESPANHA";
+NL.Site = "MADRID_ESPANHA";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.31.245.136";
+NL.NEAddress = "172.31.245.136";
+NL.NEName = "172.31.245.136";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "C/ MESENA 80 CPD2/CPD1 - MADRID_ESPANHA";
+NL.Site = "MADRID_ESPANHA";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "172.31.245.137";
+NL.NEAddress = "172.31.245.137";
+NL.NEName = "172.31.245.137";
+NL.Customer = "BANCO_SANTANDER";
+NL.Location = "C/ MESENA 80 CPD2/CPD2 - MADRID_ESPANHA";
+NL.Site = "MADRID_ESPANHA";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.100";
+NL.NEAddress = "200.148.171.100";
+NL.NEName = "200.148.171.100";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "TICKET OFFICE PARIS 11-13 AVENUE DE FIEDLAND - PARIS - FRANCA";
+NL.Site = "FRANCA";
+NL.ServiceIdentifier = "L4518729";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.10";
+NL.NEAddress = "200.148.171.10";
+NL.NEName = "200.148.171.10";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "APOQUINDO 3001 SANTIGO CHILE";
+NL.Site = "SANTIAGO";
+NL.ServiceIdentifier = "LPSANTIAGO - CHILE";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.102";
+NL.NEAddress = "200.148.171.102";
+NL.NEName = "200.148.171.102";
+NL.Customer = "BANCO ITAU";
+NL.Location = "CALLE ZABLA 1463";
+NL.Site = "MONTEVIDEU-URU - MONTEVIDEU-URU";
+NL.ServiceIdentifier = "MONTEVIDEU-URU";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.11";
+NL.NEAddress = "200.148.171.11";
+NL.NEName = "RTWNGFU-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "ASAHI PLAZA MINOKAMO STATION CORE OFFICE 101 GIFU JAPAO";
+NL.Site = "GIFU";
+NL.ServiceIdentifier = "LPJAPAOGIFU";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.12";
+NL.NEAddress = "200.148.171.12";
+NL.NEName = "RTWNGUN-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "BANDOU BUILDING,  LIDA-CHO OTA-SHI GUNMA-KEN 1319-1 GUNMA JAPAO";
+NL.Site = "GUNMA";
+NL.ServiceIdentifier = "LPGUNMA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.13";
+NL.NEAddress = "200.148.171.13";
+NL.NEName = "RTWNHAM-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "NIHON DANTAI SEIMEI BUILDING, RENJAKU-CHO S 307-14 HAMAMATSU JAPAO";
+NL.Site = "HAMAMATSU";
+NL.ServiceIdentifier = "LPHAMAMATSU";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.14";
+NL.NEAddress = "200.148.171.14";
+NL.NEName = "RTWNIBK-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "SHIRAI BUILDING, MITSUKAIDO-SHI, FUCHIGASHI 2909-1 IBARAKI JAPAO";
+NL.Site = "IBARAKI";
+NL.ServiceIdentifier = "LPJAPAOIBARAKI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.15";
+NL.NEAddress = "200.148.171.15";
+NL.NEName = "RTWNNGN-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "ATAGO MANSION, 101 UEDA-SHI, CHUO HIGASHI 1-5 101 (1-5) NAGANO JAPAO";
+NL.Site = "NAGANO";
+NL.ServiceIdentifier = "LPJAPAONAGANO";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.16";
+NL.NEAddress = "200.148.171.16";
+NL.NEName = "RTWNNGO-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "KIRIX MARUNOUCHI BUILDING,  MARUNOUCHI, NAK 1-17-19 NAGOIA JAPAO";
+NL.Site = "NAGOIA";
+NL.ServiceIdentifier = "LPNAGOIA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.17";
+NL.NEAddress = "200.148.171.17";
+NL.NEName = "RTWNTKO-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "NEW KOKUSAI BUILDING MARUNOUCHI CHIYODA KU 36984 TOQUIO JAPAO";
+NL.Site = "TOQUIO";
+NL.ServiceIdentifier = "LPTOQUIOA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.18";
+NL.NEAddress = "200.148.171.18";
+NL.NEName = "RT RTWNTKO-02";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "NEW KOKUSAI BUILDING MARUNOUCHI CHIYODA KU 36984 TOQUIO JAPAO";
+NL.Site = "TOQUIO";
+NL.ServiceIdentifier = "LPTOQUIOB";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.19";
+NL.NEAddress = "200.148.171.19";
+NL.NEName = "200.148.171.19";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "STADHOUDERSKADE 2 AMSTERDAM NETHERLANDS";
+NL.Site = "AMSTERDAM";
+NL.ServiceIdentifier = "LPAMSTERDAM";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.20";
+NL.NEAddress = "200.148.171.20";
+NL.NEName = "200.148.171.20";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "PASSEIO CARLOS ANDRADE TEIXEIRA 7 CASCAIS PORTUGAL";
+NL.Site = "CASCAIS";
+NL.ServiceIdentifier = "LPCASCAIS";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.209";
+NL.NEAddress = "200.148.171.209";
+NL.NEName = "200.148.171.209";
+NL.Customer = "BANCO ITAU";
+NL.Location = "55 ALHAMBRA PLAZA 8 ANDAR - FLORIDA";
+NL.Site = "MIAMI";
+NL.ServiceIdentifier = "MI/HCGS/506582";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.210";
+NL.NEAddress = "200.148.171.210";
+NL.NEName = "200.148.171.210";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "VIA BEATRICE DESTE 1 - LOMBARDIA MILAN - ITALY - TAM - MILAO";
+NL.Site = "MILAO";
+NL.ServiceIdentifier = "sidi 335 59 54 876";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.21";
+NL.NEAddress = "200.148.171.21";
+NL.NEName = "RTWNFRK-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "ESCHERSHEIMER LANDSTRASSE 55 FRANKFURT GERMANY";
+NL.Site = "FRANKFURT";
+NL.ServiceIdentifier = "LPFRANKFURT";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.2";
+NL.NEAddress = "200.148.171.2";
+NL.NEName = "200.148.171.2";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "2 S.BISCAYNE 3870 MIAMI USA";
+NL.Site = "MIAMI";
+NL.ServiceIdentifier = "LPMIAMI - USA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.22";
+NL.NEAddress = "200.148.171.22";
+NL.NEName = "200.148.171.22";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "PRACA MARQUES DE POMBAL 16 LISBOA PORTUGAL";
+NL.Site = "LISBOA";
+NL.ServiceIdentifier = "LPLISBOA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.23";
+NL.NEAddress = "200.148.171.23";
+NL.NEName = "RTWNLON-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "KING STREET 34 LONDRES INGLATERRA";
+NL.Site = "LONDRES";
+NL.ServiceIdentifier = "LPLONDRESA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.24";
+NL.NEAddress = "200.148.171.24";
+NL.NEName = "200.148.171.24";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "KING STREET 34 LONDRES INGLATERRA";
+NL.Site = "LONDRES";
+NL.ServiceIdentifier = "LPLONDRESB";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.25";
+NL.NEAddress = "200.148.171.25";
+NL.NEName = "RT RTWNMAD-01 ";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "CALLE JOSE ORTEGA Y GASSET 29 MADRID ESPANHA";
+NL.Site = "MADRID";
+NL.ServiceIdentifier = "LPMADRID";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.26";
+NL.NEAddress = "200.148.171.26";
+NL.NEName = "200.148.171.26";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "PIAZZA CASTELO 1 MILAO ITALIA";
+NL.Site = "MILAO";
+NL.ServiceIdentifier = "LPMILAO";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.27";
+NL.NEAddress = "200.148.171.27";
+NL.NEName = "RTWNPAR-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "DE LA GARNDE ARMEE 4 PARIS FRANCA";
+NL.Site = "PARIS";
+NL.ServiceIdentifier = "LPFRANCA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.28";
+NL.NEAddress = "200.148.171.28";
+NL.NEName = "RTWNVIE-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "FRANZ JOSEFS-KAI 47/3 VIENNA AUSTRIA";
+NL.Site = "VIENNA";
+NL.ServiceIdentifier = "LPVIENNA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.3";
+NL.NEAddress = "200.148.171.3";
+NL.NEName = "200.148.171.3";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "FIFTH AVENUE 600 NEW YORK USA";
+NL.Site = "NEW YORK";
+NL.ServiceIdentifier = "LPNEW YORK A - USA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.33";
+NL.NEAddress = "200.148.171.33";
+NL.NEName = "200.148.171.33";
+NL.Customer = "BARSA PLANET INTERNATIONAL LTDA";
+NL.Location = "Diagonal 662-664, 5D - BARCELONA - Barcelona - Espanha";
+NL.Site = "Barcelona - Espanha";
+NL.ServiceIdentifier = "100001539621";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.36";
+NL.NEAddress = "200.148.171.36";
+NL.NEName = "Basf1_ARG_Corri_PRI";
+NL.Customer = "Basf";
+NL.Location = "CORRIENTES 327 - P8 - CAPITAL FEDERAL, 1043 - ARGENTINA";
+NL.Site = "ARGENTINA";
+NL.ServiceIdentifier = "SIDI 78803_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.37";
+NL.NEAddress = "200.148.171.37";
+NL.NEName = "200.148.171.37";
+NL.Customer = "Basf";
+NL.Location = "CARRASCAL 3851 - SANTIAGO, 3238 - CHILE";
+NL.Site = "CHILE";
+NL.ServiceIdentifier = "LN30811_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.38";
+NL.NEAddress = "200.148.171.38";
+NL.NEName = "BASF COLOMBIA";
+NL.Customer = "Basf";
+NL.Location = "CALLE 99A 51-32, BOGOTA - COLOMBIA";
+NL.Site = "COLOMBIA";
+NL.ServiceIdentifier = "21382_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.39";
+NL.NEAddress = "200.148.171.39";
+NL.NEName = "200.148.171.39";
+NL.Customer = "Basf";
+NL.Location = "AV. OSCAR R. BENAVIDES 5915 - CA03 LIMA - PERU";
+NL.Site = "PERU";
+NL.ServiceIdentifier = "CD 42791_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.40";
+NL.NEAddress = "200.148.171.40";
+NL.NEName = "Basf_Equador_21";
+NL.Customer = "Basf";
+NL.Location = "AV. REPUBLICA # 500 Y PRADERA - 17013255 QUITO - EQUADOR";
+NL.Site = "EQUADOR";
+NL.ServiceIdentifier = "BSP_FUIO31122_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.4";
+NL.NEAddress = "200.148.171.4";
+NL.NEName = "200.148.171.4";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "FIFTH AVENUE 600 NEW YORK USA";
+NL.Site = "NEW YORK";
+NL.ServiceIdentifier = "LPNEW YORK B - USA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.42";
+NL.NEAddress = "200.148.171.42";
+NL.NEName = "Basf_Paraguai";
+NL.Customer = "Basf";
+NL.Location = "INDEPENDENCIA NACIONAL  811 / PISO 12 - ASSUNCAO - PARAGUAI";
+NL.Site = "PARAGUAI";
+NL.ServiceIdentifier = "SIDI 79032";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.43";
+NL.NEAddress = "200.148.171.43";
+NL.NEName = "200.148.171.43";
+NL.Customer = "Basf";
+NL.Location = "CAMI- ARIEL 4620 - MONTEVIDEO 12900 - URUGUAY";
+NL.Site = "URUGUAY";
+NL.ServiceIdentifier = "SIDI 79271";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.44";
+NL.NEAddress = "200.148.171.44";
+NL.NEName = "Basf_Bolivia_25";
+NL.Customer = "Basf";
+NL.Location = "CALLE ASUNCION ESQ. MONSENOR RIVERO - - BOLIVIA";
+NL.Site = "BOLIVIA";
+NL.ServiceIdentifier = "1-AODZ2_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.45";
+NL.NEAddress = "200.148.171.45";
+NL.NEName = "BASF_26_EUA";
+NL.Customer = "Basf";
+NL.Location = "41 MASTER BOULEVARD - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "W0N32088_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.46";
+NL.NEAddress = "200.148.171.46";
+NL.NEName = "200.148.171.46";
+NL.Customer = "Basf";
+NL.Location = "26  DAVIS DR. - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "LPUSARESTRI_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.47";
+NL.NEAddress = "200.148.171.47";
+NL.NEName = "Basf_Alemanha_28_ACT";
+NL.Customer = "Basf";
+NL.Location = "CARL-BOSCH-STRASSE N 38 - D-67056 - LUDWIGSHAFEN - ALEMANHA";
+NL.Site = "ALEMANHA";
+NL.ServiceIdentifier = "62100-62150 45M_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.48";
+NL.NEAddress = "200.148.171.48";
+NL.NEName = "Basf_Siemens";
+NL.Customer = "Basf";
+NL.Location = "BALCARCE, 683 - ARGENTINA";
+NL.Site = "ARGENTINA";
+NL.ServiceIdentifier = "LPARCAPFED_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.49";
+NL.NEAddress = "200.148.171.49";
+NL.NEName = "Basf1_ARG_Corri_BKP";
+NL.Customer = "Basf";
+NL.Location = "CORRIENTES 327 - P8 - CAPITAL FEDERAL, 1043 - ARGENTINA";
+NL.Site = "ARGENTINA";
+NL.ServiceIdentifier = "SIDI 78803_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.50";
+NL.NEAddress = "200.148.171.50";
+NL.NEName = "200.148.171.50";
+NL.Customer = "Basf";
+NL.Location = "CARRASCAL 3851 - SANTIAGO, 3238 - CHILE";
+NL.Site = "CHILE";
+NL.ServiceIdentifier = "LN30810_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.51";
+NL.NEAddress = "200.148.171.51";
+NL.NEName = "BASF_COLOMBIA";
+NL.Customer = "Basf";
+NL.Location = "CALLE 99A 51-32, BOGOTA - COLOMBIA";
+NL.Site = "COLOMBIA";
+NL.ServiceIdentifier = "21382_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.5";
+NL.NEAddress = "200.148.171.5";
+NL.NEName = "200.148.171.5";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "CALLE OLIVA Y NUESTRA SENORA DE LA ASUNCION 107 ASSUNCAO PARAGUAI";
+NL.Site = "ASSUNCAO";
+NL.ServiceIdentifier = "LPPARAGUAIASS";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.52";
+NL.NEAddress = "200.148.171.52";
+NL.NEName = "BASF_26_EUA-BKP";
+NL.Customer = "Basf";
+NL.Location = "41 MASTER BOULEVARD - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "W0N31850_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.53";
+NL.NEAddress = "200.148.171.53";
+NL.NEName = "200.148.171.53";
+NL.Customer = "Basf";
+NL.Location = "26  DAVIS DR. - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "LPUSARESTRI_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.54";
+NL.NEAddress = "200.148.171.54";
+NL.NEName = "200.148.171.54";
+NL.Customer = "Basf";
+NL.Location = "CARL-BOSCH-STRASSE N 38 - D-67056 - LUDWIGSHAFEN - ALEMANHA";
+NL.Site = "ALEMANHA";
+NL.ServiceIdentifier = "LUBASF-34727-2MU_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.55";
+NL.NEAddress = "200.148.171.55";
+NL.NEName = "200.148.171.55";
+NL.Customer = "MIRVI BRASIL LTDA";
+NL.Location = "POL. IND. OIANZABALETA - PARCELA 66A B VENTAS 20305  - GUIPUZCOA - ESPANHA";
+NL.Site = "GUIPUZCOA - ESPANHA";
+NL.ServiceIdentifier = "20110001006392";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.56";
+NL.NEAddress = "200.148.171.56";
+NL.NEName = "200.148.171.56";
+NL.Customer = "FLEXTRONICS";
+NL.Location = "RUA Cerrito 1186, Piso 12 - Buenos AireS";
+NL.Site = "Buenos AireS";
+NL.ServiceIdentifier = "SID80629";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.6";
+NL.NEAddress = "200.148.171.6";
+NL.NEName = "200.148.171.6";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "CALLE SAMIENTO 487 BUENOS AIRES ARGENTINA";
+NL.Site = "BUENOS AIRES";
+NL.ServiceIdentifier = "LPARGENTINA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.64";
+NL.NEAddress = "200.148.171.64";
+NL.NEName = "Bco_Votorantim_SP";
+NL.Customer = "Banco Votorantin";
+NL.Location = "Av. Roque Petroni Jr, 999 - Sao Paulo-SP";
+NL.Site = "Sao Paulo-SP";
+NL.ServiceIdentifier = "11000 51817625";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.66";
+NL.NEAddress = "200.148.171.66";
+NL.NEName = "Bco_Votorantim_EUA_NY";
+NL.Customer = "Banco Votorantin";
+NL.Location = "909 third avenue suite 520 5 floor - Nova Iorque-EUA";
+NL.Site = "Nova Iorque-EUA";
+NL.ServiceIdentifier = "W0P96169";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.67";
+NL.NEAddress = "200.148.171.67";
+NL.NEName = "Bc_Votorantim_Montevideu";
+NL.Customer = "Banco Votorantin";
+NL.Location = "Zona Franca - Edificio Beta 4 - Montevideu-URU";
+NL.Site = "Montevideu-URU";
+NL.ServiceIdentifier = "410014";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.68";
+NL.NEAddress = "200.148.171.68";
+NL.NEName = "Bco_Votorantim_Nassau";
+NL.Customer = "Banco Votorantin";
+NL.Location = "SAFFREY SQUARE BUILDIND SUITE 204 - Nassau - Bahamas";
+NL.Site = "Nassau - Bahamas";
+NL.ServiceIdentifier = "FRO2003477449PL1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.69";
+NL.NEAddress = "200.148.171.69";
+NL.NEName = "200.148.171.69";
+NL.Customer = "HUSQVARNA";
+NL.Location = "1030 Stevens Creek road (Electrolux Consumer Outdoor Products) - Augusta-Georgia (USA)";
+NL.Site = "Augusta-Georgia (USA)";
+NL.ServiceIdentifier = "5416271";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.70";
+NL.NEAddress = "200.148.171.70";
+NL.NEName = "200.148.171.70";
+NL.Customer = "BANCO ITAU";
+NL.Location = "HARBOUR VIEW STREET SN  SUITE 2915 - HONG KONG-CHINA";
+NL.Site = "HONG KONG-CHINA";
+NL.ServiceIdentifier = "15676";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.71";
+NL.NEAddress = "200.148.171.71";
+NL.NEName = "200.148.171.71";
+NL.Customer = "HUSQVARNA";
+NL.Location = "Herrera, 2424 - BUENOS AIRES - ARG";
+NL.Site = "BUENOS AIRES - ARG";
+NL.ServiceIdentifier = "SIDI: 82931";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.74";
+NL.NEAddress = "200.148.171.74";
+NL.NEName = "200.148.171.74";
+NL.Customer = "SID. BARRA MANSA S.A (VOTORANTIN)";
+NL.Location = "Calle Paz Soldan 170 oficina 501 - San Izidro - Peru";
+NL.Site = "San Izidro - Peru";
+NL.ServiceIdentifier = "CD47221";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.75";
+NL.NEAddress = "200.148.171.75";
+NL.NEName = "200.148.171.75";
+NL.Customer = "BRADESCO";
+NL.Location = "3B BOULEVARD DU PRINCE HENRI L1724 - LUXEMBURGO/ALEMANHA";
+NL.Site = "LUXEMBURGO/ALEMANHA";
+NL.ServiceIdentifier = "16903";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.76";
+NL.NEAddress = "200.148.171.76";
+NL.NEName = "200.148.171.76";
+NL.Customer = "BRADESCO";
+NL.Location = "25 DE MAYO 555  7 PISO (1002) - BUENOS AIRES/ARG";
+NL.Site = "BUENOS AIRES/ARG";
+NL.ServiceIdentifier = "17066";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.77";
+NL.NEAddress = "200.148.171.77";
+NL.NEName = "200.148.171.77";
+NL.Customer = "BRADESCO";
+NL.Location = "450 PARK AVENUE 32ND AND 33RD FLOORS  ZIP CODE 10022 - NEW YORK/USA";
+NL.Site = "NEW YORK/USA";
+NL.ServiceIdentifier = "16905";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.78";
+NL.NEAddress = "200.148.171.78";
+NL.NEName = "200.148.171.78";
+NL.Customer = "BRADESCO";
+NL.Location = "3B BOULEVARD DU PRINCE HENRI L1724 - LUXEMBURGO/ALEMANHA";
+NL.Site = "LUXEMBURGO/ALEMANHA";
+NL.ServiceIdentifier = "16903";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.79";
+NL.NEAddress = "200.148.171.79";
+NL.NEName = "200.148.171.79";
+NL.Customer = "BRADESCO";
+NL.Location = "25 DE MAYO 555  7 PISO (1002) - BUENOS AIRES/ARG";
+NL.Site = "BUENOS AIRES/ARG";
+NL.ServiceIdentifier = "17066";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.7";
+NL.NEAddress = "200.148.171.7";
+NL.NEName = "RT RTWNCID-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "CALLE NANAWA , ESQUINA MONSENHOR RODRIGUES CENT 107 CIDADE DO LESTE PARAGUAI";
+NL.Site = "CIDADE DO LESTE";
+NL.ServiceIdentifier = "LPPARAGUAI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.80";
+NL.NEAddress = "200.148.171.80";
+NL.NEName = "200.148.171.80";
+NL.Customer = "BRADESCO";
+NL.Location = "450 PARK AVENUE 32ND AND 33RD FLOORS  ZIP CODE 10022 - NEW YORK/USA";
+NL.Site = "NEW YORK/USA";
+NL.ServiceIdentifier = "16905";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.81";
+NL.NEAddress = "200.148.171.81";
+NL.NEName = "200.148.171.81";
+NL.Customer = "VOITH PAPEL";
+NL.Location = "CALLE DOS INDUSTRIALLES 941 KM 21DISTRITO INDUSTRIAL - CORONEL - CHILE";
+NL.Site = "CORONEL - CHILE";
+NL.ServiceIdentifier = "17745";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+//NL = NewObject();
+//NL.KEY = "200.148.171.8";
+//NL.NEAddress = "200.148.171.8";
+//NL.NEName = "200.148.171.8";
+//NL.Customer = "BANCO ITAU";
+//NL.Location = "RUA TIERNO GALVAM TORRE 3  PISO 11 - LISBOA-POR";
+//NL.Site = "LISBOA-POR";
+//NL.ServiceIdentifier = "18405";
+//AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.82";
+NL.NEAddress = "200.148.171.82";
+NL.NEName = "200.148.171.82";
+NL.Customer = "VOITH PAPEL";
+NL.Location = "AV PDTE EDO FREI MONTALVA 600183 - SANTIAGO - CHILE";
+NL.Site = "SANTIAGO - CHILE";
+NL.ServiceIdentifier = "17743";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.83";
+NL.NEAddress = "200.148.171.83";
+NL.NEName = "200.148.171.83";
+NL.Customer = "FRIBOI";
+NL.Location = "ING. ENRIQUE BUTTY 240 PISO 8  CAPITAL FEDERAL  C1001AFB - ARGENTINA";
+NL.Site = "BUENOS AIRES - ARGENTINA";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.85";
+NL.NEAddress = "200.148.171.85";
+NL.NEName = "200.148.171.85";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "Parque das Nacoes - Parque das Nacoes";
+NL.Site = "Parque das Nacoes";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.86";
+NL.NEAddress = "200.148.171.86";
+NL.NEName = "200.148.171.86";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "Porto - Porto";
+NL.Site = "Porto";
+NL.ServiceIdentifier = "";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.88";
+NL.NEAddress = "200.148.171.88";
+NL.NEName = "200.148.171.88";
+NL.Customer = "EBICS";
+NL.Location = "CALLE NINOS HEROES DE CHAPULTEPEC No. 110 A CID. MEXICO - CID. MEXICO/MEXICO";
+NL.Site = "MEXICO";
+NL.ServiceIdentifier = "A04-0701-0261";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.8";
+NL.NEAddress = "200.148.171.8";
+NL.NEName = "RT RTWNLPZ-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "AVENIDA 16 DE JULIO,  PRADO CENTRAL 1642 LA PAZ BOLIVIA";
+NL.Site = "LA PAZ";
+NL.ServiceIdentifier = "LPBOLIVIA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.9";
+NL.NEAddress = "200.148.171.9";
+NL.NEName = "200.148.171.9";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "CALLE ELVIRA MENDEZ, EDIFICIO INTERSECO , PLA 10 PANAMA PANAMA";
+NL.Site = "PANAMA";
+NL.ServiceIdentifier = "LPPANAMA";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.92";
+NL.NEAddress = "200.148.171.92";
+NL.NEName = "200.148.171.92";
+NL.Customer = "BANESPA";
+NL.Location = "RUA 201 KING OF PRUSSIA RD - PENSILVANYA - EUA";
+NL.Site = "PENSILVANYA - EUA";
+NL.ServiceIdentifier = "19586";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.95";
+NL.NEAddress = "200.148.171.95";
+NL.NEName = "200.148.171.95";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "CERRITO 1026 - ANDAR 3-BUENOS AIRES - ARGENTINA -PRINC";
+NL.Site = "BUENOS AIRES";
+NL.ServiceIdentifier = "86324/1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.96";
+NL.NEAddress = "200.148.171.96";
+NL.NEName = "200.148.171.96";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "CERRITO 1026 - ANDAR 3-BUENOS AIRES - ARGENTINA -BKP";
+NL.Site = "BUENOS AIRES";
+NL.ServiceIdentifier = "86324/1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.97";
+NL.NEAddress = "200.148.171.97";
+NL.NEName = "200.148.171.97";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "5201 BLUE LAGON DRIVE SUITE 700 - MIAMI - FLORIDA - MIAMI";
+NL.Site = "FLORIDA";
+NL.ServiceIdentifier = "WILTEL / TWC02336548";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.98";
+NL.NEAddress = "200.148.171.98";
+NL.NEName = "200.148.171.98";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "VITACURA 2943 - LAS CONDES - SANTIAGO - CHILE";
+NL.Site = "SANTIAGO";
+NL.ServiceIdentifier = "G127038";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.148.171.99";
+NL.NEAddress = "200.148.171.99";
+NL.NEName = "200.148.171.99";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "ROOM 1116-TW6 1BU-QUEENS BUIDING - LONDON - LONDRES";
+NL.Site = "LONDRES";
+NL.ServiceIdentifier = "M1383011A";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.38.192";
+NL.NEAddress = "200.153.38.192";
+NL.NEName = "Basf_Guarulhos";
+NL.Customer = "Basf";
+NL.Location = "RUA ARGENTINA, 180 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "118926421026394";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.38.193";
+NL.NEAddress = "200.153.38.193";
+NL.NEName = "Basf_Maua";
+NL.Customer = "Basf";
+NL.Location = "AV. PAPA JOAO XXIII, 4800 - SERTAOZINHO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "113704544128496";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.38.194";
+NL.NEAddress = "200.153.38.194";
+NL.NEName = "Basf1_ARG_Corri_BKP";
+NL.Customer = "Basf";
+NL.Location = "CORRIENTES 327 - P8 - CAPITAL FEDERAL, 1043 - ARGENTINA";
+NL.Site = "ARGENTINA";
+NL.ServiceIdentifier = "SIDI 78803_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.38.196";
+NL.NEAddress = "200.153.38.196";
+NL.NEName = "BASF_COLOMBIA";
+NL.Customer = "Basf";
+NL.Location = "CALLE 99A 51-32, BOGOTA - COLOMBIA";
+NL.Site = "COLOMBIA";
+NL.ServiceIdentifier = "21382_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.38.197";
+NL.NEAddress = "200.153.38.197";
+NL.NEName = "BASF_26_EUA-BKP";
+NL.Customer = "Basf";
+NL.Location = "41 MASTER BOULEVARD - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "W0N31850_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.153.40.167";
+NL.NEAddress = "200.153.40.167";
+NL.NEName = "200.153.40.167";
+NL.Customer = "CONSELHO_REGIONAL_DE_ENFERMAGEM_SP";
+NL.Location = "RUA VERIDIANA,DA 00298 - S PAULO";
+NL.Site = "S PAULO - SAO PAULO";
+NL.ServiceIdentifier = "110003221081898";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.0.254";
+NL.NEAddress = "200.159.0.254";
+NL.NEName = "200.159.0.254";
+NL.Customer = "Basf";
+NL.Location = "R. BENZENO, 765 -  POLO PETROQUIMICO NORDESTE - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "POPQ5010338_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.0.29";
+NL.NEAddress = "200.159.0.29";
+NL.NEName = "BASF-GUARARAPES";
+NL.Customer = "Basf";
+NL.Location = "AV. DR. JULIO MARANHAO, 3219 - PRAZERES - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "REC-LDF-00004_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.0.50";
+NL.NEAddress = "200.159.0.50";
+NL.NEName = "200.159.0.50";
+NL.Customer = "Basf";
+NL.Location = "R. BENZENO, 765 -  POLO PETROQUIMICO NORDESTE - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "POPQ5010338_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.0.54";
+NL.NEAddress = "200.159.0.54";
+NL.NEName = "BASF-GUARARAPES";
+NL.Customer = "Basf";
+NL.Location = "AV. DR. JULIO MARANHAO, 3219 - PRAZERES - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "REC-LDF-00004_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.0.58";
+NL.NEAddress = "200.159.0.58";
+NL.NEName = "200.159.0.58";
+NL.Customer = "Basf";
+NL.Location = "AV. DR. JULIO MARANHAO, 3219 - PRAZERES - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "JBO RCE 5020130_BKP";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.100.10";
+NL.NEAddress = "200.159.100.10";
+NL.NEName = "Amil_Fortaleza_r2";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "AVENIDA DE STUDART,BR 2070-Amil Fortaleza";
+NL.Site = "FORTALEZA-CE";
+NL.ServiceIdentifier = "FLA 5185169";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.100.14";
+NL.NEAddress = "200.159.100.14";
+NL.NEName = "Amil_Fortaleza_r1";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "AVENIDA DE STUDART,BR 2070-Amil Fortaleza";
+NL.Site = "FORTALEZA-CE";
+NL.ServiceIdentifier = "FLA 5185179";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.12.174";
+NL.NEAddress = "200.159.12.174";
+NL.NEName = "200.159.12.174";
+NL.Customer = "FEDEX";
+NL.Location = "RUA ALICIA HERVE - PETROPOLIS- RJ";
+NL.Site = "PETROPOLIS- RJ";
+NL.ServiceIdentifier = "18802";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.12.178";
+NL.NEAddress = "200.159.12.178";
+NL.NEName = "200.159.12.178";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA DAS AMERICAS, 555  LJ C - ";
+NL.Site = "R DE JANEIRO";
+NL.ServiceIdentifier = "210000029273290";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.12.72";
+NL.NEAddress = "200.159.12.72";
+NL.NEName = "200.159.12.72";
+NL.Customer = "BRASIF DO BRASIL";
+NL.Location = "R. da Assembleia, 516 - Miami-EUA";
+NL.Site = "Miami-EUA";
+NL.ServiceIdentifier = "5432060";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.12.76";
+NL.NEAddress = "200.159.12.76";
+NL.NEName = "BASF_RJ";
+NL.Customer = "Basf";
+NL.Location = "AV.LUIS CARLOS PRESTES,N 350-SALA 301/313 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "RJO RJO 5445392";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.12.77";
+NL.NEAddress = "200.159.12.77";
+NL.NEName = "basf_resende";
+NL.Customer = "Basf";
+NL.Location = "RODOVIA PRESIDENTE DUTRA, KM 300,05 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "RSD RJO 1933448";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.13.230";
+NL.NEAddress = "200.159.13.230";
+NL.NEName = "BASF_RJ";
+NL.Customer = "Basf";
+NL.Location = "AV.LUIS CARLOS PRESTES,N 350-SALA 301/313 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "RJO RJO 5445392";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.13.234";
+NL.NEAddress = "200.159.13.234";
+NL.NEName = "basf_resende";
+NL.Customer = "Basf";
+NL.Location = "RODOVIA PRESIDENTE DUTRA, KM 300,05 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "RSD RJO 1933448";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.24.45";
+NL.NEAddress = "200.159.24.45";
+NL.NEName = "Basf_SA_Londrina";
+NL.Customer = "Basf";
+NL.Location = "AV. TIRADENTES, 501 - VILA VITORIA - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "787521-7";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.24.46";
+NL.NEAddress = "200.159.24.46";
+NL.NEName = "Basf_Sapucaia_16";
+NL.Customer = "Basf";
+NL.Location = "RUA PRIMO VACCHI, 323 - BAIRRO VILA VACCHI - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "497104";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.25.194";
+NL.NEAddress = "200.159.25.194";
+NL.NEName = "200.159.25.194";
+NL.Customer = "FEDEX";
+NL.Location = "RUA NAIR, 135 RIO DE JANEIRO RJ - RIO DE JANEIRO - RJ";
+NL.Site = "RIO DE JANEIRO - RJ";
+NL.ServiceIdentifier = "18801";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.25.74";
+NL.NEAddress = "200.159.25.74";
+NL.NEName = "Basf_SA_Londrina";
+NL.Customer = "Basf";
+NL.Location = "AV. TIRADENTES, 501 - VILA VITORIA - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "787521-7";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.25.78";
+NL.NEAddress = "200.159.25.78";
+NL.NEName = "Basf_Sapucaia_16";
+NL.Customer = "Basf";
+NL.Location = "RUA PRIMO VACCHI, 323 - BAIRRO VILA VACCHI - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "497104";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.50.222";
+NL.NEAddress = "200.159.50.222";
+NL.NEName = "200.159.50.222";
+NL.Customer = "TAM_LINHAS_AEREAS";
+NL.Location = "VIA ANCHIETA KM- 48 - TAM - SAO BERNARDO";
+NL.Site = "SAO BERNARDO";
+NL.ServiceIdentifier = "IP_MPLS";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.6.32";
+NL.NEAddress = "200.159.6.32";
+NL.NEName = "BASF_C.GR.14";
+NL.Customer = "Basf";
+NL.Location = "RUA EUCLIDES DA CUNHA, 1133 - VL. PARAISO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "1-4V79RH";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.6.36";
+NL.NEAddress = "200.159.6.36";
+NL.NEName = "RTWNBSB-01";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "STN CONJUNTO C - CEP 70770-910 716 BRASILIA DISTRITO FEDERAL";
+NL.Site = "DISTRITO FEDERAL";
+NL.ServiceIdentifier = "479781";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.6.37";
+NL.NEAddress = "200.159.6.37";
+NL.NEName = "RT RTWNBSB-02";
+NL.Customer = "Banco_do_Brasil";
+NL.Location = "STN CONJUNTO C - CEP 70770-910 716 BRASILIA DISTRITO FEDERAL";
+NL.Site = "DISTRITO FEDERAL";
+NL.ServiceIdentifier = "479391";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.159.6.66";
+NL.NEAddress = "200.159.6.66";
+NL.NEName = "BASF_C.GR.14";
+NL.Customer = "Basf";
+NL.Location = "RUA EUCLIDES DA CUNHA, 1133 - VL. PARAISO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "1-4V79RH";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.205.224.206";
+NL.NEAddress = "200.205.224.206";
+NL.NEName = "200.205.224.206";
+NL.Customer = "CISICRET";
+NL.Location = "Praia de Botafogo, 142 - Rio de Janeiro";
+NL.Site = "Rio de Janeiro";
+NL.ServiceIdentifier = "5558807";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.40.178";
+NL.NEAddress = "200.232.40.178";
+NL.NEName = "BASF_Santos";
+NL.Customer = "Basf";
+NL.Location = "AREA DE TANQUES - ILHA BARNABE (PORTO DE SANTOS) - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115923221100590";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.42.134";
+NL.NEAddress = "200.232.42.134";
+NL.NEName = "200.232.42.134";
+NL.Customer = "SID. BARRA MANSA S.A (VOTORANTIN)";
+NL.Location = "Pca Ramos de Azevedo, 254 6 andar - Lima-Peru";
+NL.Site = "Lima-Peru";
+NL.ServiceIdentifier = "1100032210705";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.42.138";
+NL.NEAddress = "200.232.42.138";
+NL.NEName = "200.232.42.138";
+NL.Customer = "SID. BARRA MANSA S.A (VOTORANTIN)";
+NL.Location = "R. Bento de Andrade, 621 - Lima-Peru";
+NL.Site = "Lima-Peru";
+NL.ServiceIdentifier = "1100056410040";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.47.172";
+NL.NEAddress = "200.232.47.172";
+NL.NEName = "BASF_STO";
+NL.Customer = "Basf";
+NL.Location = "ROD SP 340 KM 144 - SIT. S. JOAO OU QUINHAO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "116353896001599";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.65.234";
+NL.NEAddress = "200.232.65.234";
+NL.NEName = "RT BASF1 10.0.0.5";
+NL.Customer = "Basf";
+NL.Location = "BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392227896";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "200.232.65.238";
+NL.NEAddress = "200.232.65.238";
+NL.NEName = "RT_BASF2_10.0.0.6";
+NL.Customer = "Basf";
+NL.Location = "BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392227594";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.129.38";
+NL.NEAddress = "201.28.129.38";
+NL.NEName = "201.28.129.38";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA XAVIER DE TOLEDO,CEL, 114 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003255280699";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.130.246";
+NL.NEAddress = "201.28.130.246";
+NL.NEName = "201.28.130.246";
+NL.Customer = "BARSA PLANET INTERNATIONAL LTDA";
+NL.Location = "Av. Francisco Matarazzo, 1500 - 4 ANDAR - SAO PAULO - Sao Paulo - SP";
+NL.Site = "Sao Paulo - SP";
+NL.ServiceIdentifier = "110003221060190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.135.218";
+NL.NEAddress = "201.28.135.218";
+NL.NEName = "201.28.135.218";
+NL.Customer = "MIRVI BRASIL LTDA";
+NL.Location = "Rod Gabriel P Bueno Couto, Dom Km 81 - Cabreuva-SP";
+NL.Site = "Cabreuva-SP";
+NL.ServiceIdentifier = "110984529706799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.178";
+NL.NEAddress = "201.28.137.178";
+NL.NEName = "Amico_SP_01";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. General Chagas Santos, 314-Concentrador Chagas DIXAMICO";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005589025693";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.182";
+NL.NEAddress = "201.28.137.182";
+NL.NEName = "Amico_SP_02";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. General Chagas Santos, 314-Concentrador Chagas DIXAMICO";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005589025898";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.190";
+NL.NEAddress = "201.28.137.190";
+NL.NEName = "201.28.137.190";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Mal.Tito, 272-Sao Miguel";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006297022099";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.194";
+NL.NEAddress = "201.28.137.194";
+NL.NEName = "DIXAMICO_SANTO_AMARO";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Comend. Elias Zarzur, 140-Sto Amaro";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005686110799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.198";
+NL.NEAddress = "201.28.137.198";
+NL.NEName = "DIXAMICO_S_BERNARDO";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Francisco Prestes Maia, 1547-Sao Bernardo";
+NL.Site = "S BERNARDO DO CAMPO-SP";
+NL.ServiceIdentifier = "115484335002198";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.202";
+NL.NEAddress = "201.28.137.202";
+NL.NEName = "Amico_BR-Itapetininga";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Barao de itapetininga, 207 - 5 andar-Barao de Itapetininga";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255027195";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.206";
+NL.NEAddress = "201.28.137.206";
+NL.NEName = "AMICO_CALHEIROS";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Alm. Calheiros, 131-Tatuape";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006197071098";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.210";
+NL.NEAddress = "201.28.137.210";
+NL.NEName = "DIXAMICO_GUARULHOS";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Dom. Jose Mauricio, 235-Guarulhos";
+NL.Site = "GUARULHOS-SP";
+NL.ServiceIdentifier = "118926443339590";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.214";
+NL.NEAddress = "201.28.137.214";
+NL.NEName = "Dixamico_SP_Osasco";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Autonomistas, 2606-Osasco";
+NL.Site = "OSASCO-SP";
+NL.ServiceIdentifier = "114253681156795";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.222";
+NL.NEAddress = "201.28.137.222";
+NL.NEName = "DIXAMICO_DIADEMA";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Pr. Joviniano de Castilho, 33-Diadema";
+NL.Site = "DIADEMA-SP";
+NL.ServiceIdentifier = "111854057102094";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.226";
+NL.NEAddress = "201.28.137.226";
+NL.NEName = "Amico_Saude_RUBEN_BERTA";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Rubem Berta, 850 ( Av. Ascendino Reis, 1145 )-Indianapolis";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549355390";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.230";
+NL.NEAddress = "201.28.137.230";
+NL.NEName = "Amico_saude_Ana_rosa_01";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Azevedo Macedo, 92-Hosp Vila Mariana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549044492";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.137.234";
+NL.NEAddress = "201.28.137.234";
+NL.NEName = "Amico_saude_Ana_rosa_02";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Azevedo Macedo, 92-Hosp Vila Mariana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549190995";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.138.18";
+NL.NEAddress = "201.28.138.18";
+NL.NEName = "AMIL_HARAS_ITU";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "TAQUARAL - ETR MUNICIPAL PAU DALHO, 21500-Haras D Quixote";
+NL.Site = "TAQUARAL-SP";
+NL.ServiceIdentifier = "119534026100790";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.102";
+NL.NEAddress = "201.28.139.102";
+NL.NEName = "AMIL_S_LIBANES";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Dona Adma Jafet, 91 - Hosp. Sirio Libanes-Hosp Sirio Libanez";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255101190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.106";
+NL.NEAddress = "201.28.139.106";
+NL.NEName = "AMIL_RIONEGRO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Rio Negro, 1356-Amil Resgate - S.P";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191040994";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.110";
+NL.NEAddress = "201.28.139.110";
+NL.NEName = "AMIL_BRAULIO_GOMES";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Braulio Gomes, 36 Centro-Ag Centro";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255303796";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.118";
+NL.NEAddress = "201.28.139.118";
+NL.NEName = "LSF-R.Cel.Agosti";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Coronel Agostinho, 76 Sobreloja 218 e 219 - Campo Grande-CGD";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92371";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.122";
+NL.NEAddress = "201.28.139.122";
+NL.NEName = "AMIL_LSF_MADUREIRA";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Dagmar da Fonseca 125 - Madureira-MAD";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92333";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.126";
+NL.NEAddress = "201.28.139.126";
+NL.NEName = "AMIL_DIAS_CRUZ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Dias da Cruz, 330-MEI";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92307";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.130";
+NL.NEAddress = "201.28.139.130";
+NL.NEName = "AMIL_LSF_OUVIDOR";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Do Ouvidor, 75 8o andar - Centro-OUV";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92342";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.134";
+NL.NEAddress = "201.28.139.134";
+NL.NEName = "LSF_HCI";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Farme de Amoedo, 86 - Ipanema - Hosp. Cardio Trauma-HCI";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92314";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.138";
+NL.NEAddress = "201.28.139.138";
+NL.NEName = "ESHO_CTijuca_ID_235329";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. General Rocca, 778-C.Tijuca";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92406";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.142";
+NL.NEAddress = "201.28.139.142";
+NL.NEName = "AMIL_TRT_CONSOLACAO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Consolacao,1272 - TRT Consolacao-TRT Consolacao";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255193591";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.146";
+NL.NEAddress = "201.28.139.146";
+NL.NEName = "AMIL_LIBERDADE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Liberdade, 844 - Drog S Paulo-Drogaria SP";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003207115497";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.150";
+NL.NEAddress = "201.28.139.150";
+NL.NEName = "AMIL-AV-ROCK-PETRONI";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Roque Petroni Junior, 1089-FL Shop Morumbi";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005181718799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.154";
+NL.NEAddress = "201.28.139.154";
+NL.NEName = "LSF_TJ2";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Haddock Lobo 396 - Tijuca-TJ2";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92319";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.158";
+NL.NEAddress = "201.28.139.158";
+NL.NEName = "LSF_JOSE_CLEMENTE";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Jose Clemente, 100 - Niteroi-NIC";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2017555";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.162";
+NL.NEAddress = "201.28.139.162";
+NL.NEName = "Hosp_Clin_Nit_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. La Salle, 12 - Niteroi - Hosp. Clinicas de Niteroi-HCN";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI/RJO 2017558";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.166";
+NL.NEAddress = "201.28.139.166";
+NL.NEName = "AMIL_LSF_VALQUEIRE";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Luis Beltrao, 160 Sls 213 e 216 - Vila Valqueire-VAL";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92320";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.170";
+NL.NEAddress = "201.28.139.170";
+NL.NEName = "LSF_Meier";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Manoela Barbosa, 01 Sls 305 e 306 - Meier-MER";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92340";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.174";
+NL.NEAddress = "201.28.139.174";
+NL.NEName = "Amil_LBSF_Icarai_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Miguel de Frias 169 - Icarai-ICA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "NRI/RJO 2022823";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.178";
+NL.NEAddress = "201.28.139.178";
+NL.NEName = "AMIL_LSF_SAOGONCALO";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Pca. Nilo Pecanha, 109 Sl 1415 - S.Goncalo-SGO";
+NL.Site = "S GONCALO-RJ";
+NL.ServiceIdentifier = "NRI 2017423";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.182";
+NL.NEAddress = "201.28.139.182";
+NL.NEName = "AMIL_LEBLON_RJ2";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Pinto de Figueiredo, 31A-SPN";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92343";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.186";
+NL.NEAddress = "201.28.139.186";
+NL.NEName = "LSF_ILH";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Rep. arabe da Siria, 445 - Jd Guanabara - Ilha do Gov.-ILH";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92344";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.190";
+NL.NEAddress = "201.28.139.190";
+NL.NEName = "AMIL_LSF_SAOJOAO";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Sao Joao Batista, 193 - S.Joao de Meriti-SJM";
+NL.Site = "S JOAO DE MERITI-RJ";
+NL.ServiceIdentifier = "92323";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.194";
+NL.NEAddress = "201.28.139.194";
+NL.NEName = "Amil_centro_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Sao Jose, 40 Sobreloja - Centro-SJO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92362";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.198";
+NL.NEAddress = "201.28.139.198";
+NL.NEName = "LSF_SILVA_RAMOS";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Silva Ramos, 85 - Tijuca-CITOTIJ";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92334";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.202";
+NL.NEAddress = "201.28.139.202";
+NL.NEName = "COPA_SIQ_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Siqueira Campos, 93 Sl 704 / 705 - Copacabana-COP";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92364";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.206";
+NL.NEAddress = "201.28.139.206";
+NL.NEName = "IPAN_PIRA_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Visconde de Piraja, 106 - Ipanema-IPN";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92366";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.210";
+NL.NEAddress = "201.28.139.210";
+NL.NEName = "LSF_IPA";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Visconde de Piraja, 430 Sl 502 - Ipanema-IPA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92324";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.214";
+NL.NEAddress = "201.28.139.214";
+NL.NEName = "AMIL_LSF_HOSPSAOLUCAS";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Trv. Frederico Pamplona, 32 - Hosp. Sao Lucas-HSL";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92412";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.218";
+NL.NEAddress = "201.28.139.218";
+NL.NEName = "AMIL-AV-PAULISTA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Paulista, 2412-FL Paulista Lj 2";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255095190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.222";
+NL.NEAddress = "201.28.139.222";
+NL.NEName = "AMIL_SHOP_D";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Cruzeiro do Sul, 1100-FL Shop D";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003227014491";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.226";
+NL.NEAddress = "201.28.139.226";
+NL.NEName = "AMIL_9_JULHO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Peixoto Gomide, 625 - Hosp. 9 de Julho-Hosp 9 Julho";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003284068198";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.230";
+NL.NEAddress = "201.28.139.230";
+NL.NEName = "AMIL_AG_SANTANA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Salete, 200 Ag.Santana-Ag Santana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006976004191";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.234";
+NL.NEAddress = "201.28.139.234";
+NL.NEName = "AMIL_HMorumbi_ID_235950";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Eng. Oscar Americano, 840 - Hosp. Sao Luis Morumbi-Hosp S L Morumbi";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003032043395";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.238";
+NL.NEAddress = "201.28.139.238";
+NL.NEName = "AMIL-R_ALCEU-CAMPOS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Dr. Alceu de Campos Rodrigues, 95 - Hosp. Sao Luis Itain-Hosp S L Itain";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003845023295";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.242";
+NL.NEAddress = "201.28.139.242";
+NL.NEName = "AMIL_FL_VILA_MARIANA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Sena Madureira,1490-FL V Mariana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549006299";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.246";
+NL.NEAddress = "201.28.139.246";
+NL.NEName = "AMIL-AL-MINISTRO-ROCHA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Min. Rocha de Azevedo, 1041-FL Jardins";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003085035095";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.254";
+NL.NEAddress = "201.28.139.254";
+NL.NEName = "AMIL-MARQUES-ITU";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA ITU,MARQ 1038-FL BrooKlim";
+NL.Site = "SaO PAULO-SP";
+NL.ServiceIdentifier = "110003825025497";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.58";
+NL.NEAddress = "201.28.139.58";
+NL.NEName = "201.28.139.58";
+NL.Customer = "BANCO SCHAHIN";
+NL.Location = "R. Vergueiro, 2009 - New Jersey - EUA";
+NL.Site = "New Jersey - EUA";
+NL.ServiceIdentifier = "110005549394990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.62";
+NL.NEAddress = "201.28.139.62";
+NL.NEName = "ESHO_VPN_21000_01";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo ESHO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9297_AMIL_TLFE-AMILTEP.9";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.66";
+NL.NEAddress = "201.28.139.66";
+NL.NEName = "ESHO_VPN_21000_01";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo ESHO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9298-AMIL (TLFE-AMILTEP.10)";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.70";
+NL.NEAddress = "201.28.139.70";
+NL.NEName = "ESHO_VPN_2001_02";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo ESHO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9294-AMIL (TLFE-AMILTEP.6)";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.78";
+NL.NEAddress = "201.28.139.78";
+NL.NEName = "lab_sergio_franco_host1";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9306-AMIL (TLFE-AMILXAP.2)";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.82";
+NL.NEAddress = "201.28.139.82";
+NL.NEName = "lab_sergio_franco_host1";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9307_AMIL_TLFE-AMILXAP.3";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.86";
+NL.NEAddress = "201.28.139.86";
+NL.NEName = "AMIL_LSF_BOT";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Conde de Iraja, 370 1o Andar - Botafogo-BOT";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92332";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.90";
+NL.NEAddress = "201.28.139.90";
+NL.NEName = "LAB_SERG_FRAN_DCX";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Conde de Porto Alegre, 119 Centro - Caxias-DQX";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92322";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.94";
+NL.NEAddress = "201.28.139.94";
+NL.NEName = "Amil_Estadao";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Eng. Caetano Alvares, 55 Estadao-Ag Estadao";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003966008890";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.139.98";
+NL.NEAddress = "201.28.139.98";
+NL.NEName = "AMIL_REGENTE_FEIJO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "PRAcA LEONOR KAUPA 100-";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005058014690";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.102";
+NL.NEAddress = "201.28.140.102";
+NL.NEName = "Farmalife_Icarai_I";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Tavares de Macedo, 5  Lj 102 - Icarai-Farmalife Icarai";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2017550";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.106";
+NL.NEAddress = "201.28.140.106";
+NL.NEName = "Farmalife_Rio_Sul_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Lauro Muller, 116  Lj 401 - Rio Sul-Farmalife Shopping Rio Sul";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92385";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.10";
+NL.NEAddress = "201.28.140.10";
+NL.NEName = "Dixamico_rjo_01";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9304";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.110";
+NL.NEAddress = "201.28.140.110";
+NL.NEName = "FARMALIFERJ_GENROCCA370";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. General Rocca, 818  Lj A-Farmalife Tijuca";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92403";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.114";
+NL.NEAddress = "201.28.140.114";
+NL.NEName = "AMIL_QUITANDA_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Da Quitanda, 111 Loja - Centro-Farmalife Quitanda";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92358";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.118";
+NL.NEAddress = "201.28.140.118";
+NL.NEName = "AMIL_FARMALIFE_LEBLON";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Ataulfo de Paiva, 285 Ljs B e C-Farmalife Leblon II";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92388";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.122";
+NL.NEAddress = "201.28.140.122";
+NL.NEName = "AMIL_FAMALIFE_TAQUARA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Geremario Dantas, 404 Ljs 243/244-Farmalife Jacarepagua";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92404";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.130";
+NL.NEAddress = "201.28.140.130";
+NL.NEName = "FARMALIFE_RECREIO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Alfredo Balthazar da Silveira, 580 - Ljs. 143/144B/101/102C-Farmalife Shopping Iguatemi";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92321";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.134";
+NL.NEAddress = "201.28.140.134";
+NL.NEName = "Farmalife_Iguatemi_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Barao de Sao Francisco, 236 Ljs 237 e 238-Farmalife Sao Conrado Fashion Mall (Iguatemi)";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92392";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.138";
+NL.NEAddress = "201.28.140.138";
+NL.NEName = "Farmalife_Fashion_Mall_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Da Gavea, 899 - 1o Piso-Farmalife Nova America (Sao Conrado Fashion Mall)";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92375";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.146";
+NL.NEAddress = "201.28.140.146";
+NL.NEName = "ESHO_Ouvidor_RJ";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Do Ouvidor 75 - Centro-C.Ouvidor";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94259";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.14";
+NL.NEAddress = "201.28.140.14";
+NL.NEName = "Dixamico_rjo_02";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9301";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.150";
+NL.NEAddress = "201.28.140.150";
+NL.NEName = "AMIL_HOSPSAOLUCAS";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Frederico Pamplona 32 - Copacabana-H.Sao Lucas";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94284";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.154";
+NL.NEAddress = "201.28.140.154";
+NL.NEName = "ESHO";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Voluntarios da Patria 445 - Botafogo-T.Care Botafogo";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94260";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.158";
+NL.NEAddress = "201.28.140.158";
+NL.NEName = "ESHO_CMeier_ID_235328";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Medina 192 - Meier-C.Meier";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92380";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.162";
+NL.NEAddress = "201.28.140.162";
+NL.NEName = "AMIL_LSF_TJ1";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. General Rocca, 778-TJ1";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92405";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.170";
+NL.NEAddress = "201.28.140.170";
+NL.NEName = "ESHO_Hosp.Clin.Niteroi";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Lassa-le 12 - Niteroi-Hcn";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "2017563";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.174";
+NL.NEAddress = "201.28.140.174";
+NL.NEName = "ESHO_HCML";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Ana Neri 190 - Caxias-Hcml";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "94258";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.178";
+NL.NEAddress = "201.28.140.178";
+NL.NEName = "ESHO_HCTI";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Farme de Amoedo 86 - Ipanema-Hcti";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94255";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.182";
+NL.NEAddress = "201.28.140.182";
+NL.NEName = "ESHO_TCARE_BARRA";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Av. Das Americas, 700 - Barra-T.Care Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94252";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.186";
+NL.NEAddress = "201.28.140.186";
+NL.NEName = "ESHO_Suprim";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Ferreira Vianna 350 - Caxias-Suprim";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "98287";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.18";
+NL.NEAddress = "201.28.140.18";
+NL.NEName = "Dixamico_rjo_02";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9302";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.190";
+NL.NEAddress = "201.28.140.190";
+NL.NEName = "ESHO_CAXIAS";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. General Dionizio 595 - Caxias-Lavanderia";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92368";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.194";
+NL.NEAddress = "201.28.140.194";
+NL.NEName = "AMIL_BARRATIJUCA";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Av. Aytron Senna, 1850 - Barra Tijuca-B.Plaza";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92312";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.198";
+NL.NEAddress = "201.28.140.198";
+NL.NEName = "Dixamico_Volta_Redonda";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. 40, 147o andar Centro-Volta Redonda";
+NL.Site = "VOLTA REDONDA-RJ";
+NL.ServiceIdentifier = "VRD 1939861";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.202";
+NL.NEAddress = "201.28.140.202";
+NL.NEName = "dixamico_rjo_triunfo";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Barao do Triunfo, 151-Cemed Caxias";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92329";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.210";
+NL.NEAddress = "201.28.140.210";
+NL.NEName = "ESHO_CDPI_BARRA";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Av. Das Americas, 4666 - Barra-Cdpi";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92386";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.22";
+NL.NEAddress = "201.28.140.22";
+NL.NEName = "AMIL_VPN_21000_01";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Amil Call Center Possolo";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "210000025448891";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.26";
+NL.NEAddress = "201.28.140.26";
+NL.NEName = "AMIL_VPN_21000_01";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Amil Call Center Possolo";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9293_AMIL_TLFE-AMILTEP.5";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.6";
+NL.NEAddress = "201.28.140.6";
+NL.NEName = "Dixamico_rjo_01";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador Possolo DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9300";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.70";
+NL.NEAddress = "201.28.140.70";
+NL.NEName = "AMIL_BARRADOR";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Ayrton Senna  - 2541-Mini ag Hosp Barra Dr";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92314";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.74";
+NL.NEAddress = "201.28.140.74";
+NL.NEName = "AMIL-VISC_PIRAJA_559";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Visconde de Piraja, 559 A-Farmalife Ipanema";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92345";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.78";
+NL.NEAddress = "201.28.140.78";
+NL.NEName = "AMIL_FARMALIFE_CAXIAS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Brig. Lima e Silva, 2094 Ljs E e F-Farmalife Caxias";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92367";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.82";
+NL.NEAddress = "201.28.140.82";
+NL.NEName = "AMIL_FARMALIFE_LEBLON1";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Ataulfo de Paiva, 644 Ljs A e B-Farmalife Leblon";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92389";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.86";
+NL.NEAddress = "201.28.140.86";
+NL.NEName = "AMIL_FARMALIFE_MADUREIRA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Do Portella, 222 Ljs 154 e 155-Farmalife Madureira";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92356";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.90";
+NL.NEAddress = "201.28.140.90";
+NL.NEName = "Farmalife_Norte_Shopping_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Dom Helder Camara, 5332 - Salao Com. 3002-Farmalife Norte Shopping";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92369";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.94";
+NL.NEAddress = "201.28.140.94";
+NL.NEName = "Amil_meier_rj";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Dias da Cruz, 203 Lj 04-Farmalife Meier";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92395";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.140.98";
+NL.NEAddress = "201.28.140.98";
+NL.NEName = "FARMALIFE-N.S.COPACABANA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nossa Senhora de Copacabana, 814-Farmalife Copacabana";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92383";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.102";
+NL.NEAddress = "201.28.141.102";
+NL.NEName = "AMIL_AEROMIL";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Haroldo Paranhos, 400 - Aeromil-Aeramil";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005033013593";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.106";
+NL.NEAddress = "201.28.141.106";
+NL.NEName = "AMIL_ALB_EINSTEIN";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Albert Einstein, 627 - HIAE-Hosp I A E";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003743022893";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.10";
+NL.NEAddress = "201.28.141.10";
+NL.NEName = "AMIL_PIRACEMA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Piracema, 669-FL Tambore";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191284591";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.110";
+NL.NEAddress = "201.28.141.110";
+NL.NEName = "AMIL_PEROBAS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Perobas, 344 - HNSL-Hosp N S L";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005011003196";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.114";
+NL.NEAddress = "201.28.141.114";
+NL.NEName = "AMIL_MACKENZIE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Maria Antonia, 101-Mackenzie";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255159792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.118";
+NL.NEAddress = "201.28.141.118";
+NL.NEName = "AMIL-R-MARTINIANO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Martiniano de Carvalho, 741-Hosp Paulistano";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003284035990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.122";
+NL.NEAddress = "201.28.141.122";
+NL.NEName = "Amil_Tyco";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Ampere, 304-Ag Tyco";
+NL.Site = "BRAGANCA PAULISTA-SP";
+NL.ServiceIdentifier = "111164035100490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.146";
+NL.NEAddress = "201.28.141.146";
+NL.NEName = "Amico_STO_ANDRE_02";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Dom Pedro II, 655-Hosp ABC";
+NL.Site = "SANTO ANDRE-SP";
+NL.ServiceIdentifier = "116334990120591";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.14";
+NL.NEAddress = "201.28.141.14";
+NL.NEName = "AMIL-STA-PAULA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Santo Amaro, 2468 - Hosp. Sta Paula-Hosp St Paula";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003845089598";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.150";
+NL.NEAddress = "201.28.141.150";
+NL.NEName = "Amico_STO_ANDRE_01";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "Av. Dom Pedro II, 655-Hosp ABC";
+NL.Site = "SANTO ANDRE-SP";
+NL.ServiceIdentifier = "116334990191596";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.154";
+NL.NEAddress = "201.28.141.154";
+NL.NEName = "AMIL_AG_ARMCO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Dr. Francisco Mesquita, 1575 - Ag Empresarial Armco-Ag Armco";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006341005190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.18";
+NL.NEAddress = "201.28.141.18";
+NL.NEName = "Amil_Santa_Joana";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Tupinambas, 157 - Hosp. Sta. Joana-Hosp St Joana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549256490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.198";
+NL.NEAddress = "201.28.141.198";
+NL.NEName = "201.28.141.198";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Rede Intraredes";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94235";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.202";
+NL.NEAddress = "201.28.141.202";
+NL.NEName = "LBSF_HOSPITAL_PASTEUR";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Amaro Cavalcanti, 495 - Meier - Hosp. Pasteur-HPA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92328";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.206";
+NL.NEAddress = "201.28.141.206";
+NL.NEName = "LSF_RECREIO";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Alfredo Balthazar da Silveira, 96 Sl 201 - Recreio-RCR";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92376";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.210";
+NL.NEAddress = "201.28.141.210";
+NL.NEName = "LAB_SERGIO_FRANCO_LEBLON";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Ataulfo de Paiva, 669 - Leblon 445-LEA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "210000023535192";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.214";
+NL.NEAddress = "201.28.141.214";
+NL.NEName = "Amil_Braz_de_Pina";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Braz de Pina, 148 - Sl 408/409/410 - Leopoldina Shop - Penha-PEN";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92308";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.218";
+NL.NEAddress = "201.28.141.218";
+NL.NEName = "AMIL_LSF_BANGU";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Francisco Real, 1869  Bangu-Bangu";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "(RJO 5589556)/92393";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.222";
+NL.NEAddress = "201.28.141.222";
+NL.NEName = "AMIL_LSF_BARRASHOPPING";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Das Americas, 4666 Lj 325 - Barra Shopping-BSH";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92306";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.226";
+NL.NEAddress = "201.28.141.226";
+NL.NEName = "AMIL_LSF_BARRA";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Das Americas, 505 Lj O e P - Barra da Tijuca-BAR";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92377";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.22";
+NL.NEAddress = "201.28.141.22";
+NL.NEName = "AMIL_FCANECA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Frei Caneca, 569-Shop Frei Caneca";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003255159598";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.230";
+NL.NEAddress = "201.28.141.230";
+NL.NEName = "Amil_recreio_rj";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Das Americas, 10101 - Ljs 116/117 - Recreio-RCO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92310";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.234";
+NL.NEAddress = "201.28.141.234";
+NL.NEName = "Lab_Serg_Cachambi";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Dom Helder Camara, 5555 Sl 313 e 314 - Cachambi-NOR";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92394";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.238";
+NL.NEAddress = "201.28.141.238";
+NL.NEName = "AMIL_BONSUCESSO";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Guilherme Maxell 516, 103/104/105 - Bonsucesso-BOM";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92331";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.242";
+NL.NEAddress = "201.28.141.242";
+NL.NEName = "LSF_Taguara";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Nelson Cardoso, 1149 Sobreloja - Jacarepagua-JAC";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92370";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.246";
+NL.NEAddress = "201.28.141.246";
+NL.NEName = "AMIL_COPACABANA_794";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Nossa Senhora de Copacabana, 794 Sl 1105 - Copacabana-Citocopa";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92327";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.250";
+NL.NEAddress = "201.28.141.250";
+NL.NEName = "LSF_CPB";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Nossa Senhora de Copacabana, 1391 Lj A - Copa-CPB";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92378";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.254";
+NL.NEAddress = "201.28.141.254";
+NL.NEName = "AMIL_LSF_LDO";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Nossa Senhora de Copacabana, 99 Lj E-LDO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "RJO 5574255";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.26";
+NL.NEAddress = "201.28.141.26";
+NL.NEName = "Amil_NagcoesUnidas";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nacoes Unidas, 11541-Total Care Berrine";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005505104090";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.2";
+NL.NEAddress = "201.28.141.2";
+NL.NEName = "Amil_Ag.ABC";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Industrial, 600 Ag ABC-Ag ABC";
+NL.Site = "SANTO ANDRE-SP";
+NL.ServiceIdentifier = "116334990113390";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.30";
+NL.NEAddress = "201.28.141.30";
+NL.NEName = "Amil_Ag_Cisper";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Olavo Egidio de Souza Aranha, 5000 - Ag Cisper-Ag Cisper";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006546013896";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.34";
+NL.NEAddress = "201.28.141.34";
+NL.NEName = "AMIL_PAULISTA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Paulista, 1499-FL Paulista Lj 1";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003284071695";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.38";
+NL.NEAddress = "201.28.141.38";
+NL.NEName = "AMIL_R_PORTUGAL_439";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "AVENIDA PORTUGAL 439-FL  Shop Analia Franco";
+NL.Site = "SaO PAULO-SP";
+NL.ServiceIdentifier = "110005044016394";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.50";
+NL.NEAddress = "201.28.141.50";
+NL.NEName = "Amil_Ag_March";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Maria Coelho Aguiar, 215 Lj 01-FL Centro Empresarial";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005693009194";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.54";
+NL.NEAddress = "201.28.141.54";
+NL.NEName = "AMIL_INDUSTRIAL";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Industrial, 600 - Farmalife ABC-Farmalife ABC";
+NL.Site = "SANTO ANDRE-SP";
+NL.ServiceIdentifier = "116334990033796";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.58";
+NL.NEAddress = "201.28.141.58";
+NL.NEName = "AMIL-DOMINGOS_JORGE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Sao Domingos, 1000 - Portao 2 - Bayer-Ag Bayer";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005686003895";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.62";
+NL.NEAddress = "201.28.141.62";
+NL.NEName = "AMIL_MWM";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nacoes Unidas, 22002 - Ag MWM-Ag MWM";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005686129490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.66";
+NL.NEAddress = "201.28.141.66";
+NL.NEName = "amil_rua_colombia";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Colombia, 332-Ag Jardins";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003085029990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.70";
+NL.NEAddress = "201.28.141.70";
+NL.NEName = "AMIL_GOL";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Prfa. Heloisa Carneiro, 27 - Ag Gol-Ag Gol";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005033001692";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.78";
+NL.NEAddress = "201.28.141.78";
+NL.NEName = "AMIL_STA_CATARINA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Paulista, 200 - Hosp. Sta Catarina-Hosp St Catarina";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003284072098";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.82";
+NL.NEAddress = "201.28.141.82";
+NL.NEName = "AMIL_Sta_Rita";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Cubatao, 1190 - Hosp. St Rita-Hosp St Rita";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005549154697";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.86";
+NL.NEAddress = "201.28.141.86";
+NL.NEName = "Amil_PedroAmerico";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Pedro Americo, 68 - Salao Vendas-Salao Vendas";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003221045190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.90";
+NL.NEAddress = "201.28.141.90";
+NL.NEName = "AMIL-AL-PARIS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Paris, 80 Residencial 0 - Alphaville-Diretoria SP";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191143599";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.94";
+NL.NEAddress = "201.28.141.94";
+NL.NEName = "HARAS_AMIL_ITU";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr.PauDalho S/N Haras D Quixote-Haras D Quixote";
+NL.Site = "ITU-SP";
+NL.ServiceIdentifier = "119534026100995";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.141.98";
+NL.NEAddress = "201.28.141.98";
+NL.NEName = "AMIL_BARUERI";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Caiapos, 84 - Almoxarifado-Almoxarifado";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191283196";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.102";
+NL.NEAddress = "201.28.154.102";
+NL.NEName = "Amil_Cauaxi_01";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191013997";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.122";
+NL.NEAddress = "201.28.154.122";
+NL.NEName = "AMIL_RUI_BARBOSARJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Rui Barbosa, 698 - Macae-Ag Amil Shopping - Shopping Tropical Plaza - Macae";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "MCERJO1941728";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.126";
+NL.NEAddress = "201.28.154.126";
+NL.NEName = "Amil_Cauaxi_02";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191210890";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.130";
+NL.NEAddress = "201.28.154.130";
+NL.NEName = "Amil_Curitiba_ACT";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Doutor Carlos de Carvalho, 715-Amil Curitiba";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA-105NGMAJ";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.134";
+NL.NEAddress = "201.28.154.134";
+NL.NEName = "AMIL_BRASILIA_ACT";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SCS Quadra 06, 157 - Ed. Bandeirantes - Bl. A - Sls. 501 a 504-Amil Brasilia";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "BSA-105NGM6A";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.186";
+NL.NEAddress = "201.28.154.186";
+NL.NEName = "AMIL_JK";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Juscelino Kubitschec, 1830 - 13o andar - Torre I-Ag Emp Ernst Young";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003079085892";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.206";
+NL.NEAddress = "201.28.154.206";
+NL.NEName = "201.28.154.206";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "RUA VOLUNTARIOS DA PATRIA, 1793 SANTANA-Santana";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110006222060198";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.210";
+NL.NEAddress = "201.28.154.210";
+NL.NEName = "AMIL_R_ALVORADA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Alvorada, 64-OncoCare - Sede Propria";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "110003845081597";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.214";
+NL.NEAddress = "201.28.154.214";
+NL.NEName = "AMIL_AL_EQUADOR";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Equador, 480-Residencial 2 - Particular - Vinicios";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191233598";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.218";
+NL.NEAddress = "201.28.154.218";
+NL.NEName = "AMICO_BR_LIMEIRA";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Barao de Jundiai, 353-Lapa III";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003834124494";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.230";
+NL.NEAddress = "201.28.154.230";
+NL.NEName = "LAB_VPN";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Rede Intraredes";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92354";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.246";
+NL.NEAddress = "201.28.154.246";
+NL.NEName = "FARMALIFE_PORTOALEGRE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Siqueira Campos, 1180-Franquia Amil RS - Sede Propria";
+NL.Site = "PORTO ALEGRE-RS";
+NL.ServiceIdentifier = "PAE-105UBUSD";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.250";
+NL.NEAddress = "201.28.154.250";
+NL.NEName = "201.28.154.250";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Senador Filinto Muller, 218-Ag Empresarial Amil - SESC";
+NL.Site = "CUIABA-MT";
+NL.ServiceIdentifier = "CBA-105VNK43";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.30";
+NL.NEAddress = "201.28.154.30";
+NL.NEName = "lab_sergio_franco_host2";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9308_AMIL_TLFE-AMILXAP.4";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.34";
+NL.NEAddress = "201.28.154.34";
+NL.NEName = "lab_sergio_franco_host2";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9309_AMIL_TLFE-AMILXAP.5";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.42";
+NL.NEAddress = "201.28.154.42";
+NL.NEName = "Amil_Cauaxi_01";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191055290";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.46";
+NL.NEAddress = "201.28.154.46";
+NL.NEName = "Amil_Cauaxi_02";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191079890";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.50";
+NL.NEAddress = "201.28.154.50";
+NL.NEName = "Amil_Cauaxi_01";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191068597";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.154.98";
+NL.NEAddress = "201.28.154.98";
+NL.NEName = "Amil_Cauaxi_02";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador Amil Cauaxi";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191207295";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.156.246";
+NL.NEAddress = "201.28.156.246";
+NL.NEName = "LSF_LEBLON_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Avenida Ataulfo de Paiva, 669-LSF Leblon";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "210000025448499";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.156.250";
+NL.NEAddress = "201.28.156.250";
+NL.NEName = "AMIL_LEBLON_RJ2";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Avenida Ataulfo de Paiva, 669-LSF Leblon";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "210000025448597";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.162";
+NL.NEAddress = "201.28.210.162";
+NL.NEName = "AMICO-C.SANTOS";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. General Chagas Santos, 314-Concentrador Chagas DIXAMICO";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005589024492";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.166";
+NL.NEAddress = "201.28.210.166";
+NL.NEName = "DIXAMICO_INTERNET";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9299_AMIL_TLFE-AMILTEP.11";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.170";
+NL.NEAddress = "201.28.210.170";
+NL.NEName = "ESHO_Hosp.Clin.Niteroi";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador DIXAMICO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9303_AMIL_TLFE-AMILTEP.15";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.178";
+NL.NEAddress = "201.28.210.178";
+NL.NEName = "LSF_internet";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9305-AMIL (TLFE-AMILXAP.1)";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.182";
+NL.NEAddress = "201.28.210.182";
+NL.NEName = "LSF_internet";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Xavier Pinheiro 439 - Pq. Duque de Caxias - Caxias-Concentrador SEDE LSF";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "9830_AMIL_TLFE-AMILXAP.6";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.210.234";
+NL.NEAddress = "201.28.210.234";
+NL.NEName = "ESHO_INTERNET";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Tenente Possolo, 33  2o andar  Bairro de fatima-Concentrador ESHO";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9296-AMIL-TLFEAMILTEP.9";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.211.10";
+NL.NEAddress = "201.28.211.10";
+NL.NEName = "Amil_Cauaxi_A";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador AMIL";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191247890";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.211.14";
+NL.NEAddress = "201.28.211.14";
+NL.NEName = "Amil_Cauaxi_B";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador AMIL";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191234594";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.211.18";
+NL.NEAddress = "201.28.211.18";
+NL.NEName = "Amil_Cauaxi_B";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador AMIL";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191226494";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.211.22";
+NL.NEAddress = "201.28.211.22";
+NL.NEName = "Amil_Cauaxi_A";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador AMIL";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191243097";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.211.26";
+NL.NEAddress = "201.28.211.26";
+NL.NEName = "Amil_Cauaxi_A";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Cauaxi, 118-Concentrador AMIL";
+NL.Site = "BARUERI-SP";
+NL.ServiceIdentifier = "110714191249290";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.212.22";
+NL.NEAddress = "201.28.212.22";
+NL.NEName = "ESHO_CAP_SALOMAO";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Ana Neri 245 - Caxias-Cetrim";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92338";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.220.30";
+NL.NEAddress = "201.28.220.30";
+NL.NEName = "Farmalife_Bonsucesso_internet";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nova York, 510-Farmalife Bonsucesso";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "98308";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.102";
+NL.NEAddress = "201.28.221.102";
+NL.NEName = "Amil_SAO_LUIZ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SLS 7135943-Amil Sao Luis - Maranhao";
+NL.Site = "S LUIS-MA";
+NL.ServiceIdentifier = "SLS 7135943";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.106";
+NL.NEAddress = "201.28.221.106";
+NL.NEName = "AMIL_Piaui_ID_236007";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Frei Serafim, 2155-Amil Piaui - Teresina";
+NL.Site = "TERESINA-PI";
+NL.ServiceIdentifier = "TSA 7135951";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.10";
+NL.NEAddress = "201.28.221.10";
+NL.NEName = "AMIL_LSF_GUADALUPE";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Etr. Camboata 2300 Sl 207 - Guadalupe-GLP";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "RJO 5563272";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.110";
+NL.NEAddress = "201.28.221.110";
+NL.NEName = "Amil_Natal";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Jundiai, 644-Amil Natal";
+NL.Site = "NATAL-RN";
+NL.ServiceIdentifier = "NTL 5041187";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.114";
+NL.NEAddress = "201.28.221.114";
+NL.NEName = "AMIL_BELEM";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Conego Jeronimo Pimentel, 207 Ch-Amil Belem";
+NL.Site = "BELEM-PA";
+NL.ServiceIdentifier = "BLM 5086800";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.118";
+NL.NEAddress = "201.28.221.118";
+NL.NEName = "AMIL_ED_ROBERTO_SIM";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Brasilia Sesi - DF - SBN Q 1 BL .C-Ag Sesi";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "484959";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.122";
+NL.NEAddress = "201.28.221.122";
+NL.NEName = "Amil_509Norte";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Brasilia CNPQ - DF - SEPN 509 Bl. A-Ag CNPQ";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "CPE-105WE50F";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.126";
+NL.NEAddress = "201.28.221.126";
+NL.NEName = "201.28.221.126";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Brigadeiro Franco, 2300 - Pr-Farmalife PR";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA105MN90SM";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.130";
+NL.NEAddress = "201.28.221.130";
+NL.NEName = "AMIL_AG_VARIG_RS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. 18 de Novembro, 800-Ag Varig RS";
+NL.Site = "PORTO ALEGRE-RS";
+NL.ServiceIdentifier = "PAE-105NG1D";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.134";
+NL.NEAddress = "201.28.221.134";
+NL.NEName = "Amil_Barra_Shopp_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4666 Lj 302B-Amil Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92422";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.138";
+NL.NEAddress = "201.28.221.138";
+NL.NEName = "AMIL_FARMALIFE_BARRA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 1155 - Loja C - Barra Space Center-Farmalife Barra - Space Center";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92416";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.142";
+NL.NEAddress = "201.28.221.142";
+NL.NEName = "Amil_Bnds";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Brasilia IPEA - DF - SBS Q 1 B1. J-Ag IPEA";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "484635";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.146";
+NL.NEAddress = "201.28.221.146";
+NL.NEName = "Amil_Ag_Corporate";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SCN Q2 BLOCO A-Ag Corporate";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "BSA-105V4DPB";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.14";
+NL.NEAddress = "201.28.221.14";
+NL.NEName = "Lab.S_Franco-ESTR.TRESRIOS";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "ESTRADA DOS TRES RIOS, 200 - FGA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92365";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.150";
+NL.NEAddress = "201.28.221.150";
+NL.NEName = "AMIL_GOIANIASTOESTE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Assis Chateaubriand Qd. R-19 Lt. 4/5 - Setor Oeste Goiania GO-Amil Goiania";
+NL.Site = "GOIANIA-GO";
+NL.ServiceIdentifier = "GNA-105NCVY8";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.154";
+NL.NEAddress = "201.28.221.154";
+NL.NEName = "AMIL_GOIANIA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Isa Costa, SN Goiania GO 74665-900-Ag Unilever";
+NL.Site = "GOIANIA-GO";
+NL.ServiceIdentifier = "451812";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.158";
+NL.NEAddress = "201.28.221.158";
+NL.NEName = "AMIL_HOSP_BRASILIA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SHIS - QI 15 - Lote G-Hosp Brasilia";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "484468";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.162";
+NL.NEAddress = "201.28.221.162";
+NL.NEName = "AMLR_ABM1";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Dr. Sergio Braga, 452-Mini Ag Barbara Mansa";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "BMA/RJO 1933633";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.166";
+NL.NEAddress = "201.28.221.166";
+NL.NEName = "Amil_Hosp.Snt.Maria";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Tenente Jose Eduardo, 585-Mini Ag Hosp St Maria";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "BMA/RJO 1933634";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.170";
+NL.NEAddress = "201.28.221.170";
+NL.NEName = "CASA_AMIL_BUZIOS_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Jose Bento Ribeiro Dantas. Lotes 10 e 11-Casa de Buzios";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "MPBZ RJO 1930032";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.174";
+NL.NEAddress = "201.28.221.174";
+NL.NEName = "FARMALIFE_VICENTECARVALHORJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Vicente Carvalho, 909 Lj 1043/1044-Farmalife Vicente Carvalho";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92335";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.178";
+NL.NEAddress = "201.28.221.178";
+NL.NEName = "FARMALIFE_R.S.JOSE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Sao Jose, 40 A-Farmalife S. Jose";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92363";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.182";
+NL.NEAddress = "201.28.221.182";
+NL.NEName = "AMIL_LIMA_SILVA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Brig. Lima e Silva, 2012 Ljs A e B-Ag Caxias";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92379";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.186";
+NL.NEAddress = "201.28.221.186";
+NL.NEName = "201.28.221.186";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA TEFE,BR 59-";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92374";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.18";
+NL.NEAddress = "201.28.221.18";
+NL.NEName = "LAB_SERGIO_NILOPOLIS";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Pr. Nilo Pecanha, 109 Sl 102 - Sao Goncalo-NLP";
+NL.Site = "NILOPOLIS-RJ";
+NL.ServiceIdentifier = "NLP 1935736";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.190";
+NL.NEAddress = "201.28.221.190";
+NL.NEName = "AMIL_CCAP";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Brig. Lima e Silva, 2035 Torre II Sl 703-Contabilidade - Jau";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92373";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.194";
+NL.NEAddress = "201.28.221.194";
+NL.NEName = "Amil_Min_Trab_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Pres. Antonio Carlos, 251 - 7o andar-Mini Ag TRT";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92353";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.198";
+NL.NEAddress = "201.28.221.198";
+NL.NEName = "AMIL_REVEND_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Rio Branco, 116 - 14o andar-Revend";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92359";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.202";
+NL.NEAddress = "201.28.221.202";
+NL.NEName = "AMIL_ATLANTICA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Atlantica, 4240 Lj 244-Ag Copacabana";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92311";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.206";
+NL.NEAddress = "201.28.221.206";
+NL.NEName = "Farmalife_Plazza_Shopp_Rio_Te";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R.15 de Novembro, 8 - Terreo - Plaza Shopping-Ag Niteroi";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2017547";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.210";
+NL.NEAddress = "201.28.221.210";
+NL.NEName = "PARANA_VENDAS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Dr. Carlos de Carvalho, 655 - Loja 1-Ag PR / Vendas";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA-1061479P";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.22";
+NL.NEAddress = "201.28.221.22";
+NL.NEName = "LAB.S.FRANCO-Ana.Neri-190";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Ana Neri 190 - Caxias - Hosp Mario Lioni-HML";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92337";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.26";
+NL.NEAddress = "201.28.221.26";
+NL.NEName = "AMIL_LSF_CATETE";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Catete, 311 Sl 318 - Catete-CAT/LAR";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92316";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.2";
+NL.NEAddress = "201.28.221.2";
+NL.NEName = "AMIL_LSF_ITAGUAI";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Paulo de Frontin 271 - Itaguai-ITA";
+NL.Site = "ITAGUAI-RJ";
+NL.ServiceIdentifier = "IGI 1932608";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.30";
+NL.NEAddress = "201.28.221.30";
+NL.NEName = "Amil-Assist-N-Iguacu";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Cel. Francisco Soares, 78 - Centro Nova Iguacu-NIG";
+NL.Site = "NOVA IGUACU-RJ";
+NL.ServiceIdentifier = "92317";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.34";
+NL.NEAddress = "201.28.221.34";
+NL.NEName = "AMIL_CSNSCARMO_CAMPOGRANDE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Jaguaruna, 105-AG NS Carmo";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94275";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.38";
+NL.NEAddress = "201.28.221.38";
+NL.NEName = "CIDADE_DE_DEUS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Marechal Miguel Salazar Mendes de Morais, 747-Ag Wella";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92381";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.42";
+NL.NEAddress = "201.28.221.42";
+NL.NEName = "AMIL_CAP.SALOMAO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Capitao Salomao, 27-Ag Hosp St Lucia";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92339";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.46";
+NL.NEAddress = "201.28.221.46";
+NL.NEName = "AMIL_GLAXO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Dos Bandeirantes, 8464-Ag GSK";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92315";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.50";
+NL.NEAddress = "201.28.221.50";
+NL.NEName = "AMIL_REDEGLOBO_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Jardim Botanico, 226 Sl 408-Mini Ag TV Globo";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92384";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.54";
+NL.NEAddress = "201.28.221.54";
+NL.NEName = "Amil_RJJACARE";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Pr. Alberto Monteiro Filho-Mini Ag  Cisper";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92372";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.58";
+NL.NEAddress = "201.28.221.58";
+NL.NEName = "201.28.221.58";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA VISCONDE DE SEPETIBA 935-";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2017546";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.62";
+NL.NEAddress = "201.28.221.62";
+NL.NEName = "Amil_PETROPOLIS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Dr. Nelson de Sa Earb, 95 Lj C-Ag Petropolis";
+NL.Site = "PETROPOLIS-RJ";
+NL.ServiceIdentifier = "PTS/ RJO 1942066";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.66";
+NL.NEAddress = "201.28.221.66";
+NL.NEName = "Amil_Posto_Tijuca_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Maracana, 987 Lj 1014-Ag Tijuca";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "94261";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.6";
+NL.NEAddress = "201.28.221.6";
+NL.NEName = "Amil_Presidentevargas_rj";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. Pres. Vargas, 435 Sl 2104 - Centro-CN2";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92357";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.70";
+NL.NEAddress = "201.28.221.70";
+NL.NEName = "AMIL_POSTO_HOPS_ORDEM";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Conde de Bonfim, 1033 - Usina-Mini Ag Orden 3";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "98288_AMIL_TLFE-AMILCOB.1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.74";
+NL.NEAddress = "201.28.221.74";
+NL.NEName = "AMIL_SACADURA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Sacadura Cabral, 102 - Saude - RJ-Ag Lojas Americanas";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92361";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.78";
+NL.NEAddress = "201.28.221.78";
+NL.NEName = "Amil_Ag_Varig_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Das Canarias, 1862-Mini Ag Rubem Berta";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92402";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.82";
+NL.NEAddress = "201.28.221.82";
+NL.NEName = "AMIL-ASSIST_BELFORD-ROXO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Etr. Boa Esperanca, 650-Mini Ag Bayer";
+NL.Site = "BELFORD ROXO-RJ";
+NL.ServiceIdentifier = "BERO/RJO  1933090";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.86";
+NL.NEAddress = "201.28.221.86";
+NL.NEName = "AMIL_PASTEUR";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Amaro Cavalcanti, 495-Mini Ag H Pasteur";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92326";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.90";
+NL.NEAddress = "201.28.221.90";
+NL.NEName = "Amil_Curitiba_STB";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Al. Doutor Carlos de Carvalho, 715-Amil Curitiba";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA-105O61V8";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.221.94";
+NL.NEAddress = "201.28.221.94";
+NL.NEName = "Amil_Brasilia_Stb";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SCS Quadra 06, 157 - Ed. Bandeirantes - Bl. A - Sls. 501 a 504-Amil Brasilia";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "BSA-105N9976";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.198";
+NL.NEAddress = "201.28.222.198";
+NL.NEName = "Amil_Concentrador_Barra_r1";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4200 Bl 3 Edificio Sao Paulo-Concentrador Amil Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9831_AMIL_TLFE-AMILAME5.1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.202";
+NL.NEAddress = "201.28.222.202";
+NL.NEName = "Amil_Concentrador_Barra_r2";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4200 Bl 3 Edificio Sao Paulo-Concentrador Amil Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9834";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.206";
+NL.NEAddress = "201.28.222.206";
+NL.NEName = "Amil_Concentrador_Barra_r1";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4200 Bl 3 Edificio Sao Paulo-Concentrador Amil Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9833";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.38";
+NL.NEAddress = "201.28.222.38";
+NL.NEName = "Amil_Concentrador_Barra_r2";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4200 Bl 3 Edificio Sao Paulo-Concentrador Amil Barra";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9831";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.42";
+NL.NEAddress = "201.28.222.42";
+NL.NEName = "ESHO_U.Mulher";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Ana Neri 245 - Caxias-U. Mulher";
+NL.Site = "DUQUE DE CAXIAS-RJ";
+NL.ServiceIdentifier = "92387";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.222.90";
+NL.NEAddress = "201.28.222.90";
+NL.NEName = "Amil_Brasif_Aeroporto";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RODOVIA HELIO SMIDT 00000-Ag Empresarial - Brasif";
+NL.Site = "GUARULHOS-SP";
+NL.ServiceIdentifier = "118926412083895";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.225.206";
+NL.NEAddress = "201.28.225.206";
+NL.NEName = "201.28.225.206";
+NL.Customer = "CISICRET";
+NL.Location = "Praia de Botafogo, 142 - Rio de Janeiro-BRA";
+NL.Site = "Rio de Janeiro-BRA";
+NL.ServiceIdentifier = "23962594";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.227.218";
+NL.NEAddress = "201.28.227.218";
+NL.NEName = "Amil_SPS";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "QUADRA SPO 00000-Ag Abin";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "485246";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.227.222";
+NL.NEAddress = "201.28.227.222";
+NL.NEName = "AMIL_CIACA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA BENJAMIN LINS 555-CIACA";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA-106ESBE3";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.227.226";
+NL.NEAddress = "201.28.227.226";
+NL.NEName = "AMIL_CIACA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA BENJAMIN LINS 555-CIACA";
+NL.Site = "CURITIBA-PR";
+NL.ServiceIdentifier = "CTA-106EQ8U1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.230.33";
+NL.NEAddress = "201.28.230.33";
+NL.NEName = "201.28.230.33";
+NL.Customer = "FRIBOI";
+NL.Location = "RUA IRINEU JOSE BORDON, 215 - SAO PAULO - BRASIL";
+NL.Site = "SAO PAULO - BRASIL";
+NL.ServiceIdentifier = "110003625015099";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.10";
+NL.NEAddress = "201.28.237.10";
+NL.NEName = "ESHO_Piratininga";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Etr. Francisco Cruz Nunes, 6723-Cemed Itaipu";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2023563";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.198";
+NL.NEAddress = "201.28.237.198";
+NL.NEName = "Farmalife_Plazza_3andar";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. XV de Novembro,  8  3o andar-Farmalife Niteroi - Plaza Shopping";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2021018";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.2";
+NL.NEAddress = "201.28.237.2";
+NL.NEName = "AMIL_LSF_VILAISABEL";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. 28 de Setembro, 44 Sl 805 - Vila Isabel-VIL";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92346";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.34";
+NL.NEAddress = "201.28.237.34";
+NL.NEName = "AMIL_CNC_RJ";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Ayrton Senna, 5555-Mini Ag. CNC - Sede Propria";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92391";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.38";
+NL.NEAddress = "201.28.237.38";
+NL.NEName = "AMIL_BOULEVARD";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Av. 28 de Setembro, 229 - Vila Isabel-VLA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92330";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.42";
+NL.NEAddress = "201.28.237.42";
+NL.NEName = "Amil_Alcantara";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "R. Joao Caetano, 185/401 - Alcantara-ALC";
+NL.Site = "S GONCALO-RJ";
+NL.ServiceIdentifier = "NRI 2019098";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.70";
+NL.NEAddress = "201.28.237.70";
+NL.NEName = "AMIL-MarquesS.Vicente";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "SAO VICENTE, MARQ, 235-Posto TRT 2R - Barra Funda";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003392030490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.237.86";
+NL.NEAddress = "201.28.237.86";
+NL.NEName = "AMIL_CINCINATO_BRAGA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA CINCINATO BRAGA 340-Total Care - UCP";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003284158596";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.239.38";
+NL.NEAddress = "201.28.239.38";
+NL.NEName = "AMIL_ESHO_BARRA";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Av. Das Americas, 700-CITA AMERICA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "RJO/5583417";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.20";
+NL.NEAddress = "201.28.24.20";
+NL.NEName = "BASF_SJC";
+NL.Customer = "Basf";
+NL.Location = "RUA CARLOS MARCONDES, 1200 - BAIRRO LIMOEIRO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115633931000793";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.242.130";
+NL.NEAddress = "201.28.242.130";
+NL.NEName = "AMIL_CNB11";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "QUADRA CNB 11 00000-ag Taguatinga";
+NL.Site = "TAGUATINGA-DF";
+NL.ServiceIdentifier = "BSA-105VEF8T";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.242.174";
+NL.NEAddress = "201.28.242.174";
+NL.NEName = "Farmalife_Barra_Shopping";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Das Americas, 4666 Lj 115 E1 - Barra Shopping-Farmalife - Barra Shopping";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "92423";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.21";
+NL.NEAddress = "201.28.24.21";
+NL.NEName = "RT_Basf_Guaratingueta";
+NL.Customer = "Basf";
+NL.Location = "AV. BRASIL, 791 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "112523122009894";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.242.210";
+NL.NEAddress = "201.28.242.210";
+NL.NEName = "Agencia_LagoNorte";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "RUA SHIN QL 1 CONJUNTO 4 00000-Ag Lago Norte";
+NL.Site = "BRASILIA-DF";
+NL.ServiceIdentifier = "485608";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.32";
+NL.NEAddress = "201.28.24.32";
+NL.NEName = "Basf1_ARG_Corri_PRI";
+NL.Customer = "Basf";
+NL.Location = "CORRIENTES 327 - P8 - CAPITAL FEDERAL, 1043 - ARGENTINA";
+NL.Site = "ARGENTINA";
+NL.ServiceIdentifier = "SIDI 78803_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.34";
+NL.NEAddress = "201.28.24.34";
+NL.NEName = "BASF COLOMBIA";
+NL.Customer = "Basf";
+NL.Location = "CALLE 99A 51-32, BOGOTA - COLOMBIA";
+NL.Site = "COLOMBIA";
+NL.ServiceIdentifier = "21382_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.35";
+NL.NEAddress = "201.28.24.35";
+NL.NEName = "BASF_26_EUA";
+NL.Customer = "Basf";
+NL.Location = "41 MASTER BOULEVARD - USA";
+NL.Site = "USA";
+NL.ServiceIdentifier = "W0N32088_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.38";
+NL.NEAddress = "201.28.24.38";
+NL.NEName = "Basf_Equador_21";
+NL.Customer = "Basf";
+NL.Location = "AV. REPUBLICA # 500 Y PRADERA - 17013255 QUITO - EQUADOR";
+NL.Site = "EQUADOR";
+NL.ServiceIdentifier = "BSP_FUIO31122_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.40";
+NL.NEAddress = "201.28.24.40";
+NL.NEName = "Basf_Paraguai";
+NL.Customer = "Basf";
+NL.Location = "INDEPENDENCIA NACIONAL  811 / PISO 12 - ASSUNCAO - PARAGUAI";
+NL.Site = "PARAGUAI";
+NL.ServiceIdentifier = "SIDI 79032";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.42";
+NL.NEAddress = "201.28.24.42";
+NL.NEName = "Basf_Bolivia_25";
+NL.Customer = "Basf";
+NL.Location = "CALLE ASUNCION ESQ. MONSENOR RIVERO - - BOLIVIA";
+NL.Site = "BOLIVIA";
+NL.ServiceIdentifier = "1-AODZ2_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.24.43";
+NL.NEAddress = "201.28.24.43";
+NL.NEName = "Basf_Alemanha_28_ACT";
+NL.Customer = "Basf";
+NL.Location = "CARL-BOSCH-STRASSE N 38 - D-67056 - LUDWIGSHAFEN - ALEMANHA";
+NL.Site = "ALEMANHA";
+NL.ServiceIdentifier = "62100-62150 45M_PRI";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.210";
+NL.NEAddress = "201.28.26.210";
+NL.NEName = "201.28.26.210";
+NL.Customer = "Basf";
+NL.Location = "ESTRADA SAMUEL AIZEMBERG , 1707 - JD. CONTINENTAL - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392218293";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.214";
+NL.NEAddress = "201.28.26.214";
+NL.NEName = "201.28.26.214";
+NL.Customer = "Basf";
+NL.Location = "ESTRADA SAMUEL AIZEMBERG , 1707 - JD. CONTINENTAL - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392216096";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.218";
+NL.NEAddress = "201.28.26.218";
+NL.NEName = "BASF_SJC";
+NL.Customer = "Basf";
+NL.Location = "RUA CARLOS MARCONDES, 1200 - BAIRRO LIMOEIRO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115633931000793";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.222";
+NL.NEAddress = "201.28.26.222";
+NL.NEName = "201.28.26.222";
+NL.Customer = "Basf";
+NL.Location = "RUA CARLOS MARCONDES, 1200 - BAIRRO LIMOEIRO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115633931008492";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.226";
+NL.NEAddress = "201.28.26.226";
+NL.NEName = "RT_Basf_Guaratingueta";
+NL.Customer = "Basf";
+NL.Location = "AV. BRASIL, 791 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "112523122009894";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.26.230";
+NL.NEAddress = "201.28.26.230";
+NL.NEName = "201.28.26.230";
+NL.Customer = "Basf";
+NL.Location = "AV. BRASIL, 791 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "112523122009991";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.10";
+NL.NEAddress = "201.28.31.10";
+NL.NEName = "201.28.31.10";
+NL.Customer = "Basf";
+NL.Location = "ESTRADA SAMUEL AIZEMBERG , 1707 - JD. CONTINENTAL - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392219699";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.14";
+NL.NEAddress = "201.28.31.14";
+NL.NEName = "201.28.31.14";
+NL.Customer = "Basf";
+NL.Location = "ESTRADA SAMUEL AIZEMBERG , 1707 - JD. CONTINENTAL - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484392219990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.146";
+NL.NEAddress = "201.28.31.146";
+NL.NEName = "ESHO_ITAIPU_512";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "Etr. Francisco Cruz Nunes, 711 area 16C (ao lado do Condominio UBa II)-NOVO PONTO ITAIPU";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI / RJO 2016937";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.170";
+NL.NEAddress = "201.28.31.170";
+NL.NEName = "AMIL-HOSP-CORACAO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. Des. Eliseu Guilherme, 123-Hosp Coracao";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003884054198";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.174";
+NL.NEAddress = "201.28.31.174";
+NL.NEName = "AMIL_TAM";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "R. General Pantaleao Teles, 210  HG 2 Jd Aeroporto-Ag Tam";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005033006490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.178";
+NL.NEAddress = "201.28.31.178";
+NL.NEName = "Amil_Varing";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Pr. Cte. Linneu Gomes, S/N Ag Varig-Ag Varig";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110005044025792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.18";
+NL.NEAddress = "201.28.31.18";
+NL.NEName = "201.28.31.18";
+NL.Customer = "Basf";
+NL.Location = "AV. ANGELO DEMARCHI,123 - DEMARCHI - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115484396211196";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.202";
+NL.NEAddress = "201.28.31.202";
+NL.NEName = "FARMALIF_BONSUCESSO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nova York, 510-Farmalife - Central";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "98306_AMIL_TLFE-AMILNOY.1";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.31.206";
+NL.NEAddress = "201.28.31.206";
+NL.NEName = "FARMALIF_BONSUCESSO";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "Av. Nova York, 510-Farmalife - Central";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "98307_AMIL_TLFE-AMILNOY.2";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.4.150";
+NL.NEAddress = "201.28.4.150";
+NL.NEName = "Basf_Guarulhos";
+NL.Customer = "Basf";
+NL.Location = "RUA ARGENTINA, 180 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "118926421026394";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.4.154";
+NL.NEAddress = "201.28.4.154";
+NL.NEName = "Basf_Maua";
+NL.Customer = "Basf";
+NL.Location = "AV. PAPA JOAO XXIII, 4800 - SERTAOZINHO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "113704544128496";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.4.158";
+NL.NEAddress = "201.28.4.158";
+NL.NEName = "201.28.4.158";
+NL.Customer = "Basf";
+NL.Location = "AV. PAPA JOAO XXIII, 4800 - SERTAOZINHO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "113704544127996";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.48.29";
+NL.NEAddress = "201.28.48.29";
+NL.NEName = "201.28.48.29";
+NL.Customer = "SID. BARRA MANSA S.A (VOTORANTIN)";
+NL.Location = "Carretera Central km. 9.5 s/n - Lima-Peru";
+NL.Site = "Lima-Peru";
+NL.ServiceIdentifier = "CD41375";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.6.134";
+NL.NEAddress = "201.28.6.134";
+NL.NEName = "BASF_Santos";
+NL.Customer = "Basf";
+NL.Location = "AREA DE TANQUES - ILHA BARNABE (PORTO DE SANTOS) - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115923221100590";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.92.206";
+NL.NEAddress = "201.28.92.206";
+NL.NEName = "BASF_STO";
+NL.Customer = "Basf";
+NL.Location = "ROD SP 340 KM 144 - SIT. S. JOAO OU QUINHAO - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "116353896001599";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.28.92.210";
+NL.NEAddress = "201.28.92.210";
+NL.NEName = "201.28.92.210";
+NL.Customer = "Basf";
+NL.Location = "AV. VARGAS,PRES 2001 - BRASIL";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "115290620500291";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.102";
+NL.NEAddress = "201.63.105.102";
+NL.NEName = "201.63.105.102";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "AVENIDA PAULISTA, 1374  5 SUBSOLO - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284199896";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.106";
+NL.NEAddress = "201.63.105.106";
+NL.NEName = "Amico_Amil_RJ_STB";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "AVENIDA DAS AMERICAS, 466-DIXAMICO BARRA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9842";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.110";
+NL.NEAddress = "201.63.105.110";
+NL.NEName = "Amico_Barra_RJ_ATC";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "AVENIDA DAS AMERICAS, 466-DIXAMICO BARRA";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9843";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.90";
+NL.NEAddress = "201.63.105.90";
+NL.NEName = "201.63.105.90";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "AVENIDA PAULISTA, 1374  5 SUBSOLO - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284203796";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.94";
+NL.NEAddress = "201.63.105.94";
+NL.NEName = "201.63.105.94";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "AVENIDA PAULISTA, 1374  5 SUBSOLO - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284200096";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.105.98";
+NL.NEAddress = "201.63.105.98";
+NL.NEName = "201.63.105.98";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "AVENIDA PAULISTA, 1374  5 SUBSOLO - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284093699";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.138";
+NL.NEAddress = "201.63.106.138";
+NL.NEName = "201.63.106.138";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA REBOUCAS, 02708 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003085000399";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.142";
+NL.NEAddress = "201.63.106.142";
+NL.NEName = "201.63.106.142";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA BRAZ LEME, 01700 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110006976047095";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.146";
+NL.NEAddress = "201.63.106.146";
+NL.NEName = "201.63.106.146";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA AMARO,STO, 06428 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110005181715197";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.150";
+NL.NEAddress = "201.63.106.150";
+NL.NEName = "201.63.106.150";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PAULISTA, 00037 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284071997";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.154";
+NL.NEAddress = "201.63.106.154";
+NL.NEName = "201.63.106.154";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA BRASIL, 00611 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003884083899";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.158";
+NL.NEAddress = "201.63.106.158";
+NL.NEName = "201.63.106.158";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PAULISTA, 2100 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284090797";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.162";
+NL.NEAddress = "201.63.106.162";
+NL.NEName = "201.63.106.162";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA MIGUEL,S, 02515 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110006621104490";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.166";
+NL.NEAddress = "201.63.106.166";
+NL.NEName = "201.63.106.166";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ADELINO,PE, 02074 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110006197048991";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.170";
+NL.NEAddress = "201.63.106.170";
+NL.NEName = "201.63.106.170";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PACAEMBU, 1047 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003825100090";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.174";
+NL.NEAddress = "201.63.106.174";
+NL.NEName = "201.63.106.174";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA ARICANDUVA, 05555 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110006721032890";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.178";
+NL.NEAddress = "201.63.106.178";
+NL.NEName = "201.63.106.178";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA ALBERT EINSTEIN, 627 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003743040492";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.182";
+NL.NEAddress = "201.63.106.182";
+NL.NEName = "201.63.106.182";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA PIO XI, 00919 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003834001295";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.186";
+NL.NEAddress = "201.63.106.186";
+NL.NEName = "201.63.106.186";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA NAZARE, 01902 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110005062003096";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.190";
+NL.NEAddress = "201.63.106.190";
+NL.NEName = "201.63.106.190";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "PRACA ROSAS, 00018 - ";
+NL.Site = "BARUERI";
+NL.ServiceIdentifier = "110714191316795";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.194";
+NL.NEAddress = "201.63.106.194";
+NL.NEName = "201.63.106.194";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PEDRO II,DOM, 1241 - ";
+NL.Site = "SANTO ANDRE";
+NL.ServiceIdentifier = "116334990040792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.198";
+NL.NEAddress = "201.63.106.198";
+NL.NEName = "201.63.106.198";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA KENNEDY, 990 - ";
+NL.Site = "S BERNARDO DO CAMPO";
+NL.ServiceIdentifier = "115484330001495";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.202";
+NL.NEAddress = "201.63.106.202";
+NL.NEName = "201.63.106.202";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA DIOGO DE FARIA, 00095 - ";
+NL.Site = "GUARULHOS";
+NL.ServiceIdentifier = "118926443170994";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.206";
+NL.NEAddress = "201.63.106.206";
+NL.NEName = "201.63.106.206";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA FERNANDO P FRANCO,VOL, 00488 - ";
+NL.Site = "MOGI DAS CRUZES";
+NL.ServiceIdentifier = "113814721123797";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.210";
+NL.NEAddress = "201.63.106.210";
+NL.NEName = "201.63.106.210";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA MONTENEGRO, 00059 - ";
+NL.Site = "GUARUJA";
+NL.ServiceIdentifier = "112563383113392";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.214";
+NL.NEAddress = "201.63.106.214";
+NL.NEName = "201.63.106.214";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA ANA COSTA,DA, 00236 - ";
+NL.Site = "SANTOS";
+NL.ServiceIdentifier = "115923235099599";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.218";
+NL.NEAddress = "201.63.106.218";
+NL.NEName = "201.63.106.218";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA INDEPENDENCIA, 00095 - ";
+NL.Site = "TAUBATE";
+NL.ServiceIdentifier = "116613625927797";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.106.222";
+NL.NEAddress = "201.63.106.222";
+NL.NEName = "201.63.106.222";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA JORGE TIBIRICA, 03387 - ";
+NL.Site = "SAO JOSE DO RIO PRETO";
+NL.ServiceIdentifier = "115623233067097";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.108.178";
+NL.NEAddress = "201.63.108.178";
+NL.NEName = "201.63.108.178";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "ALAMEDA TOCANTINS, 525  1 ANDAR - ";
+NL.Site = "BARUERI";
+NL.ServiceIdentifier = "110714191092293";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.108.182";
+NL.NEAddress = "201.63.108.182";
+NL.NEName = "201.63.108.182";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "ALAMEDA TOCANTINS, 525  1 ANDAR - ";
+NL.Site = "BARUERI";
+NL.ServiceIdentifier = "110714191327193";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.110.186";
+NL.NEAddress = "201.63.110.186";
+NL.NEName = "201.63.110.186";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "RUA TUTOIA, 1157  4 ANDAR - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003884123190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.102";
+NL.NEAddress = "201.63.142.102";
+NL.NEName = "201.63.142.102";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA JUNDIAI, 01270 - ";
+NL.Site = "JUNDIAI";
+NL.ServiceIdentifier = "113264521048595";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.146";
+NL.NEAddress = "201.63.142.146";
+NL.NEName = "201.63.142.146";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA ANTONIO PIRES PIMENTEL, 02072 - ";
+NL.Site = "BRAGANCA PAULISTA";
+NL.ServiceIdentifier = "111164033203390";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.154";
+NL.NEAddress = "201.63.142.154";
+NL.NEName = "201.63.142.154";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA BENTO,S, 00507 - ";
+NL.Site = "TATUI";
+NL.ServiceIdentifier = "116603251003390";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.158";
+NL.NEAddress = "201.63.142.158";
+NL.NEName = "201.63.142.158";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA JULIO MESQUITA, 01065 - ";
+NL.Site = "CAMPINAS";
+NL.ServiceIdentifier = "111353252019192";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.162";
+NL.NEAddress = "201.63.142.162";
+NL.NEName = "201.63.142.162";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA NOVE DE ABRIL, 842 - ";
+NL.Site = "MOGI-GUACU";
+NL.ServiceIdentifier = "113823861021597";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.142.166";
+NL.NEAddress = "201.63.142.166";
+NL.NEName = "201.63.142.166";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ANTONIO DE ALMEIDA LEITE, 793 - ";
+NL.Site = "OURINHOS";
+NL.ServiceIdentifier = "114283322003593";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.174.10";
+NL.NEAddress = "201.63.174.10";
+NL.NEName = "201.63.174.10";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA NACOES UNIDAS, 2359 - ";
+NL.Site = "NOVO HAMBURGO";
+NL.ServiceIdentifier = "511820027604190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.174.14";
+NL.NEAddress = "201.63.174.14";
+NL.NEName = "201.63.174.14";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA PINHEIRO MACHADO,SEN, 678 - ";
+NL.Site = "PELOTAS";
+NL.ServiceIdentifier = "512730027604592";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.174.18";
+NL.NEAddress = "201.63.174.18";
+NL.NEName = "201.63.174.18";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA URUGUAI, 657  LJ 04 - ";
+NL.Site = "NOVO HAMBURGO";
+NL.ServiceIdentifier = "511960027604799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.174.6";
+NL.NEAddress = "201.63.174.6";
+NL.NEName = "201.63.174.6";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA TIRADENTES, 828 - ";
+NL.Site = "MARINGA";
+NL.ServiceIdentifier = "413890027604091";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.102";
+NL.NEAddress = "201.63.175.102";
+NL.NEName = "201.63.175.102";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA WASHINGTON LUIZ, 00981 - ";
+NL.Site = "PRES PRUDENTE";
+NL.ServiceIdentifier = "115073223211398";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.106";
+NL.NEAddress = "201.63.175.106";
+NL.NEName = "201.63.175.106";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA PERNAMBUCO, 1434 - ";
+NL.Site = "BELO HORIZONTE";
+NL.ServiceIdentifier = "310000027166195";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.110";
+NL.NEAddress = "201.63.175.110";
+NL.NEName = "201.63.175.110";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA CARLOS GOMES, 1234 - ";
+NL.Site = "PORTO ALEGRE";
+NL.ServiceIdentifier = "510000027606194";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.114";
+NL.NEAddress = "201.63.175.114";
+NL.NEName = "201.63.175.114";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA GUAJAJARAS, 40 AN 12 - ";
+NL.Site = "BELO HORIZONTE";
+NL.ServiceIdentifier = "310000027606292";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.118";
+NL.NEAddress = "201.63.175.118";
+NL.NEName = "201.63.175.118";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "ALAMEDA RIO BRANCO, 346 - ";
+NL.Site = "BLUMENAU";
+NL.ServiceIdentifier = "470270027606695";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.122";
+NL.NEAddress = "201.63.175.122";
+NL.NEName = "201.63.175.122";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ORLANDO,FREI, 33 - ";
+NL.Site = "CANOAS";
+NL.ServiceIdentifier = "510620027606793";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.126";
+NL.NEAddress = "201.63.175.126";
+NL.NEName = "201.63.175.126";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA RIO DE JANEIRO, 1887 - ";
+NL.Site = "CASCAVEL";
+NL.ServiceIdentifier = "411350027606891";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.130";
+NL.NEAddress = "201.63.175.130";
+NL.NEName = "201.63.175.130";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA BENTO GONCALVEZ, 1354  Sala 102 - ";
+NL.Site = "LAJEADO";
+NL.ServiceIdentifier = "511530027606390";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.134";
+NL.NEAddress = "201.63.175.134";
+NL.NEName = "201.63.175.134";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA DEODORO DA FONSECA,MAL, 621  E - ED SOUZA - SALA 1 - ";
+NL.Site = "CHAPECO";
+NL.ServiceIdentifier = "470460027603998";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.138";
+NL.NEAddress = "201.63.175.138";
+NL.NEName = "201.63.175.138";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA CASTELO BRANCO, 747  LJ COMERCIAL 1 - ";
+NL.Site = "IPATINGA";
+NL.ServiceIdentifier = "313610027606990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.142";
+NL.NEAddress = "201.63.175.142";
+NL.NEName = "201.63.175.142";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA TUBARAO, 21  SALA 2 - ";
+NL.Site = "ITAJAI";
+NL.ServiceIdentifier = "470890027605590";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.146";
+NL.NEAddress = "201.63.175.146";
+NL.NEName = "201.63.175.146";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA FERNANDO LOBO, 103  SALA 901 A 903 - ";
+NL.Site = "JUIZ DE FORA";
+NL.ServiceIdentifier = "314190027607093";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.154";
+NL.NEAddress = "201.63.175.154";
+NL.NEName = "201.63.175.154";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA NELSON SA EARP, 95  SL 206 - ";
+NL.Site = "PETROPOLIS";
+NL.ServiceIdentifier = "212140027605099";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.158";
+NL.NEAddress = "201.63.175.158";
+NL.NEName = "201.63.175.158";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA DULCIDIO.CEL, 23 - ";
+NL.Site = "PONTA GROSSA";
+NL.ServiceIdentifier = "415020027605197";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.162";
+NL.NEAddress = "201.63.175.162";
+NL.NEName = "201.63.175.162";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA DOS ANDRADES, 1234 AN 15 - CJ 1504/1511 - ";
+NL.Site = "PORTO ALEGRE";
+NL.ServiceIdentifier = "510000027606597";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.170";
+NL.NEAddress = "201.63.175.170";
+NL.NEName = "201.63.175.170";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA NICACIO,MAJ, 1160 - ";
+NL.Site = "FRANCA";
+NL.ServiceIdentifier = "112260027163291";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.174";
+NL.NEAddress = "201.63.175.174";
+NL.NEName = "201.63.175.174";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA PERNAMBUCO, 906 - ";
+NL.Site = "LONDRINA";
+NL.ServiceIdentifier = "413610027164092";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.178";
+NL.NEAddress = "201.63.175.178";
+NL.NEName = "201.63.175.178";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA RUI BARBOSA, 695  SL 105 - ";
+NL.Site = "MACAE";
+NL.ServiceIdentifier = "211600027164190";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.182";
+NL.NEAddress = "201.63.175.182";
+NL.NEName = "201.63.175.182";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA JAIME CAMARA,DOM, 205 - ";
+NL.Site = "FLORIANOPOLIS";
+NL.ServiceIdentifier = "470000027163095";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.186";
+NL.NEAddress = "201.63.175.186";
+NL.NEName = "201.63.175.186";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA CANDIDO XAVIER, 647 - ";
+NL.Site = "CURITIBA";
+NL.ServiceIdentifier = "410000027162098";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.190";
+NL.NEAddress = "201.63.175.190";
+NL.NEName = "201.63.175.190";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA JOAO CESAR DE OLIVEIRA, 1007 - ";
+NL.Site = "CONTAGEM";
+NL.ServiceIdentifier = "318560027686990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.194";
+NL.NEAddress = "201.63.175.194";
+NL.NEName = "201.63.175.194";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ISABEL,PRSA, 205  205 A - ";
+NL.Site = "CRICIUMA";
+NL.ServiceIdentifier = "470510027162697";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.198";
+NL.NEAddress = "201.63.175.198";
+NL.NEName = "201.63.175.198";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA JULIO DE CASTILHOS, 1969 - ";
+NL.Site = "CAXIAS DO SUL";
+NL.ServiceIdentifier = "510710027685993";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.202";
+NL.NEAddress = "201.63.175.202";
+NL.NEName = "201.63.175.202";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA CELSO,MONS, 225  AN 2 - ";
+NL.Site = "CURITIBA";
+NL.ServiceIdentifier = "410000027162795";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.206";
+NL.NEAddress = "201.63.175.206";
+NL.NEName = "201.63.175.206";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA RONDON PACHECO,GOV, 2340 - ";
+NL.Site = "UBERLANDIA";
+NL.ServiceIdentifier = "325490027166598";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.210";
+NL.NEAddress = "201.63.175.210";
+NL.NEName = "201.63.175.210";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ALBERTO PASQUALINE, 125 - ";
+NL.Site = "VOLTA REDONDA";
+NL.ServiceIdentifier = "213310027166696";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.214";
+NL.NEAddress = "201.63.175.214";
+NL.NEName = "201.63.175.214";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA ITAIOPOLIS, 206 - ";
+NL.Site = "JOINVILLE";
+NL.ServiceIdentifier = "470990027163792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.218";
+NL.NEAddress = "201.63.175.218";
+NL.NEName = "201.63.175.218";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA PEDRO,S, 154  SL 1505/1506 - ";
+NL.Site = "NITEROI";
+NL.ServiceIdentifier = "211880027164495";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.222";
+NL.NEAddress = "201.63.175.222";
+NL.NEName = "201.63.175.222";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA WALMOR,DOM, 383  SL 406 - ";
+NL.Site = "NOVA IGUACU";
+NL.ServiceIdentifier = "211900027164593";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.230";
+NL.NEAddress = "201.63.175.230";
+NL.NEName = "201.63.175.230";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA FELIX DA CUNHA, 772  SL 1/2 - ";
+NL.Site = "PASSO FUNDO";
+NL.ServiceIdentifier = "512020027164996";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.94";
+NL.NEAddress = "201.63.175.94";
+NL.NEName = "201.63.175.94";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA VINTE E QUATRO, 01480 - ";
+NL.Site = "BARRETOS";
+NL.ServiceIdentifier = "110693322110692";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.175.98";
+NL.NEAddress = "201.63.175.98";
+NL.NEName = "201.63.175.98";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA GETULIO VARGAS, 21050 - ";
+NL.Site = "BAURU";
+NL.ServiceIdentifier = "110743214034794";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.202.222";
+NL.NEAddress = "201.63.202.222";
+NL.NEName = "201.63.202.222";
+NL.Customer = "BANCO_ABN_AMRO_REAL_S_A_";
+NL.Location = "AVENIDA LUIS ANTONIO,BRIG, 1813 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003284235299";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.232.134";
+NL.NEAddress = "201.63.232.134";
+NL.NEName = "201.63.232.134";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "PRACA REPUBLICA, 497 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003221128797";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.232.138";
+NL.NEAddress = "201.63.232.138";
+NL.NEName = "201.63.232.138";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "PRACA REPUBLICA, 497 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003221152990";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.232.58";
+NL.NEAddress = "201.63.232.58";
+NL.NEName = "201.63.232.58";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PRESTES MAIA, 220 20 ANDAR - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003227124092";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.232.62";
+NL.NEAddress = "201.63.232.62";
+NL.NEName = "201.63.232.62";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AVENIDA PRESTES MAIA, 220 20 ANDAR - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110003227123894";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.232.66";
+NL.NEAddress = "201.63.232.66";
+NL.NEName = "201.63.232.66";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "RUA AMADOR BUENO, 474 - ";
+NL.Site = "S PAULO";
+NL.ServiceIdentifier = "110005693099495";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.239.254";
+NL.NEAddress = "201.63.239.254";
+NL.NEName = "201.63.239.254";
+NL.Customer = "FEDEX";
+NL.Location = "AV SEVERO DULLIUS, 1165 PORTO ALEGRE RS - PORTO ALEGRE - RS";
+NL.Site = "PORTO ALEGRE - RS";
+NL.ServiceIdentifier = "18800";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.61.106";
+NL.NEAddress = "201.63.61.106";
+NL.NEName = "AMIL_BARRA";
+NL.Customer = "AMIL_FARMALIFE";
+NL.Location = "AVENIDA DAS AMERICAS 4666-";
+NL.Site = "R DE JANEIRO-RJ";
+NL.ServiceIdentifier = "9840";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.67.170";
+NL.NEAddress = "201.63.67.170";
+NL.NEName = "AMIL_ASSISTENCIA_MEDICA";
+NL.Customer = "AMICO SAUDE";
+NL.Location = "R. Barao de Jundiai, 313-Lapa I";
+NL.Site = "S PAULO-SP";
+NL.ServiceIdentifier = "110003834139793";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.72.210";
+NL.NEAddress = "201.63.72.210";
+NL.NEName = "AMIL_PRQ_GRAFICO";
+NL.Customer = "ESHO EMPRESA SERV HOSPITALARES";
+NL.Location = "R. Barao Triunfo - 139 Caxias-H.Care";
+NL.Site = "Duque de Caxias-RJ";
+NL.ServiceIdentifier = "98309";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.63.72.2";
+NL.NEAddress = "201.63.72.2";
+NL.NEName = "LSF_Piratininga_RJ";
+NL.Customer = "LAB MEDICOS DR SERGIO FRANCO";
+NL.Location = "Etr. Francisco Cruz Nunes, 6723 - Lj 103-PIT";
+NL.Site = "NITEROI-RJ";
+NL.ServiceIdentifier = "NRI 2023480";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.103.114";
+NL.NEAddress = "201.91.103.114";
+NL.NEName = "201.91.103.114";
+NL.Customer = "BANESPA";
+NL.Location = "RUA HUNGRIA, 1000 SAO PAULO SP - SAO PAULO - BR";
+NL.Site = "SAO PAULO - BR";
+NL.ServiceIdentifier = "19581";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.164.234";
+NL.NEAddress = "201.91.164.234";
+NL.NEName = "201.91.164.234";
+NL.Customer = "MARITIMA_SEGUROS_SA";
+NL.Location = "AV SENADOR VIRGILIO TAVORA 1727 - ";
+NL.Site = "STA CRUZ DO SUL";
+NL.ServiceIdentifier = "850000029261193";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.102";
+NL.NEAddress = "201.91.227.102";
+NL.NEName = "201.91.227.102";
+NL.Customer = "FEDEX";
+NL.Location = "RUA MARINA CIUFULLI ZANFELICE, 280 LAPA SP - SAO PAULO";
+NL.Site = "SAO PAULO";
+NL.ServiceIdentifier = "17066";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.106";
+NL.NEAddress = "201.91.227.106";
+NL.NEName = "201.91.227.106";
+NL.Customer = "FEDEX";
+NL.Location = "EDIFICIO TECA 5 ANDAR AEROPORTO DE GUARULHOS - GUARULHOS - SP";
+NL.Site = "GUARULHOS - SP";
+NL.ServiceIdentifier = "18798";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.38";
+NL.NEAddress = "201.91.227.38";
+NL.NEName = "201.91.227.38";
+NL.Customer = "EBICS";
+NL.Location = "AV. TEGULA 888 BL A - TERREO ATIBAIA - SAO PAULO - ATIBAIA/SAO PAULO";
+NL.Site = "BRASIL";
+NL.ServiceIdentifier = "11051 44171032-98";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.86";
+NL.NEAddress = "201.91.227.86";
+NL.NEName = "201.91.227.86";
+NL.Customer = "FEDEX";
+NL.Location = "RUA MARINA CIUFULLI ZANFELICE, 291  LAPA  SP - SAO PAULO";
+NL.Site = "SAO PAULO";
+NL.ServiceIdentifier = "18792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.90";
+NL.NEAddress = "201.91.227.90";
+NL.NEName = "201.91.227.90";
+NL.Customer = "FEDEX";
+NL.Location = "RUA MARINA CIUFULLI ZANFELICE, 291  LAPA  SP - SAO PAULO";
+NL.Site = "SAO PAULO";
+NL.ServiceIdentifier = "18792";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.227.98";
+NL.NEAddress = "201.91.227.98";
+NL.NEName = "201.91.227.98";
+NL.Customer = "FEDEX";
+NL.Location = "AV SAO LUIZ, 187 CENTRO SP - SAO PAULO";
+NL.Site = "SAO PAULO";
+NL.ServiceIdentifier = "18797";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.240.154";
+NL.NEAddress = "201.91.240.154";
+NL.NEName = "201.91.240.154";
+NL.Customer = "BANCO ITAU";
+NL.Location = "AV. DO ESTADO 5533 - SAO PAULO II";
+NL.Site = "SAO PAULO";
+NL.ServiceIdentifier = "11000 32073294 97";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.33.10";
+NL.NEAddress = "201.91.33.10";
+NL.NEName = "201.91.33.10";
+NL.Customer = "FEDEX";
+NL.Location = "AEROPORTO DE CAMPINAS CAMPINAS SP - CAMPINAS - SP";
+NL.Site = "CAMPINAS - SP";
+NL.ServiceIdentifier = "18799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+NL = NewObject();
+NL.KEY = "201.91.33.6";
+NL.NEAddress = "201.91.33.6";
+NL.NEName = "201.91.33.6";
+NL.Customer = "FEDEX";
+NL.Location = "AEROPORTO DE CAMPINAS CAMPINAS SP - CAMPINAS - SP";
+NL.Site = "CAMPINAS - SP";
+NL.ServiceIdentifier = "18799";
+AddDataItem("CLIENTES_GLOBAIS", NL);
+
+log ("Fim Pop_CLIENTES_GLOBAIS");

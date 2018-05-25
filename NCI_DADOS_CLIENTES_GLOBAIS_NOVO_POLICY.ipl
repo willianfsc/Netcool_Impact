@@ -1,0 +1,42 @@
+
+// DADOS CLIENTES GLOBAIS NOVO
+// Inicio
+
+log ("CLGLOB2: Inicio ");
+
+ TAB1 = "EVENTOS";
+ FIL1 = "(Manager = 'ICMP ISM' or (Class = 40000 and AlertKey like '.*CPE')) and (URL not like '@Impact_CLGLOB') and (ServerName LIKE 'DOM1.*')";
+ EVROOT = GetByFilter(TAB1, FIL1, false);
+ Numroot = length(EVROOT);
+ if (Numroot >0)
+ {
+  I = Numroot-1;
+  while (I>=0) 
+  {
+   TABELA = "CLIENTES_GLOBAIS";
+               IPAPROCURAR = EVROOT[I].NEAddress;
+               FILTRO = "NEAddress='"+IPAPROCURAR+"'";
+   SERVERSERIAL = EVROOT[I].ServerSerial;
+   FILTROUPD = "ServerSerial="+SERVERSERIAL + " AND NEAddress='"+IPAPROCURAR+"'";
+   RET = GetByFilter(TABELA, FILTRO, false);
+   NumR = length(RET);
+   log ("CLGLOB: NumR = "+NumR);
+   log ("CLGLOB: NEAddress = "+IPAPROCURAR);
+   log ("CLGLOB: ServerSerial= "+SERVERSERIAL );
+   if (NumR > 0)
+   {
+    UPD = "Customer='"+RET[0].Customer+"', NEName='"+RET[0].NEName+"', Location='"+RET[0].Location+"', Site='"+RET[0].Site+"', ServiceIdentifier='"+RET[0].ServiceIdentifier+"'";
+    BatchUpdate (TAB1, FILTROUPD, UPD);
+    log ("CLGLOB: OK - " + IPAPROCURAR + " " + RET[0].Customer + " " + RET[0].Site);
+   }
+   else 
+   {
+    log ("CLGLOB: IP " + IPAPROCURAR + " nao encontrado!");
+   }
+      URL = EVROOT[I].URL;
+   UPD = "URL='"+URL+"@Impact_CLGLOB'";
+   BatchUpdate (TAB1, FILTROUPD, UPD);
+   I = I - 1;
+  }
+ }
+log ("CLGLOB: Fim ");

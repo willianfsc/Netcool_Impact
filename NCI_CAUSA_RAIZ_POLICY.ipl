@@ -1,0 +1,104 @@
+
+// CAUSA RAIZ POLICY
+// Inicio
+
+log ("CRPOL: Inicio");
+log ("CRPOL: ServerName: " + @ServerName);
+efeito = 0;              //este flag indicara quando encontramos um outro
+                         //evento que sera raiz do evento atual.
+raiz = 0;               // este flag indicara quando o proprio evento deve
+                        // ser considerado como raiz.
+TABELA = "CONEXOES";
+NOMEAPROCURAR = @NEName;
+FILTRO = "NENAME_B='"+NOMEAPROCURAR+"'";
+log ("CRPOL: procurando "+FILTRO+" em "+TABELA);
+PROCURA = GetByFilter(TABELA, FILTRO, false);
+Nump = length(PROCURA);
+log ("CRPOL: Nump = "+Nump);
+if (Nump > 0) {
+        TAB2 = "EVENTOS";
+        FIL2 = "(NEName='"+PROCURA[0].NENAME_A+"')AND(NmosCauseType>0)AND(Category=250)AND(Severity>0)AND(Class<>48741)";
+        log ("CRPOL: Encontrado "+PROCURA[0].NENAME_A);
+        log ("CRPOL: procurando "+FIL2+" em "+TAB2);
+        PROCCAUSA = GetByFilter(TAB2, FIL2, false);
+        Numpc = length(PROCCAUSA);
+        if (Numpc > 0) {
+                // Encontramos um evento ja assinalado como causa ou efeito.
+                // isto significa que o evento sendo tratado eh um efeito.
+                log ("CRPOL: Encontrado evento raiz!");
+                @NmosCauseType = 2;
+                @NmosSerial = PROCCAUSA[0].NmosSerial;
+                @Severity = 1;
+                efeito = 1;
+        }
+        while (efeito == 0 AND raiz == 0) {
+                NOMEAPROCURAR = PROCURA[0].NENAME_A;
+                FILTRO = "NENAME_B='"+NOMEAPROCURAR+"'";
+                log ("CRPOL: procurando "+FILTRO+" em "+TABELA);
+                PROCURA = GetByFilter(TABELA, FILTRO, false);
+                Nump = length(PROCURA);
+                if (Nump == 0) {
+                        // nao existem mais links acima
+                        // o evento analizado deve ser considerado como raiz.
+			// mas nao setamos o NmosCauseType pois a Automation
+			// NodeInterfaceCorrelation fara isto
+                        raiz = 1;
+                        @NmosCauseType = 1;
+                        @Severity = 5;
+                        SSER = String(@ServerSerial);
+                        @NmosSerial = SSER;
+                        log ("CRPOL: Nao existem outras raizes...Evento sendo tratado eh a propria raiz!");
+                        log ("CRPOL: " + @NEName + " eh ROOTCAUSE - Serial: " + SSER + " Prec.Ser: " + @NmosSerial);
+                        }
+                else {
+                        TAB2 = "EVENTOS";
+                        FIL2 = "(NEName='"+PROCURA[0].NENAME_A+"')AND(NmosCauseType>0)AND(Category=250)AND(Severity>0)AND(Class<>48741)";
+                        log ("CRPOL: Encontrado "+PROCURA[0].NENAME_A);
+                        log ("CRPOL: procurando "+FIL2+" em "+TAB2);
+                        PROCCAUSA = GetByFilter(TAB2, FIL2, false);
+                        Numpc = length(PROCCAUSA);
+                        if (Numpc > 0) {
+                                // Encontramos um evento ja assinalado como causa ou efeito.
+                                // isto significa que o evento sendo tratado eh um efeito.
+                                log ("CRPOL: Encontrado evento raiz!");
+                                @NmosCauseType = 2;
+                                @NmosSerial = PROCCAUSA[0].NmosSerial;
+                                @Severity = 1;
+                                efeito = 1;
+                        }
+                } // fim do else
+        } // fim do while
+ }
+
+
+ else
+ {
+        log ("CRPOL: NEName='"+@NEName+"' nao encontrado em "+TABELA);
+	 if ((@Category == 250)and (@NmosCauseType == 0))
+	 {
+             @NmosCauseType = 1;
+             SSER = String(@ServerSerial);
+             @NmosSerial = SSER;
+        }
+ }
+
+
+// Indica a passagem do evento pela policy
+// @URL = @URL + '@Impact_CRPOL';
+
+// Retornando o evento.
+
+ReturnEvent(EventContainer);
+
+log("CRPOL: ReturnEvent successful");
+
+log("CRPOL: *** fim ***");
+
+
+
+
+
+
+
+
+

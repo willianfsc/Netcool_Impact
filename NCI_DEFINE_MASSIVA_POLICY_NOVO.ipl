@@ -1,0 +1,83 @@
+
+// DEFINE_MASSIVA_POLICY_NOVO
+
+// Esta policy seta o campo Massiva do evento com uma das seguintes informacoes:
+// 0 - A ser definido pelo operador
+// 1 - Alarme de status para o Granit
+// 2 - Massiva (Evento que afeta a cliente)
+// 3 - Evento apenas informativo.
+
+// As regras que definem sobre esta informacao estao no seguinte DAtAType:
+// Regras_Massivas
+
+// Inicio
+
+log ("DEFMA:"+Alert_NEName+" Inicio DEFINE_MASSIVA_POLICY");
+
+// Retorna todos os OrgNodes de Regras_Massiva onde Categoria e Tecnologia s?o
+// iguais ao evento recebido.
+
+TABELA = "IMPACT_REGRAS";
+FILTRO = "((TECHNOLOGY="+EVROOT[I].Technology+")AND(CATEGORY="+EVROOT[I].Category+")AND(SEVERITY="+EVROOT[I].Severity+"))";
+
+RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+
+NumR = length(RETREGRAS);
+log ("DEFMA:"+Alert_NEName+" filtro = "+FILTRO);
+log ("DEFMA:"+Alert_NEName+" Retorna "+NumR+" regras");
+
+if (NumR == 1)
+{
+ Alert_Massiva = RETREGRAS[0].MASSIVA;
+ log ("DEFMA:"+Alert_NEName+" Massiva encontrada = "+Alert_Massiva);
+}
+
+if (NumR > 1)
+{
+ count = NumR - 1;
+ ATSEV = RETREGRAS[count].SEVERITY;
+ PONTEIRO = count;
+ log ("DEFMA:"+Alert_NEName+" ATSEV ="+ATSEV+" PONTEIRO ="+PONTEIRO);
+ while ( count >= 1 )
+ {
+  count = count - 1;
+  SEV2 = RETREGRAS[count].SEVERITY;
+  log ("DEFMA:"+Alert_NEName+" SEV2="+SEV2);
+  if (int(ATSEV) < int(SEV2))
+  {
+   PONTEIRO = count;
+   ATSEV = SEV2;
+   log ("DEFMA:"+Alert_NEName+" ATSEV ="+ATSEV+" PONTEIRO ="+PONTEIRO);
+  }
+ }
+ Alert_Massiva = RETREGRAS[PONTEIRO].MASSIVA;
+ log ("DEFMA:"+Alert_NEName+" Massiva encontrada = "+Alert_Massiva);
+}
+
+if (NumR == 0)
+{
+ Alert_Massiva = 0;
+ log ("DEFMA:"+Alert_NEName+" Regra nao encontrada - Massiva tipo 0");
+}
+
+// Indica a passagem do evento pela policy
+Alert_URL = EVROOT[I].URL + '@Impact_NEND';
+
+// Retornando o evento.
+
+FILTROUPD = "ServerSerial= "+EVROOT[I].ServerSerial;
+//FILTROUPD = "Identifier= '"+EVROOT[I].Identifier +"'";
+
+if (EVROOT[I].Severity > 0 and EVROOT[I].ServerName like '^DOM2.*')
+{  
+  UPD2 = "Massiva = "+Alert_Massiva+", URL = '"+Alert_URL+"'";
+ BatchUpdate (TABLE, FILTROUPD, UPD2);
+}
+if (EVROOT[I].Severity > 0 and EVROOT[I].ServerName like '^DOM1.*')
+{  
+  UPD1 = "NEName='"+Alert_NEName+"', NEAddress='"+Alert_NEAddress+"', Location='"+Alert_Location+"', Acknowledged="+Alert_Acknowledged+", LocalNodeAlias='"+Alert_LocalNodeAlias+"', URL='"+Alert_URL+"', RemoteNodeAlias='"+Alert_RemoteNodeAlias+"', Massiva = "+Alert_Massiva;
+  BatchUpdate (TABLE, FILTROUPD, UPD1);
+}
+
+log("DEFMA:Fim da policy ");
+

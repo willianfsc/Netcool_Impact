@@ -1,0 +1,68 @@
+// Politica para enriquecer eventos com informacao de numero de BA/TP
+
+// Inicio
+
+horario = getdate();
+limiteconsulta = horario - 5400;
+
+
+log ("BATP: Inicio");
+
+log ("BATP: Consultando eventos");
+
+TABEVENTO = "EVENTOS";
+FILTROEV = "(Abertura = 10) and (Severity >= 4) and (Category <> 197) and (Summary not like 'BA = ') and (LastOccurrence>="+string(limiteconsulta)+") and (ServerName LIKE '^DOM')";
+EV = GetByFilter(TABEVENTO, FILTROEV, false);
+NumR = length(EV);
+
+if (NumR > 0)
+{ 
+ I = NumR - 1;
+
+ while (I>=0)
+ {
+  log ("BATP: Consultando Historico de Massivas para ServerSerial" + string(EV[I].ServerSerial));
+              log ("BATP: ServerName: " + EV[I].ServerName);
+  TABMASSIVA = "HISTORICO_MASSIVA";
+    FILTROM = "Server_Serial='"+string(EV[I].ServerSerial)+"'";
+    RET = GetByFilter(TABMASSIVA, FILTROM, false);
+    NumR = length(RET);
+  if (NumR > 0)
+    { 
+   J = NumR - 1;
+   while (J>=0)
+   {
+    TAM = length(RET[J].NUMERO_BA);
+    if (TAM != 0)   // Massiva tem BA Aberto
+    {
+     UPSUMMARY = "Summary = '"+ EV[I].Summary + " - ( BA = " + RET[J].NUMERO_BA + " )'";
+     BatchUpdate(TABEVENTO, "ServerSerial="+string(EV[I].ServerSerial), UPSUMMARY);
+     log ("BATP: OK - ServerSerial: " + EV[I].ServerSerial + " - " + UPSUMMARY);
+    }
+    else
+    {
+
+     log ("BATP: OK - ServerSerial: " + EV[I].ServerSerial + " - Sem BA no HISTORICO");
+    }
+
+    J = J - 1;
+
+   }
+  }
+  else 
+    {
+   log ("BATP: NOK - ServerSerial: " + EV[I].ServerSerial + " nao esta na base de HISTORICO"); 
+
+  }
+  
+  I = I - 1;
+ }
+}
+else 
+{
+ log ("BATP: Nao existem eventos a tratar"); 
+}
+
+horario2 = getdate();
+tdecor = horario2 - horario;
+log ("BATP: ****** Fim BATP -> Tempo decorrido na politica: "+string(tdecor)+"s");

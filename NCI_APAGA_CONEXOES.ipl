@@ -1,0 +1,13 @@
+
+DataType = "CONEXOES";
+
+CountOnly = False;
+
+MyNodes = GetByFilter(DataType, "", CountOnly);
+
+BatchDelete(DataType,NULL,MyNodes);
+
+
+
+
+

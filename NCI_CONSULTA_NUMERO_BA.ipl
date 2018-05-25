@@ -1,0 +1,61 @@
+// Politica para adicionar ao TrapReason o Numero de BA                                                                              
+                                                                                                                                     
+ // Inicio                                                                                                                           
+                                                                                                                                     
+ horario = getdate();                                                                                                                
+                                                                                                                                     
+ log ("NUM_BA: ****** Inicio Consulta Num BA ******");                                                                               
+ log ("NUM_BA: Consultando eventos no ObjectServer");                                                                                
+                                                                                                                                     
+ TABEVENTOS = "EVENTOS";                                                                                                             
+ //FILTROEVENTOS = "(Massiva > 0) and (Abertura > 0) and (Class = 48777) and (TrapReason = '')";
+ FILTROEVENTOS = "(Massiva in (1,2)) and (Abertura > 0) and (Class <> 48741) and (TrapReason = '')";                               
+                                                                                                                                     
+ log ("NUM_BA: " + FILTROEVENTOS);                                                                                                   
+ EV = GetByFilter(TABEVENTOS, FILTROEVENTOS, false);                                                                                 
+ NumEV = length(EV);                                                                                                                 
+                                                                                                                                     
+   if (NumEV>0)                                                                                                                      
+ {                                                                                                                                   
+  I = NumEV - 1;                                                                                                                     
+                                                                                                                                     
+  while (I>=0)                                                                                                                       
+  {                                                                                                                                  
+   //Verificando se Server Serial e Serial do ObjectServer é igual ao Server Serial e Serial da base de dados oracle                 
+   log ("NUM_BA: Consultando eventos na tabela Historico Massiva");                                                                  
+   TABHISTMASS = "HISTORICO_MASSIVA";                                                                                                
+   FILTROHISTMASS = "Server_Serial='"+string(EV[I].ServerSerial)+"' and Serial='"+string(EV[I].Serial)+"' and NUMERO_BA is not NULL";
+   HM = GetByFilter(TABHISTMASS, FILTROHISTMASS, false);                                                                             
+   NumH = length(HM);                                                                                                                
+                                                                                                                                     
+    if (NumH>0)                                                                                                                      
+    {                                                                                                                                
+     H = NumH -1;                                                                                                                    
+     while (H>=0)                                                                                                                    
+     {                                                                                                                               
+      //atualizando o TrapReason(Eventos) com o NUMERO_BA(Historico Massiva)                                                         
+      TrapReason = "TrapReason = '" + HM[H].NUMERO_BA + "'";                                                                         
+      FILTROTrapReason = "ServerSerial="+ EV[I].ServerSerial;                                                                        
+      BatchUpdate(TABEVENTOS, FILTROTrapReason, TrapReason);                                                                         
+      log ("NUM_BA: OK - TrapReason atualizado com o numero de BA:" + HM[H].NUMERO_BA + " - Serial:" + EV[I].Serial);                
+                                                                                                                                     
+      H = H - 1;                                                                                                                     
+     }                                                                                                                               
+    }                                                                                                                                
+    else                                                                                                                             
+    {                                                                                                                                
+     log ("NUM_BA: " + EV[I].ServerSerial + " ou " + EV[I].Serial + " nao esta na base de HISTORICO_MASSIVA");                       
+                                                                                                                                     
+    }                                                                                                                                
+                                                                                                                                     
+   I = I - 1;                                                                                                                        
+  }                                                                                                                                  
+  }                                                                                                                                  
+ else                                                                                                                                
+ {                                                                                                                                   
+  log ("NUM_BA: Nao existem eventos a tratar");                                                                                      
+ }                                                                                                                                   
+                                                                                                                                     
+ horario2 = getdate();                                                                                                               
+ tdecor = horario2 - horario;                                                                                                        
+ log ("NUM_BA: ****** Fim CONSULTA_NUMERO_BA -> Tempo decorrido na politica: "+string(tdecor)+"s ******");                           

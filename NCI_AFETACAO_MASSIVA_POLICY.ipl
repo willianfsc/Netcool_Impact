@@ -1,0 +1,65 @@
+// Politica para adicionar ao AdditionalInfo o                                                                                                              
+		                                                                                                                                                        
+		// Inicio                                                                                                                                               
+		                                                                                                                                                        
+		horario = getdate();                                                                                                                                    
+		consultalimite = horario - 10800;                                                                                                                       
+		                                                                                                                                                        
+		log ("AFT_MASS: ****** Inicio Afetacao Massiva ******");                                                                                                
+		log ("AFT_MASS: Consultando eventos no ObjectServer");                                                                                                  
+		                                                                                                                                                        
+		TABEVENTOS = "EVENTOS";                                                                                                                                 
+		FILTROEVENTOS = "(Massiva = 2) and (Abertura > 0) and (AdditionalInfo not like 'Afetacao') and (LastOccurrence>="+string(consultalimite)+")";               
+		log ("AFT_MASS: " + FILTROEVENTOS);		
+		EV = GetByFilter(TABEVENTOS, FILTROEVENTOS, false);                                                                                                     
+		NumEV = length(EV);                                                                                                                                     
+		                                                                                                                                                        
+		                                                                                                                                                        
+		  	if (NumEV>0)                                                                                                                                    
+			{	                                                                                                                                        
+				                                                                                                                                        
+				I = NumEV - 1;                                                                                                                          
+		                                                                                                                                                        
+				while (I>=0)                                                                                                                            
+				{                                                                                                                                       
+					//Verificando se Server Serial e Serial do ObjectServer � igual ao Server Serial e Serial da base de dados oracle               
+					log ("AFT_MASS: Consultando eventos na tabela Historico Massiva");                                                              
+					TABHISTMASS = "HISTORICO_MASSIVA";                                                                                              
+					FILTROHISTMASS = "Server_Serial='"+string(EV[I].ServerSerial)+"' and Serial='"+string(EV[I].Serial)+"'";                        
+					HM = GetByFilter(TABHISTMASS, FILTROHISTMASS, false);                                                                           
+					NumH = length(HM);                                                                                                              
+		                                                                                                                                                        
+						if (NumH>0)                                                                                                             
+						{	                                                                                                                
+							H = NumH -1;                                                                                                    
+							while (H>=0)                                                                                                    
+							{                                                                                                               
+								//atualizando o  AdditionalInfo(Eventos) com o NUMERO_AFETADOS(Historico Massiva)                           
+								UPAdditionalInfo = "AdditionalInfo = 'Afetacao ( " + HM[H].NUMERO_AFETADOS + " )'";
+								FILTROUPAdditionalInfo = "ServerSerial="+ EV[I].ServerSerial;                                               
+								BatchUpdate(TABEVENTOS, FILTROUPAdditionalInfo, UPAdditionalInfo);                                              
+								log ("AFT_MASS: OK - AdditionalInfo atualizado com o numero de afetados " + EV[I].ServerSerial);                                  
+															                                                
+							H = H - 1;                                                                                                      
+							}		                                                                                                
+						}                                                                                                                       
+						else                                                                                                                    
+						{                                                                                                                       
+							log ("AFT_MASS: " + EV[I].ServerSerial + " ou " + EV[I].Serial + " nao esta na base de HISTORICO_MASSIVA");	
+							                                                                                                                
+						}                                                                                                                       
+							                                                                                                                
+					I = I - 1;	                                                                                                                
+				}                                                                                                                                       
+			                                                                                                                                                
+			                                                                                                                                                
+		                                                                                                                                                        
+		 	}                                                                                                                                               
+			else                                                                                                                                            
+			{                                                                                                                                               
+				log ("AFT_MASS: Nao existem eventos a tratar");	                                                                                        
+			}                                                                                                                                               
+			                                                                                                                                                
+		horario2 = getdate();                                                                                                                                   
+		tdecor = horario2 - horario;                                                                                                                            
+		log ("AFT_MASS: ****** Fim Afetacao Massiva -> Tempo decorrido na politica: "+string(tdecor)+"s ******");

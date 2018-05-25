@@ -1,0 +1,153 @@
+// Inicio
+
+log ("RESP-ICS: Inicio CIC-ICS_RESPOSTA_POLICY");
+
+// Recebe string XML
+
+XMLSTRING = @JMSMessage;
+//XMLSTRING = '<?xml version="1.0" standalone="yes"?><evento><ServerSerial>120468815</ServerSerial><Serial>120468815</Serial><cliente><id>123</id><nome>ALBERTO NEVES</nome><terminal><numero>1633333122</numero></terminal></cliente></evento>';
+//XMLSTRING = '<?xml version="1.0"?><evento><ServerSerial>138118942</ServerSerial><Serial>11257400</Serial><cliente><id>9232201351</id><nome>TLD TELEDATA TECNOLOGIA EM CONECTIVIDADE LTDA</nome><terminal><numero>1141536333</numero></terminal></cliente><cliente><id>6158370340</id><nome>HUAWEI DO BRASIL TELECOMUNICACOES LTDA</nome><terminal><numero>1135023304</numero></terminal></cliente><cliente><id>3267388866</id><nome>HUAWEI DO BRASIL LTDA</nome><terminal><numero>1137725714</numero></terminal></cliente><cliente><id>3267386812</id><nome>HUAWEI DO BRASIL LTDA</nome><terminal><numero>1137424975</numero></terminal></cliente><cliente><id>3267386065</id><nome>HUAWEI DO BRASIL LTDA</nome><terminal><numero>1135074889</numero></terminal></cliente><cliente><id>6146094378</id><nome>HUAWEI DO BRASIL TELECOMUNICACOES LTDA</nome><terminal><numero>1137390004</numero></terminal></cliente></evento>';
+
+// Usar DSA XML para interpretar esta string
+
+// Cria referencia Document Data Item
+log ("RESP-ICS:"+XMLSTRING);
+
+B = GetByFilter("Resp-ICS", XMLSTRING, False);
+Num = Length(B);
+
+log ("RESP-ICS: Num B = " + Num);
+
+// Cria referencia Root-Level Element
+
+if (Num > 0) 
+{
+ TAB = {"evento"};
+ FILTRO = "";
+ MAXNUM = 1000;
+    
+ EVENTO = GetByLinks (TAB, FILTRO, MAXNUM, B);
+ NUMEV = Length(EVENTO);
+
+ log ("RESP-ICS: NUMEV = " + NUMEV);
+
+ while (NUMEV > 0) 
+ {
+
+  // Ler o conteudo da Resposta do ICS e
+  // encontrar Evento Original e criar novos eventos, um para cada terminal afetado
+
+  I = NUMEV - 1;
+  
+  SERVERSERIAL = EVENTO[I].links.ServerSerial.First;
+  SERIAL = EVENTO[I].links.Serial.First;
+
+  // BUSCA EVENTO ORIGINAL
+
+  //FILTRO = "(ServerSerial="+SERVERSERIAL.PCDATA+")AND(Serial="+SERIAL.PCDATA+")";
+  FILTRO = "(ServerSerial="+SERVERSERIAL.PCDATA+")";
+        ORIGINAL = GetByFilter("EVENTOS",FILTRO,CountOnly);
+  NumO = Length(ORIGINAL);
+
+  if ( NumO = 0 )
+  {
+   log ("RESP-ICS: FILTRO = " + FILTRO);
+   log ("RESP-ICS: Evento original nao encontrado");
+  }
+  else
+  {
+   // Evento original encontrado!
+
+   CLIENTES = EVENTO[I].links.cliente.array; 
+  
+   NumCLI = Length(CLIENTES);  // QUANTIDADE DE CLIENTES 
+ 
+   log ("RESP-ICS: NumCLI = " + NumCLI);
+   while (NumCLI > 0) 
+   {   
+    
+    J = NumCLI - 1;
+    
+    NOMECLI = CLIENTES[J].links.nome.array; // NOME DE CLIENTES
+    IDCLI = CLIENTES[J].links.id.array;
+    TERM = CLIENTES[J].links.terminal.array; // ARRAY COM TERMINAIS 
+     
+    NUMERO = TERM[0].links.numero.array; // ARRAY COM NUMEROS DO PRIMEIRO CLIENTE, 
+           // PARA OUTROS TERMINAIS MUDAR NUMERO ENTRE [ ]
+
+    NumTERM = Length(NUMERO);   // QUANTIDADE DE TERMINAIS DO CLIENTE 0,
+
+    log ("RESP-ICS: NumTERM = " + NumTERM);
+    
+    if (NumTERM = 0)
+    {
+     log ("RESP-ICS: ServerSerial : " + SERVERSERIAL.PCDATA);
+     log ("RESP-ICS: Serial : " + SERIAL.PCDATA);
+     log ("RESP-ICS: Cliente : " + IDCLI[0].PCDATA + "-" + NOMECLI[0].PCDATA);
+     TermEV = NewObject();
+
+      TermEV.Identifier = "DOM1_OS::" + SERVERSERIAL.PCDATA + SERIAL.PCDATA + NOMECLI[0].PCDATA;
+      TermEV.Severity = ORIGINAL[0].Severity;
+      TermEV.Summary = ORIGINAL[0].Summary+" RESP";
+      TermEV.Category = ORIGINAL[0].Category;
+      TermEV.Technology = ORIGINAL[0].Technology;
+      TermEV.Agent = "IMPACT";
+      TermEV.FirstOccurrence = ORIGINAL[0].FirstOccurrence;
+      TermEV.LastOccurrence = ORIGINAL[0].LastOccurrence;
+      TermEV.NmosSerial = SERVERSERIAL.PCDATA;
+      TermEV.NmosCauseType = 2;
+      NCLI = NOMECLI[0].PCDATA;
+      //TermEV.Customer = Replace(NCLI," ","_");
+      TermEV.Customer = Replace(NCLI,"/","");
+      TermEV.Customer = Replace(TermEV.Customer,"&","e");
+      TermEV.OwnerUID = 65534;
+    
+      AddDataItem("EVENTOS", TermEV);
+    }
+    while (NumTERM > 0) 
+    {
+     K = NumTERM - 1;
+
+
+     log ("RESP-ICS: ServerSerial : " + SERVERSERIAL.PCDATA);
+     log ("RESP-ICS: Serial : " + SERIAL.PCDATA);
+     log ("RESP-ICS: Cliente : " + NOMECLI[0].PCDATA);
+     log ("RESP-ICS: Terminal : " + NUMERO[K].PCDATA);
+
+
+      TermEV = NewObject();
+
+      TermEV.Identifier = "DOM1_OS::" + SERVERSERIAL.PCDATA + SERIAL.PCDATA + NUMERO[K].PCDATA;
+      TermEV.Severity = ORIGINAL[0].Severity;
+      TermEV.Summary = ORIGINAL[0].Summary+" RESP";
+      TermEV.Category = ORIGINAL[0].Category;
+      TermEV.Technology = ORIGINAL[0].Technology;
+      TermEV.Agent = "IMPACT";
+      TermEV.FirstOccurrence = ORIGINAL[0].FirstOccurrence;
+      TermEV.LastOccurrence = ORIGINAL[0].LastOccurrence;
+      TermEV.NmosSerial = SERVERSERIAL.PCDATA;
+      TermEV.NmosCauseType = 2;
+      NCLI = NOMECLI[0].PCDATA;
+                                         //TermEV.Customer = Replace(NCLI," ","_");
+      TermEV.Customer = Replace(NCLI,"/","");
+      TermEV.Customer = Replace(TermEV.Customer,"&","e");
+      TermEV.ServiceIdentifier = NUMERO[K].PCDATA;
+      TermEV.OwnerUID = 65534;
+    
+      AddDataItem("EVENTOS", TermEV);
+    
+     NumTERM = NumTERM - 1;
+    }
+  
+    NumCLI = NumCLI - 1;
+   }
+
+  }
+
+  NUMEV = NUMEV - 1;
+     
+ }
+ 
+}
+// BatchUpdate("EVENTOS", FILTRO, "NmosSerial='"+SERIAL+"'");
+log ("RESP-ICS: FIM DE CIC-ICS_RESPOSTA_POLICY");

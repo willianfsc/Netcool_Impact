@@ -1,0 +1,40 @@
+
+// PROCURA POR NOME
+// Retorna todos os OrgNodes de TAB_NOMES
+// para nomes iguais ao do evento recebido.
+
+EV = GetByFilter('EVENTOS', "AdtionalInfo = 'NOME'",false);
+
+Num = length(EV);
+
+if (Num > 0)
+{
+   J = Num -1;
+	while ( J >=0 )
+	{
+		TABELA = "TAB_NOMES";
+		FILTRO = "NOME='"+EV[J].NEName+"'";
+		RETREGRAS = GetByFilter(TABELA, FILTRO, false);
+		NumR = length(RETREGRAS);
+		log ("Procura por nome: " + EV[J].NEName + " - encontrado " + NumR + " registro na tabela!");
+		if (NumR == 1)
+		{
+			I = NumR - 1;
+			EV[J].NEAddress = RETREGRAS[I].IP;
+			log ("Dado: " + EV[J].NEName + " encontrou-se: " + EV[J].NEAddress);
+		}
+		else
+		{
+			ERRO = NewObject();
+			ERRO.KEY = EV[J].NEName;
+			ERRO.NOME = EV[J].NEName;
+			ERRO.IP = EV[J].NEAddress;
+			ERRO.ERRO = "NumR = "+ NumR;
+			AddDataItem ("ERRO_NOMES",ERRO);
+			log ("Evento com NOME nao encontrado na tabela TAB_NOMES");
+		}
+
+		J = J -1;
+	}
+}
+

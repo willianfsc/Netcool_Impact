@@ -1,0 +1,217 @@
+
+// CIC-ICS_ENVIO_POLICY
+
+// Esta policy envia para o EAI, Abertura de eventos Alarme e Massiva. 
+// O fechamento destes eventos utiliza a policy CIC-ICS_FECHAMENTO_POLICY.
+
+// Inicio
+horario = getdate();
+horario2 = getdate();
+log ("XML : Inicio CIC-ICS_ENVIO_POLICY - data:"+string(horario));
+horario = horario - 30;
+
+// Procura por eventos Alarme ou Massiva ainda nao enviados
+
+NOMEEQ = "";
+IPEQ = "";
+IFINDEX = "";
+// GPONID = "";
+
+TABELA = "EVENTOS";
+
+//FILTRO = "(Massiva > 0) AND (Massiva <= 3) AND (Abertura = 0) AND (Agent <> 'IMPACT') AND (ServerName LIKE '^DOM') AND (FirstOccurrence < "+string(horario)+") "; 
+FILTRO = "Category not in (824, 826, 827, 829) AND (Massiva > 0) AND (Massiva <= 3) AND (Abertura = 0) AND (Severity > 1) AND (Agent <> 'IMPACT') AND (FirstOccurrence < "+string(horario)+") AND ((Category <> 197) OR ((Category = 197) AND (Class = 620)))"; 
+
+CONSULTA =  GetByFilter(TABELA, FILTRO, False);
+
+NumC = length(CONSULTA);
+log ("XML : Filtro: "+FILTRO);
+log ("XML : NumC ="+NumC);
+
+if (NumC > 0) {
+ While(NumC > 0) {
+  I = NumC - 1;
+  GPONID = "";  
+  log ("XML: ServerName: " + CONSULTA[I].ServerName);
+  if (CONSULTA[I].Class == 48741)
+  {
+          log ("XML: BATP");
+          NumBATP = CONSULTA[I].TrapReason;
+          IdBATP = CONSULTA[I].ServiceType;
+  } else
+  {
+          NumBATP = "";
+          IdBATP = "BA";
+  }
+  // Criando XML de envio
+  
+  log ("Iniciando XML...");
+  
+  XML = "<?xml version='1.0' standalone='yes'?>";
+  XML = XML + "<evento>";
+  
+  if (CONSULTA[I].AlertGroup = "AposAlta")
+  {       
+   XML = XML + "<MeasurementAfterFulfillment>";
+   XML = XML + "<DSLAM>" + CONSULTA[I].NEName + "</DSLAM>";
+   XML = XML + "<Terminal>" + RExtract(CONSULTA[I].AlertKey,".*Terminal=(.*)") + "</Terminal>";
+   XML = XML + "<NRC>" + RExtract(CONSULTA[I].AlertKey,"NRC=(.*):.*") + "</NRC>";
+   XML = XML + "<NumberOfMeasurements>" + RExtract(CONSULTA[I].Summary,".*NroMuestras=(.*)") + "</NumberOfMeasurements>";
+   XML = XML + "<SnrUp>" + RExtract(CONSULTA[I].AdditionalInfo,".*SNRup=(.*):SNR.*") + "</SnrUp>";
+   XML = XML + "<SnrDown>" + RExtract(CONSULTA[I].AdditionalInfo,".*SNRdown=(.*):AtenUp.*") + "</SnrDown>";
+   XML = XML + "<AtenUp>" + RExtract(CONSULTA[I].AdditionalInfo,".*AtenUp=(.*):AtenDown.*") + "</AtenUp>";
+   XML = XML + "<AtenDown>" + RExtract(CONSULTA[I].AdditionalInfo,".*AtenDown=(.*):MaxVelUp.*") + "</AtenDown>";
+   XML = XML + "<MaxSpeedlUp>" + RExtract(CONSULTA[I].AdditionalInfo,".*MaxVelUp=(.*):MaxVelDown.*") + "</MaxSpeedlUp>";
+   XML = XML + "<MaxSpeedDown>" + RExtract(CONSULTA[I].AdditionalInfo,".*MaxVelDown=(.*)") + "</MaxSpeedDown>";
+   XML = XML + "</MeasurementAfterFulfillment>";
+  }
+  else
+  {
+   XML = XML + "<Abertura>" + CONSULTA[I].Abertura + "</Abertura>";
+   XML = XML + "<Massiva>" + CONSULTA[I].Massiva + "</Massiva>";
+   XML = XML + "<ServerSerial>" + CONSULTA[I].ServerSerial + "</ServerSerial>";
+   XML = XML + "<Serial>" + CONSULTA[I].Serial + "</Serial>";
+   XML = XML + "<NumBATP>" + NumBATP + "</NumBATP>";
+   XML = XML + "<IdBATP>" + IdBATP + "</IdBATP>";
+   XML = XML + "<Data>" + CONSULTA[I].FirstOccurrence + "</Data>";
+   novaSummary = replace (CONSULTA[I].Summary,"\n"," ");
+   novaSummary1 = replace (novaSummary,"&","&amp;");
+   novaSummary = replace (novaSummary1,">","&gt;");
+   novaSummary1 = replace (novaSummary,"<","&lt;");
+   novaSummary = replace (novaSummary1,"'","&apos;");
+   novaSummary1 = replace (novaSummary,"\""," ");
+   XML = XML + "<Summary>" + novaSummary1 + "</Summary>";
+   XML = XML + "<Category>" + CONSULTA[I].Category + "</Category>";
+   XML = XML + "<Technology>" + CONSULTA[I].Technology + "</Technology>";
+   XML = XML + "<TipoServico>" + RExtract(CONSULTA[I].SubObjectType,"SERVICO:(.*)-PROVEDOR:") + "</TipoServico>";
+   XML = XML + "<Provedor>" + RExtract(CONSULTA[I].SubObjectType,"SERVICO:.*-PROVEDOR:(.*)") + "</Provedor>";
+   XML = XML + "<AdditionalInfo>" + CONSULTA[I].AdditionalInfo + "</AdditionalInfo>";
+   XML = XML + "<equipamento>";
+   if (CONSULTA[I].NEName LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+   {
+    log ("XML: NEName eh um ip");
+    NOMEEQ = "";
+   } else
+   {
+    log ("XML: NEName nao eh um ip");
+    NOMEEQ = CONSULTA[I].NEName;
+   }
+
+   XML = XML + "<nome>" + NOMEEQ + "</nome>";
+  
+   if (CONSULTA[I].NEAddress LIKE "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+")
+   {
+           log ("XML: NEAddress eh um ip");
+    IPEQ = CONSULTA[I].NEAddress;
+   } else
+   {
+    log ("XML: NEAddress nao eh um ip");
+    IPEQ = "";
+   }
+  
+   XML = XML + "<ip>" + IPEQ + "</ip>";
+  
+   XML = XML + "<shelf>";
+   XML = XML + "<nome>" + CONSULTA[I].ShelfID + "</nome>";
+   XML = XML + "<subshelf>";
+   XML = XML + "<nome>" + CONSULTA[I].SubShelfID + "</nome>";
+   XML = XML + "<slot>";
+   XML = XML + "<nome>" + CONSULTA[I].Slot + "</nome>";
+   XML = XML + "<subslot>";
+   XML = XML + "<nome>" + CONSULTA[I].SubSlotID + "</nome>";
+   XML = XML + "<port>";
+   XML = XML + "<nome>" + CONSULTA[I].PSAP + "</nome>";
+  
+   if (CONSULTA[I].ShelfID = "" AND CONSULTA[I].SubShelfID = "" AND CONSULTA[I].Slot = "" AND CONSULTA[I].SubSlotID = "" AND CONSULTA[I].PSAP = "")
+   {
+           log ("XML: Setando ifindex");
+           IFINDEX = CONSULTA[I].LSAP;
+   } else
+   {
+           IFINDEX = "";
+   }
+
+   GPONID = "";
+   if (CONSULTA[I].Class <> 48741)
+   {
+           if (CONSULTA[I].AlertKey LIKE "ONT-.*-.*-.*-.*-.*")
+           {
+                   GPONID = RExtract(CONSULTA[I].AlertKey,"ONT-.*-.*-.*-.*-(.*)");
+           }
+           elseif (CONSULTA[I].AlertKey LIKE "^[0-9]+ [0-9]+ [0-9]+ [0-9]+ .*")
+           {
+                   GPONID = RExtract(CONSULTA[I].AlertKey,"^[0-9]+ [0-9]+ [0-9]+ ([0-9]+) .*");
+           }
+           elseif (CONSULTA[I].AlertKey LIKE ".*ONT-.*-.*-.*")
+           {
+                   GPONID = RExtract(CONSULTA[I].AlertKey,".*ONT-.*-.*-(.*)");
+           }
+   }
+   XML = XML + "<ifindex>" + IFINDEX + "</ifindex>";
+   
+   XML = XML + "</port>";
+   XML = XML + "</subslot>"; 
+   XML = XML + "</slot>";
+   XML = XML + "</subshelf>";
+   XML = XML + "</shelf>";
+   XML = XML + "<Gpon>";
+   XML = XML + "<Identifier>" + GPONID + "</Identifier>";
+   XML = XML + "</Gpon>";
+   XML = XML + "</equipamento>";
+  }
+  XML = XML + "</evento>";
+  log ("XML para enviar: "+XML);
+  
+  // Criacao da variavel JNDIProps que contem as propriedades JNDI
+  //JNDIProps = NewObject();
+  //JNDIProps["java.naming.factory.initial"] = "com.sun.jndi.fscontext.RefFSContextFactory";
+  //JNDIProps["java.naming.provider.url"] = "file:/opt/mqm/tmp/JNDI-Directory";
+  
+  // Definicao de variavel MsgProps para envio via JMS
+  
+  MsgProps = NewObject();
+  if (CONSULTA[I].Massiva = 3)
+  {   
+   MsgProps.Priority = 4;
+  }
+  else
+  {
+   MsgProps.Priority = 5;
+  }
+
+  MsgProps.DeliveryMode = "PERSISTENT";
+  MsgProps.TimeToLive = 0;
+               
+  // Envio XML via JMS
+  
+  // "WSMQQueueConnectionFactory" => Nome do JMS connection factory.
+  // "ResponseQueue" => Nome do contexto JMS para onde se deseja enviar a mensagem.
+  
+  // Enviando el mensaje
+  if (CONSULTA[I].Massiva = 3)
+  { 
+   //SendJMSMessage(JNDIProps, "WSMQQueueConnectionFactory", "ResponseQueueWPS", MsgProps, XML);
+   SendJMSMessage("JMS_DATASOURCE_RESPONSE_WPS", MsgProps, XML);
+  }
+  else
+  {
+   //SendJMSMessage(JNDIProps, "WSMQQueueConnectionFactory", "ResponseQueue", MsgProps, XML);
+   SendJMSMessage("JMS_DATASOURCE_RESPONSE", MsgProps, XML);
+  }
+
+  log ("XML Enviado!");
+  
+  NumC = NumC - 1;
+ }
+
+ // Apos o envio de todas as mensagens atualiza status
+
+ BatchUpdate(TABELA, FILTRO, "Abertura = 10");
+ 
+ log ('XML : Fim CIC-ICS_ENVIO_POLICY - data:'+string(horario));
+
+}
+else {
+ log ("XML :Nao existe evento para enviar");
+}
+

@@ -1,0 +1,104 @@
+// REVE CAUSA RAIZ POLICY 
+// reve os nos setados como causa se nao apareceram outros eventos que devam
+// ser causa deles.
+// Esta policy roda de tempos em tempos procurando os eventos Root.
+
+
+// Inicio
+
+log ("CRPOL2: Inicio");
+
+efeito = 0;              //este flag indicara quando encontramos um outro
+                         //evento que sera raiz do evento atual.
+
+raiz = 0;               // este flag indicara quando o proprio evento deve
+                        // ser considerado como raiz.
+TAB1 = "EVENTOS";
+FIL1 = "NmosCauseType=1 and Category in (250, 200, 220, 230, 330, 60) and Severity>1 and (LastOccurrence < (getdate - 40)) AND (Class<>48741) AND (ServerName LIKE '^DOM1')";
+EVROOT = GetByFilter(TAB1, FIL1, false);
+Numroot = length(EVROOT);
+if (Numroot >0) {
+        // existem eventos root
+        I = Numroot-1;
+        while (I>=0) {
+                log ("CRPOL2: ServerName: " + EVROOT[I].ServerName);
+                TABELA = "CONEXOES";
+                NOMEAPROCURAR = EVROOT[I].NEName;
+                FILTRO = "NENAME_B='"+NOMEAPROCURAR+"'";
+                log ("CRPOL2: procurando "+FILTRO+" em "+TABELA);
+
+                PROCURA = GetByFilter(TABELA, FILTRO, false);
+                Nump = length(PROCURA);
+                log ("CRPOL2: Nump = "+Nump);
+                if (Nump > 0) {
+                        FIL2 = "(NEName='"+PROCURA[0].NENAME_A+"')AND(NmosCauseType>0)AND(Category=250)";
+                        log ("CRPOL2: Encontrado "+PROCURA[0].NENAME_A);
+                        log ("CRPOL2: procurando "+FIL2+" em "+TAB1);
+                        PROCCAUSA = GetByFilter(TAB1, FIL2, false);
+                        Numpc = length(PROCCAUSA);
+                        if (Numpc > 0) {
+                                // Encontramos um evento ja assinalado como causa ou efeito.
+                                // isto significa que o evento sendo tratado eh um efeito.
+                                log ("CRPOL2: Encontrado evento raiz!");
+                                FIL3 = "ServerSerial="+EVROOT[I].ServerSerial;
+                                UPD = "NmosCauseType=2, NmosSerial='"+PROCCAUSA[0].NmosSerial+"', Severity=1";
+    log ("CRPOL2: Para "+FIL3+" ... Atualizando "+UPD);
+                                efeito = 1;
+         // Atualiza evento como sintoma.
+                                BatchUpdate (TAB1,FIL3,UPD);
+         // Atualiza todos os eventos sintoma dele como sintoma do seu raiz
+         FIL3 = "NmosSerial='"+EVROOT[I].ServerSerial+"' and ServerSerial<>"+EVROOT[I].ServerSerial+" and InvName='"+EVROOT[I].InvName+"'";
+         UPD = "NmosSerial='"+PROCCAUSA[0].NmosSerial+"'";
+         log ("CRPOL2: Para "+FIL3+" ... Atualizando "+UPD);
+         BatchUpdate (TAB1,FIL3,UPD);
+                        }
+                        while (efeito == 0 AND raiz == 0) {
+                                NOMEAPROCURAR = PROCURA[0].NENAME_A;
+                                FILTRO = "NENAME_B='"+NOMEAPROCURAR+"'";
+                                log ("CRPOL2: procurando "+FILTRO+" em "+TABELA);
+                                PROCURA = GetByFilter(TABELA, FILTRO, false);
+                                Nump = length(PROCURA);
+                                if (Nump == 0) {
+                                        // nao existem mais links acima
+                                        // o evento analizado deve ser considerado como raiz.
+                                        log ("CRPOL2: Nao existem outras raizes...Evento "+EVROOT[I].NEName+" sendo tratado ainda eh raiz!");
+                                        raiz = 1;
+                                }
+                                else {
+                                        FIL2 = "(NEName='"+PROCURA[0].NENAME_A+"')AND(NmosCauseType>0)AND(Category=250)AND (Class<>48741)";
+                                        log ("CRPOL2: Encontrado "+PROCURA[0].NENAME_A);
+                                        log ("CRPOL2: procurando "+FIL2+" em "+TAB1);
+                                        PROCCAUSA = GetByFilter(TAB1, FIL2, false);
+                                        Numpc = length(PROCCAUSA);
+                                        if (Numpc > 0) {
+                                                // Encontramos um evento ja assinalado como causa ou efeito.
+                                                // isto significa que o evento sendo tratado eh um efeito.
+                                                log ("CRPOL2: Encontrado evento raiz!");
+                                                FIL3 = "Serial="+EVROOT[I].Serial;
+                                                UPD = "NmosCauseType=2, Severity=1";
+                                                efeito = 1;
+                                                // Atualiza evento como sintoma.
+                                   BatchUpdate (TAB1,FIL3,UPD);
+       // Atualiza todos os eventos sintoma dele como sintoma do seu raiz
+            FIL3 = "NmosSerial='"+EVROOT[I].ServerSerial+"' and ServerSerial<>"+EVROOT[I].ServerSerial+" and  InvName='"+EVROOT[I].InvName+"'";
+       UPD = "NmosSerial='"+PROCCAUSA[0].NmosSerial+"'";
+       log ("CRPOL2: Para "+FIL3+" ... Atualizando "+UPD);
+            BatchUpdate (TAB1,FIL3,UPD);
+                                        }
+                                } // fim else
+                        } // fim do while (enquanto nao se descobrir causa ou efeito.
+                } // Fim do if (se existem conexao acima)
+    I = I - 1;
+        } // Fim do while (enquanto houverem eventos root)
+} //Fim do if (se existem eventos root)
+
+log("CRPOL2: *** fim ***");
+
+
+
+
+
+
+
+
+

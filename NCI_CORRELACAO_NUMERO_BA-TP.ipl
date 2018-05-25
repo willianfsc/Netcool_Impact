@@ -1,0 +1,83 @@
+// Politica para enriquecer eventos com informacao de numero de BA/TP
+
+// Inicio
+
+horario = getdate();
+horario = horario - 300;
+
+log ("BATP: Inicio");
+log ("BATP: TESTE ANTES IF Summary = " + @Summary);
+if (@StateChange >= "+string(horario)+" && @Category != 197 && @Summary NOT LIKE "BA =") 
+{	
+
+ 
+
+  TABELA = "HISTORICO_MASSIVA";
+  FILTRO = "Server_Serial='"+@ServerSerial+"'";
+  RET = GetByFilter(TABELA, FILTRO, false);
+  NumR = length(RET);
+ 
+  if (NumR > 0)
+  {	
+	while (NumR > 0)
+	{
+	 I = NumR - 1;
+	 
+		TAM = length(RET[I].NUMERO_BA);
+		if (TAM != 0)
+		{
+	              log ("BATP: TESTE DENTRO Summary =" + @Summary);
+			@Summary = @Summary + " - ( BA = " + RET[I].NUMERO_BA + " )";
+			log ("BATP: OK - ServerSerial: " + @ServerSerial + " - " + @Summary);
+		}
+		else
+		{
+			log ("BATP: OK - ServerSerial: " + @ServerSerial + " - Sem BA no HISTORICO");
+
+			// Tenta por 30 minutos consultar a base de Massivas
+			horario2 = @StateChange;
+			horario2 = horario2 - 1800;
+	 		if (@LastOccurrence >= horario2)
+			{
+                           // Apenas atualiza um campo para mudar o StateChange
+				@StdSummary = @StdSummary;
+			}
+		}
+
+		NumR = NumR - 1;
+	 }
+
+	
+  }
+  else 
+  {
+	log ("BATP: NOK - ServerSerial: " + @ServerSerial + " nao esta na base de HISTORICO");
+
+	// Espera por 10 minutos consultar a base de Massivas
+        horario3 = @StateChange;
+        horario3 = horario3 - 600;
+        if (@LastOccurrence >= horario3)
+        {
+              // Apenas atualiza um campo pra mudar o StateChange
+		@StdSummary = @StdSummary;
+        }
+
+  }
+
+}
+else 
+	 {
+	 	log ("BATP: OK - ServerSerial: " + @ServerSerial + " - Nao atende as condicoes para alterar o Summary");
+		// Retornando o evento.
+		//ReturnEvent(EventContainer); 
+		//NumR = NumR - 1;
+	 }
+
+log ("BATP: TESTE Termino");
+// Retornando o evento.
+ReturnEvent(EventContainer); 
+log("BATP: ReturnEvent successful");
+
+
+
+

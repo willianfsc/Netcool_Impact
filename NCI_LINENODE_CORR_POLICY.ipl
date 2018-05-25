@@ -1,0 +1,87 @@
+
+// CORRELACAO LINE ALARM BPX - NODEDOWN
+//
+// Esta policy roda uma vez a cada 91 segundos
+// Procura por eventos Categoria =  220 (Line Alarme) e Tecnologia =  6 (BPX)
+// Se houver eventos procura na tabela CONEXOES a informação completa 
+//    do line BPX retornando o no conectado a este link 
+// Procura por eventos node down do nó acima.
+// Se houver evento node down coloca este node down com efeito e o evento line como causa.
+//
+// Inicio
+
+
+log ("LINENODE: Inicio");
+
+// Procura por eventos Categoria=220 (Line Alarme) e Tecnologia=6 (BPX) e NmosCauseType=0 (nem causa nem raiz)
+
+TABELA = "EVENTOS";
+FILTRO = "(Category=220) AND (Technology=6) AND (NmosCauseType=0) AND (Severity=5) AND (ServerName LIKE '^DOM1')";
+
+log ("LINENODE: Procurando eventos Line Alarme...");
+
+EVLA = GetByFilter(TABELA, FILTRO, false);
+NumEVLA = length(EVLA);
+
+log ("LINENODE: Encontrados " + NumEVLA + " eventos Line Alarm");
+
+while (NumEVLA > 0) {
+ 
+ ind2 = NumEVLA-1;
+       log("LINENODE: ServerName: " + EVLA[ind2].ServerName);
+ // Procura na tabela CONEXOES o LocalNodeAlias do evento encontrado
+ log ("LINENODE: Procurando afetacao:"+ EVLA[ind2].LocalNodeAlias);
+
+ TAB2 = "CONEXOES";
+ FIL2 = "LNA='" + EVLA[ind2].LocalNodeAlias + "'";
+
+ CONEXAO = GetByFilter(TAB2, FIL2, false);
+ NumCON = length(CONEXAO);
+ 
+ if (NumCON > 0) {
+
+  
+  log ("LINENODE: Afetacao = " + CONEXAO[0].NENAME_B);
+  
+  // procura Evento Node Down
+  FIL3 = "(Category=250)AND(NEName='" + CONEXAO[0].NENAME_B + "')";
+  //FIL3 = "(ServerName LIKE '^DOM1') AND (Category=250)AND(NEName='" + CONEXAO[0].NENAME_B + "')";
+
+
+  
+  EVND = GetByFilter(TABELA, FIL3, false);
+  NumEVND = length(EVND);
+  
+  if (NumEVND > 0) {
+   log ("LINENODE: NodeDown encontrado!!! Correlacionando..." +EVLA[ind2].LocalNodeAlias + " -> " + CONEXAO[0].NENAME_B);
+   UPD = "NmosCauseType=2, NmosSerial='"+EVLA[ind2].ServerSerial+"', Severity=1";
+   BatchUpdate (TABELA,FIL3,UPD);
+
+   UPD = "NmosCauseType=1, NmosSerial='"+EVLA[ind2].ServerSerial+"', Severity=5";
+   BatchUpdate (TABELA,"InvName='"+EVLA[ind2].InvName+"' and ServerSerial="+EVLA[ind2].ServerSerial,UPD);
+  }
+  else {
+   log ("LINENODE: Evento NodeDown NAO encontrado. "+EVLA[ind2].LocalNodeAlias + " -> " + CONEXAO[0].NENAME_B);
+  }
+
+ }
+ else { 
+  log ("LINENODE: Nao foi encontrada conexao de " + EVLA[ind2].LocalNodeAlias);
+ }
+
+ NumEVLA = NumEVLA - 1;
+
+}
+
+log ("LINENODE: *** fim ***");
+
+
+
+
+
+
+
+
+
+
+

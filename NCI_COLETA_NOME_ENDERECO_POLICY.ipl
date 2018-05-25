@@ -1,0 +1,31 @@
+
+// COLETA_NOME_ENDERECO_POLICY
+
+// Inicio
+horario = getdate();
+log ("COLETA_NEND: Inicio ");
+// DEFINE NOMES E ENDERECOS PARA TODOS OS EVENTOS DO CIC, INCLUINDO TAMBEM INFORMACAO DE 
+// LOCALIZACAO DO EQUIPAMENTO COM PROBLEMA
+
+TABLE = "EVENTOS_COLETA";
+FILTER = "(Identifier IN (select top 600 Identifier from alerts.status where Category in (824, 826, 827, 829) AND (Type <> 2) AND Service <> '' AND (Class <> 48741) and (URL not like '@Impact_NEND') AND (ServerName LIKE 'DOM1' OR (ServerName LIKE 'DOM2' AND Severity > 0)) and Technology <> 14))";
+EVROOT = GetByFilter(TABLE, FILTER, false);
+Numroot = length(EVROOT);
+Total = Numroot;
+if (Numroot >0)
+{
+ I = Numroot-1;
+
+log ("COLETA_NEND: Chama DEFINE_MASSIVA"); 
+ while (I>=0) 
+ {
+  // Chama Define massiva
+  Activate(NULL,"DEFINE_MASSIVA_POLICY_NOVO");
+  I = I-1;
+ } 
+}
+log ("COLETA_NEND: Fim da policy ");
+horario2 = getdate();                                                                                                                                   
+tdecor = horario2 - horario;                                                                                                                            
+log ("COLETA_NEND: ****** Fim NEND -> Tempo decorrido na politica: "+string(tdecor)+"s para "+string(Total)+" registros ******");
+
